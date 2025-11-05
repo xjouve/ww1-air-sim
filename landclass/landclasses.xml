@@ -1,0 +1,387 @@
+<LandClasses ImageQualityIgnoreMips="80" ImageQualityIgnoreHigherMips="50">
+    <LandClass Id="1" Name="Ice" Dim="9216" Priority="45" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="001summer1.mos" Scenery="001summer1.lso" />
+                    <Variation Mosaic="001summer2.mos" Scenery="001summer2.lso" />
+                    <Variation Mosaic="001summer3.mos" Scenery="001summer3.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="001winter1.mos" Scenery="001summer1.lso" />
+                    <Variation Mosaic="001winter2.mos" Scenery="001summer2.lso" />
+                    <Variation Mosaic="001winter3.mos" Scenery="001summer3.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="6" Name="Grassland" Dim="9216" Priority="10" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="006summer1.mos" Scenery="006summer1.lso" />
+                    <Variation Mosaic="006summer2.mos" Scenery="006summer2.lso" />
+                    <Variation Mosaic="006summer3.mos" Scenery="006summer3.lso" />
+                    <Variation Mosaic="006summer4.mos" Scenery="006summer4.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="006winter1.mos" Scenery="006summer1.lso" />
+                    <Variation Mosaic="006winter2.mos" Scenery="006summer2.lso" />
+                    <Variation Mosaic="006winter3.mos" Scenery="006summer3.lso" />
+                    <Variation Mosaic="006winter4.mos" Scenery="006summer4.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="8" Name="Crop and Town" Dim="5120" Priority="70" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="015summer1.mos" Scenery="015summer1.lso" />
+                    <Variation Mosaic="015summer2.mos" Scenery="015summer2.lso" />
+                    <Variation Mosaic="008summer1.mos" Scenery="008summer1.lso" />
+                    <Variation Mosaic="010summer3.mos" Scenery="010summer3.lso" />
+                    <Variation Mosaic="008summer2.mos" Scenery="008summer2.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="015winter1.mos" Scenery="015summer1.lso" />
+                    <Variation Mosaic="015winter2.mos" Scenery="015summer2.lso" />
+                    <Variation Mosaic="008winter1.mos" Scenery="008summer1.lso" />
+                    <Variation Mosaic="010winter3.mos" Scenery="010summer3.lso" />
+                    <Variation Mosaic="008winter2.mos" Scenery="008summer2.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="10" Name="Grass, Crop and Shrub" Dim="5120" Priority="60" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="008summer1.mos" Scenery="008summer1.lso" />
+                    <Variation Mosaic="008summer2.mos" Scenery="008summer2.lso" />
+                    <Variation Mosaic="010summer1.mos" Scenery="010summer1.lso" />
+                    <Variation Mosaic="010summer2.mos" Scenery="010summer2.lso" />
+                    <Variation Mosaic="010summer3.mos" Scenery="010summer3.lso" />
+                    <Variation Mosaic="015summer1.mos" Scenery="015summer1.lso" />
+                    <Variation Mosaic="025summer2.mos" Scenery="025summer2.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="008winter1.mos" Scenery="008summer1.lso" />
+                    <Variation Mosaic="008winter2.mos" Scenery="008summer2.lso" />
+                    <Variation Mosaic="010winter1.mos" Scenery="010summer1.lso" />
+                    <Variation Mosaic="010winter2.mos" Scenery="010summer2.lso" />
+                    <Variation Mosaic="010winter3.mos" Scenery="010summer3.lso" />
+                    <Variation Mosaic="015winter1.mos" Scenery="015summer1.lso" />
+                    <Variation Mosaic="025winter2.mos" Scenery="025summer2.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="15" Name="Crops" Dim="5120" Priority="0" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="008summer1.mos" Scenery="008summer1.lso" />
+                    <Variation Mosaic="008summer2.mos" Scenery="008summer2.lso" />
+                    <Variation Mosaic="010summer1.mos" Scenery="010summer1.lso" />
+                    <Variation Mosaic="010summer2.mos" Scenery="010summer2.lso" />
+                    <Variation Mosaic="010summer3.mos" Scenery="010summer3.lso" />
+                    <Variation Mosaic="015summer1.mos" Scenery="015summer1.lso" />
+                    <Variation Mosaic="015summer2.mos" Scenery="015summer2.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="008winter1.mos" Scenery="008summer1.lso" />
+                    <Variation Mosaic="008winter2.mos" Scenery="008summer2.lso" />
+                    <Variation Mosaic="010winter1.mos" Scenery="010summer1.lso" />
+                    <Variation Mosaic="010winter2.mos" Scenery="010summer2.lso" />
+                    <Variation Mosaic="010winter3.mos" Scenery="010summer3.lso" />
+                    <Variation Mosaic="015winter1.mos" Scenery="015summer1.lso" />
+                    <Variation Mosaic="015winter2.mos" Scenery="015summer2.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="17" Name="Marsh?" Dim="9216" Priority="0" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="017summer1.mos" Scenery="017summer1.lso" />
+                    <Variation Mosaic="017summer2.mos" Scenery="017summer2.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="017winter1.mos" Scenery="017summer1.lso" />
+                    <Variation Mosaic="017winter2.mos" Scenery="017summer2.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="24" Name="Forest" Dim="9216" Priority="0" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="024summer1.mos" Scenery="024summer1.lso" />
+                    <Variation Mosaic="024summer2.mos" Scenery="024summer2.lso" />
+                    <Variation Mosaic="024summer3.mos" Scenery="024summer3.lso" />
+                    <Variation Mosaic="025summer2.mos" Scenery="025summer2.lso" />
+                    <Variation Mosaic="025summer3.mos" Scenery="025summer3.lso" />
+                    <Variation Mosaic="025summer4.mos" Scenery="025summer4.lso" />
+                    <Variation Mosaic="025summer5.mos" Scenery="025summer5.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="024winter1.mos" Scenery="024summer1.lso" />
+                    <Variation Mosaic="024winter2.mos" Scenery="024summer2.lso" />
+                    <Variation Mosaic="024winter3.mos" Scenery="024summer3.lso" />
+                    <Variation Mosaic="025winter2.mos" Scenery="025summer2.lso" />
+                    <Variation Mosaic="025winter3.mos" Scenery="025summer3.lso" />
+                    <Variation Mosaic="025winter4.mos" Scenery="025summer4.lso" />
+                    <Variation Mosaic="025winter5.mos" Scenery="025summer5.lso" />
+                    <Variation Mosaic="026winter1.mos" Scenery="026summer1.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="25" Name="Forest and Field" Dim="9216" Priority="50" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="024summer1.mos" Scenery="024summer1.lso" />
+                    <Variation Mosaic="024summer2.mos" Scenery="024summer2.lso" />
+                    <Variation Mosaic="024summer3.mos" Scenery="024summer3.lso" />
+                    <Variation Mosaic="025summer2.mos" Scenery="025summer2.lso" />
+                    <Variation Mosaic="025summer3.mos" Scenery="025summer3.lso" />
+                    <Variation Mosaic="025summer4.mos" Scenery="025summer4.lso" />
+                    <Variation Mosaic="025summer5.mos" Scenery="025summer5.lso" />
+                    <Variation Mosaic="026summer1.mos" Scenery="026summer1.lso" />
+                    <Variation Mosaic="026summer2.mos" Scenery="026summer2.lso" />
+                    <Variation Mosaic="026summer3.mos" Scenery="026summer3.lso" />
+                    <Variation Mosaic="026summer4.mos" Scenery="026summer4.lso" />
+                    <Variation Mosaic="026summer5.mos" Scenery="026summer5.lso" />
+                    <Variation Mosaic="027summer1.mos" Scenery="027summer1.lso" />
+                    <Variation Mosaic="027summer2.mos" Scenery="027summer2.lso" />
+                    <Variation Mosaic="027summer3.mos" Scenery="027summer3.lso" />
+                    <Variation Mosaic="027summer4.mos" Scenery="027summer4.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="024winter1.mos" Scenery="024summer1.lso" />
+                    <Variation Mosaic="024winter2.mos" Scenery="024summer2.lso" />
+                    <Variation Mosaic="024winter3.mos" Scenery="024summer3.lso" />
+                    <Variation Mosaic="025winter2.mos" Scenery="025summer2.lso" />
+                    <Variation Mosaic="025winter3.mos" Scenery="025summer3.lso" />
+                    <Variation Mosaic="025winter4.mos" Scenery="025summer4.lso" />
+                    <Variation Mosaic="025winter5.mos" Scenery="025summer5.lso" />
+                    <Variation Mosaic="026winter1.mos" Scenery="026summer1.lso" />
+                    <Variation Mosaic="026winter2.mos" Scenery="026summer2.lso" />
+                    <Variation Mosaic="026winter3.mos" Scenery="026summer3.lso" />
+                    <Variation Mosaic="026winter4.mos" Scenery="026summer4.lso" />
+                    <Variation Mosaic="026winter5.mos" Scenery="026summer5.lso" />
+                    <Variation Mosaic="027winter1.mos" Scenery="027summer1.lso" />
+                    <Variation Mosaic="027winter2.mos" Scenery="027summer2.lso" />
+                    <Variation Mosaic="027winter3.mos" Scenery="027summer3.lso" />
+                    <Variation Mosaic="027winter4.mos" Scenery="027summer4.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="26" Name="Coniferous Forest" Dim="9216" Priority="40" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="025summer2.mos" Scenery="025summer2.lso" />
+                    <Variation Mosaic="025summer3.mos" Scenery="025summer3.lso" />
+                    <Variation Mosaic="025summer4.mos" Scenery="025summer4.lso" />
+                    <Variation Mosaic="025summer5.mos" Scenery="025summer5.lso" />
+                    <Variation Mosaic="026summer1.mos" Scenery="026summer1.lso" />
+                    <Variation Mosaic="026summer2.mos" Scenery="026summer2.lso" />
+                    <Variation Mosaic="026summer3.mos" Scenery="026summer3.lso" />
+                    <Variation Mosaic="026summer4.mos" Scenery="026summer4.lso" />
+                    <Variation Mosaic="026summer5.mos" Scenery="026summer5.lso" />
+                    <Variation Mosaic="027summer1.mos" Scenery="027summer1.lso" />
+                    <Variation Mosaic="027summer2.mos" Scenery="027summer2.lso" />
+                    <Variation Mosaic="027summer3.mos" Scenery="027summer3.lso" />
+                    <Variation Mosaic="027summer4.mos" Scenery="027summer4.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="025winter2.mos" Scenery="025summer2.lso" />
+                    <Variation Mosaic="025winter3.mos" Scenery="025summer3.lso" />
+                    <Variation Mosaic="025winter4.mos" Scenery="025summer4.lso" />
+                    <Variation Mosaic="025winter5.mos" Scenery="025summer5.lso" />
+                    <Variation Mosaic="026winter1.mos" Scenery="026summer1.lso" />
+                    <Variation Mosaic="026winter2.mos" Scenery="026summer2.lso" />
+                    <Variation Mosaic="026winter3.mos" Scenery="026summer3.lso" />
+                    <Variation Mosaic="026winter4.mos" Scenery="026summer4.lso" />
+                    <Variation Mosaic="026winter5.mos" Scenery="026summer5.lso" />
+                    <Variation Mosaic="027winter1.mos" Scenery="027summer1.lso" />
+                    <Variation Mosaic="027winter2.mos" Scenery="027summer2.lso" />
+                    <Variation Mosaic="027winter3.mos" Scenery="027summer3.lso" />
+                    <Variation Mosaic="027winter4.mos" Scenery="027summer4.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="27" Name="Mixed Forest" Dim="9216" Priority="30" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="024summer1.mos" Scenery="024summer1.lso" />
+                    <Variation Mosaic="024summer2.mos" Scenery="024summer2.lso" />
+                    <Variation Mosaic="024summer3.mos" Scenery="024summer3.lso" />
+                    <Variation Mosaic="025summer2.mos" Scenery="025summer2.lso" />
+                    <Variation Mosaic="025summer3.mos" Scenery="025summer3.lso" />
+                    <Variation Mosaic="025summer4.mos" Scenery="025summer4.lso" />
+                    <Variation Mosaic="025summer5.mos" Scenery="025summer5.lso" />
+                    <Variation Mosaic="026summer1.mos" Scenery="026summer1.lso" />
+                    <Variation Mosaic="026summer2.mos" Scenery="026summer2.lso" />
+                    <Variation Mosaic="026summer3.mos" Scenery="026summer3.lso" />
+                    <Variation Mosaic="026summer4.mos" Scenery="026summer4.lso" />
+                    <Variation Mosaic="026summer5.mos" Scenery="026summer5.lso" />
+                    <Variation Mosaic="027summer1.mos" Scenery="027summer1.lso" />
+                    <Variation Mosaic="027summer2.mos" Scenery="027summer2.lso" />
+                    <Variation Mosaic="027summer3.mos" Scenery="027summer3.lso" />
+                    <Variation Mosaic="027summer4.mos" Scenery="027summer4.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="024winter1.mos" Scenery="024summer1.lso" />
+                    <Variation Mosaic="024winter2.mos" Scenery="024summer2.lso" />
+                    <Variation Mosaic="024winter3.mos" Scenery="024summer3.lso" />
+                    <Variation Mosaic="025winter2.mos" Scenery="025summer2.lso" />
+                    <Variation Mosaic="025winter3.mos" Scenery="025summer3.lso" />
+                    <Variation Mosaic="025winter4.mos" Scenery="025summer4.lso" />
+                    <Variation Mosaic="025winter5.mos" Scenery="025summer5.lso" />
+                    <Variation Mosaic="026winter1.mos" Scenery="026summer1.lso" />
+                    <Variation Mosaic="026winter2.mos" Scenery="026summer2.lso" />
+                    <Variation Mosaic="026winter3.mos" Scenery="026summer3.lso" />
+                    <Variation Mosaic="026winter4.mos" Scenery="026summer4.lso" />
+                    <Variation Mosaic="026winter5.mos" Scenery="026summer5.lso" />
+                    <Variation Mosaic="027winter1.mos" Scenery="027summer1.lso" />
+                    <Variation Mosaic="027winter2.mos" Scenery="027summer2.lso" />
+                    <Variation Mosaic="027winter3.mos" Scenery="027summer3.lso" />
+                    <Variation Mosaic="027winter4.mos" Scenery="027summer4.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="31" Name="Large City" Dim="5120" Priority="100" IsWater="No" Mask="GenericCityMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="031summer1.mos" Scenery="031summer1.lso" />
+                    <Variation Mosaic="031summer2.mos" Scenery="031summer2.lso" />
+                    <Variation Mosaic="031summer3.mos" Scenery="031summer3.lso" />
+                    <Variation Mosaic="034summer1.mos" Scenery="034summer1.lso" />
+                    <Variation Mosaic="034summer2.mos" Scenery="034summer1.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="031winter1.mos" Scenery="031summer1.lso" />
+                    <Variation Mosaic="031winter2.mos" Scenery="031summer2.lso" />
+                    <Variation Mosaic="031winter3.mos" Scenery="031summer3.lso" />
+                    <Variation Mosaic="034winter1.mos" Scenery="034summer1.lso" />
+                    <Variation Mosaic="034winter2.mos" Scenery="034summer1.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="34" Name="Medium City" Dim="5120" Priority="90" IsWater="No" Mask="GenericCityMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="031summer1.mos" Scenery="031summer1.lso" />
+                    <Variation Mosaic="031summer2.mos" Scenery="031summer2.lso" />
+                    <Variation Mosaic="031summer3.mos" Scenery="031summer3.lso" />
+                    <Variation Mosaic="034summer1.mos" Scenery="034summer1.lso" />
+                    <Variation Mosaic="034summer2.mos" Scenery="034summer1.lso" />
+                    <Variation Mosaic="047summer1.mos" Scenery="047summer1.lso" />
+                    <Variation Mosaic="047summer2.mos" Scenery="047summer2.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="031winter1.mos" Scenery="031summer1.lso" />
+                    <Variation Mosaic="031winter2.mos" Scenery="031summer2.lso" />
+                    <Variation Mosaic="031winter3.mos" Scenery="031summer3.lso" />
+                    <Variation Mosaic="034winter1.mos" Scenery="034summer1.lso" />
+                    <Variation Mosaic="034winter2.mos" Scenery="034summer1.lso" />
+                    <Variation Mosaic="047winter1.mos" Scenery="047summer1.lso" />
+                    <Variation Mosaic="047winter2.mos" Scenery="047summer2.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="47" Name="Small City" Dim="5120" Priority="80" IsWater="No" Mask="GenericCityMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="034summer1.mos" Scenery="034summer1.lso" />
+                    <Variation Mosaic="034summer2.mos" Scenery="034summer1.lso" />
+                    <Variation Mosaic="047summer1.mos" Scenery="047summer1.lso" />
+                    <Variation Mosaic="047summer2.mos" Scenery="047summer2.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="034winter1.mos" Scenery="034summer1.lso" />
+                    <Variation Mosaic="034winter2.mos" Scenery="034summer1.lso" />
+                    <Variation Mosaic="047winter1.mos" Scenery="047summer1.lso" />
+                    <Variation Mosaic="047winter2.mos" Scenery="047summer2.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="51" Name="Dry Woody Scrub" Dim="9216" Priority="20" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="051summer1.mos" Scenery="051summer1.lso" />
+                    <Variation Mosaic="051summer2.mos" Scenery="051summer2.lso" />
+                    <Variation Mosaic="051summer3.mos" Scenery="051summer3.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="051winter1.mos" Scenery="051summer1.lso" />
+                    <Variation Mosaic="051winter2.mos" Scenery="051summer2.lso" />
+                    <Variation Mosaic="051winter3.mos" Scenery="051summer3.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+    <LandClass Id="56" Name="Rock" Dim="9216" Priority="5" IsWater="No" Mask="GenericLandClassMask.xml">
+        <Seasons>
+            <Season Name="Summer">
+                <Variations>
+                    <Variation Mosaic="056summer2.mos" Scenery="056summer2.lso" />
+                    <Variation Mosaic="056summer4.mos" Scenery="056summer4.lso" />
+                    <Variation Mosaic="056summer5.mos" Scenery="056summer5.lso" />
+                </Variations>
+            </Season>
+            <Season Name="Winter">
+                <Variations>
+                    <Variation Mosaic="056winter2.mos" Scenery="056summer2.lso" />
+                    <Variation Mosaic="056winter4.mos" Scenery="056summer4.lso" />
+                    <Variation Mosaic="056winter5.mos" Scenery="056summer5.lso" />
+                </Variations>
+            </Season>
+        </Seasons>
+    </LandClass>
+</LandClasses>

@@ -1,0 +1,1 @@
+tiff2lcf test8RGBA.tif c2v.txt 1024000 1024 landclasses.xml test.lcf
