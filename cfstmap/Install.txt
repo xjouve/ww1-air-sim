@@ -1,0 +1,10 @@
+To Install CfsTmap.
+
+Unzip the archive to your chosen destination. A folder "CfsTmap" will
+be created there containing the Program and all the support files.
+
+If you do not have mwgfx.dll installed on your system then browse to
+the CfsTmap folder and run the mwgfxdll.exe program - this will
+install the dll to C:\Windows\System\. If your Windows folder is named
+differently then edit the destination when prompted.
+

@@ -1,0 +1,62 @@
+
+  CATGEN.EXE
+
+<< unfinished >>
+
+CATGEN is a little program to generate a catalogue
+of BGL library object names and their 128 bit ID numbers.
+
+The purpose of this catalogue is to enable SCASM 2.32 or
+later to deal direct with the lib objects description string
+so the scenery designer does not need to know and type in
+the long and cryptic object ID number.
+
+SCASM uses the generated catalogue as an conversion table.
+You can include nearly all BGL library files from your
+system.
+
+Generating a catalogue:
+ * Select "New Cat" and set a new filename and path
+   you also can select the index table size
+ * Select "OpenLib" to load a BGL library file
+   Select "Catalogue" to add the objects to the cat. <???>
+   repeat the last 2 steps for every lib you want to add
+   to the catalogue.
+
+The file is automatically saved when you exit the program
+or load/create a new catalogue file.
+If the object's name is already in the catalogue it is not
+added, even if the ID is different!
+The number of entries is not limited but the size of the
+index table is. As a result the object searcing may slow
+down when the number of entries is growing much larger
+than index table size.
+
+< --- >
+
+Of course extensive use of this feature will increase
+the compile time. This is the reason why the catalogue
+is NOT organised as a simple list. A special methode
+(hshing) is used to minimise the number of file acess
+per search.
+Why I am telling you this? Verry simple. The head of the
+file is a look-up table and you can change it's size.
+But you have to be very carfully with this.
+The size of this table MUST be a prime number.
+The size of this table should be larger than the expected
+number of catalogue entries but its size is not really
+critical. But you should watch the numbers of collisions
+and the length of the longest collision chain. The later
+is the maximum (plus 1) number of tries to find an
+given object name (worst case). This value should be
+very much smaller than the total amount of catalogue
+entries.
+
+Known problems/limitations:
+* The number of objects the DIR function can display
+  correctly is limited to abt. 9000.
+* Compressed LibFiles cannot be handled.
+
+Manfred Moldenhauer
+e-mail: M_Moldenhauer@compuserve.com
+

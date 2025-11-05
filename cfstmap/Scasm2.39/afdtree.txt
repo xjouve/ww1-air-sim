@@ -1,0 +1,48 @@
+AFD Tree
+
+Installation:
+There is no installation procedure. Simply copy
+AFDTREE.EXE and AFDTREE.TXT into a folder of your
+choice.
+
+This program shows the contents of AFD BGL-files
+in the form of an hierachical tree. This is similar
+to the style of Windows Explorer.
+
+AFD stands for Aircraft Facility Directory. This
+data section was added to the BGL file format
+when FS98 and CFS came out. Normaly files containing
+AFD data will have "AFD" somewhere in the filename.
+But it is possible that normal scenery BGL's will
+also contain AFD data. AfdTree will show you an
+error window if you try to open an BGL without
+such data section. This little tool lets you have a
+look into these files.
+
+Normally you can expect that AFD BGL files will only
+contain airport data or NDB/VOR data. Also every
+new created BGL with AFD data will cause FS to
+rebuild its internal data base.
+
+The output window is a normal Windows Edit Control. This
+means that you can use keybord commands CTRL-C and CTRL-V
+to copy text to and from the clipboard.
+
+Remark: If you don't see a button (+ or -) attached to a
+node icon, the node cannot be axpanded. This happens
+when a NameList is empty or when no following node exists.
+Also the right window remains empty if there is no data
+linked to a node.
+
+Known problems:
+* Sometimes this program confuses the option flags.
+* In FS2K AFD files the runway headings often do not
+match exactly with the ILS headings as they normally do
+in FS98. If this happens AFDTREE will show you the
+difference at the end of the line.
+
+Manfred Moldenhauer
+
+e-mail  (NO html documents please!!!):
+M_Moldenhauer@comuserve.com     /normal
+Manfred.Moldenhauer@t-online.de /backup only

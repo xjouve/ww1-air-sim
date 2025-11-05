@@ -1,0 +1,92 @@
+There is a new RUMWAY command in the FS2K BGL's
+This is the experimental version of its SCASM implementation.
+Many of the data fields are not tested. The following table
+shows the relationship between the data fields and the
+(experimental) parameter names. Most of the parameternames are
+the same as in the known RunwayData instruction. The flags
+may have different meanings.
+Many thanks to Sascha W. Felix for the VASI-Type table.
+
+Note the change in the VASITYPE parameters, changed to HEX input format!
+
+The LIGHTS switch seem only to work with value 4 (center line lights)
+
+/*
+**      Runway2 Struktur FS2K (vorlaeufig, evtl. variable Laenge)
+**
+**      all lines with "???" are unsure
+**
+**                                                                    Keywords
+**                                                                    ========
+*/
+typedef struct {
+    short   opcode;     //  0 0xAA
+    short   size;       //  2 length of this structure
+    char    sop1;       //  4 ??? (always 1 / sub opcode?)
+    char    lat[6];     //  5 Latitude
+    char    lon[6];     // 11 Longitude
+    char    elev[6];    // 17 elevation                               ALTITUDE
+    short   thdg;       // 21 true heading (16 bit pseudodegrees)     HEADING
+    short   len;        // 25 rwy length in ft                        LENGTH     int
+    short   wid;        // 27 rwy width in ft                         WIDTH      int
+    char    rwyflg1;    // 29 flags for runway markers (paintings) ?  MARKERS    hex
+    char    rwyflg2;    // 30 threshold markings                      THRESHOLD  hex
+    char    surface;    // 31 runway surface                          SURFACE    dec
+    char    light;      // 32 runway lights                           LIGHTS     hex
+    char    id;         // 33 rwy ID, bit 6=L, bit 7=R                ID
+    char    sop2;       // 34 always 2 ?                              ---
+    char    sop2a;      // 35                                         SOP2A
+    short   throf_n;    // 36 displaced threshold offset, near end    THROFFN
+    char    sop3;       // 38   3                                     ---
+    char    sop3a;      // 39                                         SOP3A
+    short   throf_f;    // 40 displaced threshold offset, far end     THROFFF
+    char    sop4;       // 42 always 4 ?                              ---
+    char    sop4a;      // 43                                         SOP4A
+    short   ext_n;      // 44 runway extension, near end              EXTN
+    char    sop5;       // 46   5                                     ---
+    char    sop5a;      // 47                                         SOP5A
+    short   ext_f;      // 48 runway extension, far end               EXTF
+    char    sop6;       // 50   6                                     ---
+    char    sop6a;      // 51                                         SOP6A
+    char    thrlight_n; // 52 threshold light control bits, near end  THRLIGHTSN  hex
+    char    aprlight_n; // 53 aproach lights, near end ???            APRLN       dec
+    char    strbs_n;    // 54 strobes ???                             STROBESN    dec
+                        //    near end VASI data
+    char    vasitypn;   // 55 VASI type                               VASITYPEN   hex
+    short   slopen;     // 56 VASI slope angle                        VASISLOPEN
+    short   sdispln;    // 58 VASI side displacement ft               VASISIDEN
+    short   ldispln;    // 60 VASI longitudinal displacement          VASIDISTN
+    short   spacen;     // 62 VASI elements spacing                   VASISPACEN
+    char    sop7;       // 64   7                                     ---
+    char    sop7a;      // 65                                         SOP7A
+    char    thrlight_f; // 66 threshold light control bits, far end   THRLIGHTSF  hex
+    char    aprlight_f; // 67 aproach lights, far end ???             APRLF       dec
+    char    strbs_f;    // 68 strobes ???                             STROBESF    dec
+                        //    far end VASI data
+    char    vasitypf;   // 69 VASI type                               VASITYPEF   hex
+    short   slopef;     // 70 VASI slope angle                        VASISLOPEF
+    short   sdisplf;    // 72 VASI side displacement ft               VASISIDEF
+    short   ldisplf;    // 74 VASI longitudinal displacement          VASIDISTF
+    short   spacef;     // 76 VASI elements spacing                   VASISPACEF
+} Rwy2;
+
+
+Example:
+    ;
+    Header( 1 47 49  9 11 )
+    LatRange( 49 47 )
+
+    Area( 5 48:28  10:12  100 )
+        Smoothing( 1 )
+        Runway( 48:28  10:12
+            altitude 22.5
+            heading  45.555
+            length 3000
+            width   150
+            surface 1
+            ID      11L
+        )
+        Smoothing ( 0 )
+    EndA
+    ;
+

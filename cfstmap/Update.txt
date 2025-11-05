@@ -1,0 +1,95 @@
+CfsTmap Update text
+
+4.00.9 ======= 27/02/00 ==================================
+
+Texture drawing method changed after Jan ter Horst reported
+that there were problems during Quick Combat over the Demo
+Arran scenery. The Aircraft names were flickering and
+disappearing and sometimes the Aircraft too! The changes 
+also make unnecessary the need for Level mesh for placing
+static scenery (though it is still a good idea) 
+
+4.00.8 ======= 25/02/00 ==================================
+
+Various tweaks and tidyups to get ready for release. 
+Modified "Adjoining Layouts" so that they are assumed to
+be in the same folder as the current layout - useful if
+you move folders about or send them to other people.
+Distribution version will come with Scasm 2.39 included
+with permission of Manfred Moldenhauer. Users of previous
+beta versions of CfsTmap will need to use the Prefs menu
+to select this scasm which is in the same folder as CfsTmap.
+New users will have this one selected automatically.
+
+4.00.7 ======= 11/02/00 ==================================
+
+Changed name to CfsTMap (from CfsTrn)
+
+Major addition - Allow the selecting of "Adjoining Layouts"
+                 Other mtw files can be selected as located
+                 next to the current layout (NSE & W) and
+                 the appropriate edge-textures of these
+                 layouts will be used during the matching
+                 process so layouts will join together
+                 smoothly.
+
+4.00.6 ======= 06/02/00 ==================================
+
+Solved several Elevation-related problems.
+
+Major addition - Elevation Interpolation.... If this option
+                 is selected in the Prefs menu then the
+                 output will use 16 elevation points for
+                 each tile. The 4 corner ones are the ones
+                 set in the layout but 5 extra points are
+                 calculated. These points will be lower
+                 by a standard amount around the edges 
+                 (so tiles will still mesh at any rotation) 
+                 but by a random amount for the middle 1.
+                 The amount is not much but it helps in
+                 breaking up the Angularity!
+
+              -  Functions to Import the Elevations for
+                 any edge from another file (presumably
+                 the layout that meets on that edge)
+
+4.00.5 ======= 05/02/00 ==================================
+
+Changes to the way the rescaled elevation is calculated
+Base Altitude multiplied by scale.
+Shift Layout and Shift Tiles now also copies rotation.
+
+4.00.3 ======= 02/02/00 ==================================
+
+Of course I was wrong in thinking that the Elevation points
+won`t be rotated. They will! This means that they need to
+be contrarotated by the same amount as the bitmap is being
+rotated.....
+
+4.00.2 ======= 02/02/00 ==================================
+
+This is the first real beta. Currently terrain is generated 
+using TexRelief. TexRelief gives the opportunity to utilise 
+rotation for images
+
+Features :-
+
+Rotatable Images - All images are rotatable 0, 90, 180, 270
+                   either from the selection thumbnail or
+                   in the actual displayed tile - as the 
+                   mouse moves over a tile a button will 
+                   appear in the corner. Each click on this
+                   will rotate 90 deg.
+
+                   If "Rotation" is checked in the Prefs menu
+                   then all possible variations of all std
+                   bitmaps will be used in the matching process
+
+                   note that no new images are created. Rotation
+                   is done within the Program on the fly.
+
+Scaled Elevation - Elevations are now calculated with scale
+                   compensation so an elevation of 100m will give
+                   100m (not 400m at scale 4, 300m at scale 3 etc)
+
+ 
