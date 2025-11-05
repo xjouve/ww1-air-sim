@@ -1,0 +1,28 @@
+Example Multi-Layout Scenery Source
+
+Isle of Arran
+
+In the "Arran" folder you will find 28 terrain files which fit
+together to make an elevated mesh scenery of the Isle of Arran
+just off the Scottish coast.
+
+The layouts are organised to fit together in the following fashion
+to give a total size of about 40 km by 70 km
+
+NW Corner                        NE Corner
+
+   Arran00  Arran01  Arran02  Arran03
+   Arran10  Arran11  Arran12  Arran13
+   Arran20  Arran21  Arran22  Arran23
+   .........
+   .........
+   Arran60  Arran61  Arran62  Arran63
+
+SW Corner                        SE Corner
+
+Load the terrain files into CfsTmap then "Create Bgl" for each of
+them into the same folder.
+
+Also included is a dos batch file (Linkit.bat) that demonstrates
+how to use sclink to link multiple BGL files into a single BGL
+when a suitable naming convention is used
