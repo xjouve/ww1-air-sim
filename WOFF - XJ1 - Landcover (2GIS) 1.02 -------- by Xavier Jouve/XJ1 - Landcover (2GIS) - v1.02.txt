@@ -1,0 +1,11 @@
+v1.02
+-corrected bad naming of files
+v1.01
+-added modified landclass.xml for less object missing effect
+-increased compatibility with water shapes
+-added woods in place of waterways
+-increased compatibility with elevation data
+-increased compatibility with frontlines
+v1.00
+-made tiff2lcf compatible
+-adjusted size

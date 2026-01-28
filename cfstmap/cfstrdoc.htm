@@ -1,0 +1,621 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD>
+	<META NAME="GENERATOR" Content="Visual Page 1.0 for Windows">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<TITLE>untitled</TITLE>
+</HEAD>
+
+<BODY BACKGROUND="Media/paper.gif" BGCOLOR="#DDDDDD">
+
+<P ALIGN="CENTER"><FONT SIZE="4"><B>CfsTmap</B></FONT></P>
+<P ALIGN="CENTER"><B>Elevated Mesh Scenery Creation Program for Combat Flight Simulator</B></P>
+<CENTER>
+<P>
+<TABLE BORDER="0" WIDTH="98%">
+	<TR>
+		<TD WIDTH="8%" VALIGN="TOP"></TD>
+		<TD WIDTH="22%" VALIGN="TOP"><A HREF="#Introduction">Introduction<BR>
+			</A><A HREF="#Acknowledgements">Acknowledgements</A><A HREF="#Introduction"><BR>
+			</A><A HREF="#Requirements">Requirements<BR>
+			</A><A HREF="#Installation">Installation</A></TD>
+		<TD WIDTH="21%" VALIGN="TOP"><A HREF="#InitialSetup">Initial Setup</A><BR>
+			<A HREF="#TopBar">Top ToolBar<BR>
+			</A><A HREF="#LeftBar">Left ToolBar<BR>
+			</A><A HREF="#Menus">Menus</A></TD>
+		<TD WIDTH="28%" VALIGN="TOP"><A HREF="#Choosing">Choosing a Location</A><BR>
+			<A HREF="#Creating">Creating a Scenery<BR>
+			</A><A HREF="#Rotations">Rotations<BR>
+			</A><A HREF="#Adding">Adding Static Scenery</A></TD>
+		<TD WIDTH="21%" VALIGN="TOP"><A HREF="#Future">Future</A><BR>
+			<A HREF="#Updates">Updates</A><A HREF="#Copyright"><BR>
+			Copyright</A></TD>
+	</TR>
+</TABLE>
+<IMG SRC="Media/CfsTmap.jpg" WIDTH="548" HEIGHT="578" ALIGN="BOTTOM" BORDER="0"></P>
+</CENTER>
+<P>
+<HR ALIGN="CENTER">
+</P>
+<P ALIGN="CENTER"><A NAME="Introduction"></A><B>Introduction</B></P>
+<P><FONT SIZE="2">CfsTmap is a Program for creating Elevated Scenery for Microsoft Combat Flight Simulator utilising
+the default texture files included with every installation of CFS.</FONT></P>
+<P><FONT SIZE="2">Bitmaps can be rotated 90, 180 or 270 degrees without the need to distribute any images with
+the scenery .</FONT></P>
+<P><FONT SIZE="2">This program is not meant as a substitute for Misho Katulic`s TerraBuilder. TB is a much more
+powerful program capable of of much more detail. CfsTmap is intended as an easy Tool for creating areas of Elevated-Mesh
+terrain for placing in the &quot;Un-Sceneried&quot; areas of CFS</FONT></P>
+<P><FONT SIZE="2">Users of CFSMap will recognise most of the program interface. Many improvements have been made,
+particularly to Bitmap-rotation, and some things are done slightly differently but a lot of the basic functions
+remain.</FONT></P>
+<P>
+<CENTER>
+<P>
+<HR ALIGN="CENTER">
+<A NAME="Acknowledgements"></A><B>Acknowledgements</B><FONT SIZE="2">.</FONT></P>
+</CENTER>
+<P><FONT SIZE="2"><B>Misho Katulic</B> -- For showing what could be done with the Standard Textures (with the Terrabuilder
+2 SynthWizard) and for the all-important information about the CFS texture naming convention that made the Matching
+routines possible.</FONT></P>
+<P><FONT SIZE="2"><B>Ralf-J Triebel </B>-- For a constant stream of ideas and unending support.</FONT></P>
+<P><FONT SIZE="2"><B>Manfred Moldenhauer</B> - For creating Scasm (without which there would be very little scenery
+created) and for giving permission for </FONT><A HREF="readmeScasm.txt"><FONT SIZE="2">scasm 2.39</FONT></A><FONT
+SIZE="2"> to be distributed with this program.</FONT></P>
+<P><FONT SIZE="2"><B>William Potvin II</B> - For the original Information about the new CFS opcodes that provided
+the inspiration for extending the CFSMap concept into Elevated-Mesh scenery.</FONT></P>
+<P>
+<HR ALIGN="CENTER">
+</P>
+<P ALIGN="CENTER"><A NAME="Requirements"></A><B>Requirements</B></P>
+<P><FONT SIZE="2">CfsTmap is an MWGfx program and requires mwgfx.dll to run. This will either have been included
+in the Program distribution or can be found on the </FONT><A HREF="http://fly.to/mwgfx/"><FONT SIZE="2">MWGraphics</FONT></A><FONT
+SIZE="2"> website</FONT>. <FONT SIZE="2">Regular updates for the Program and for mwgfx.dll can be found there also.</FONT></P>
+<P><FONT SIZE="2">The program will run on any PC with at least a 486 processor and Windows 95. As with any Graphics-based
+program the more memory you have installed and the more advanced your graphics card the better.</FONT></P>
+<P><FONT SIZE="2">Really requires a minimum of an 800x600 16 bit Graphics Display for reasonable functionality.</FONT></P>
+<P><FONT SIZE="2">CFS is Required to be installed on your computer (or at least the Textures.......)</FONT></P>
+<P><FONT SIZE="2">In order to Create any Scenery from you will need to have installed on your system<B> </B>the<B>
+SCASM </B>scenery compiler by Manfred<B> </B>Moldenhauer. The CfsTmap archive should contain the latest version
+(2.39) which will be installed in the CfsTmap folder. Ultimately, once problems have been solved, CfsTmap will
+include the option of using the new CFS Mesh commands which are not supported in earlier versions of scasm.</FONT></P>
+<P>
+<HR ALIGN="CENTER">
+</P>
+<P ALIGN="CENTER"><A NAME="Installation"></A><B>Installation</B></P>
+<P><FONT SIZE="2">Unzip the archive to your chosen destination. This will create a &quot;CfsTmap&quot; folder in
+the location of your choice containing all the necessary program and support files</FONT></P>
+<P><FONT SIZE="2">If mwgfx.dll is included then there will be a file &quot;mwgfxdll.exe&quot; present in this folder.
+If it is present then run it. If not then you will need to get hold of a copy from the Website unless you already
+have another MWGfx program installed (in which case you already have it!)</FONT></P>
+<P><FONT SIZE="2">When installing mwgfx.dll you will be offered the chance to change the installation from the
+default (C:\Windows\System\) - Only change this if your Windows installation location differs from the usual C:\Windows\.</FONT></P>
+<P><FONT SIZE="2">If you want to add a shortcut to the Start menu go to &quot;Start&quot;-&gt;&quot;Settings&quot;-&gt;&quot;Taskbar
+&amp; Start Menu&quot;-&gt;&quot;Start Menu Programs&quot;-&gt;&quot;Add&quot; and browse to</FONT> <FONT SIZE="2">the
+Program.</FONT></P>
+<P><FONT SIZE="2">If you want to add a Shortcut on the Desktop just right-click on a blank area of the desktop
+and select &quot;New&quot;-&gt;&quot;Shortcut&quot; and browse to the Program.</FONT></P>
+<P><FONT SIZE="2">On first running the program it will attempt (by querying the registry) to locate your CFS Folder.
+The file &quot;090909s1.bmp&quot; will be copied to the &quot;texture&quot; folder in your main CFS folder</FONT>.
+<FONT SIZE="2">This image is used for blank areas in scenery maps.</FONT></P>
+<P>
+<HR ALIGN="CENTER">
+</P>
+<P ALIGN="CENTER"><A NAME="InitialSetup"></A><B>Initial Setup</B></P>
+<P><FONT SIZE="2">The first time you run CfsTmap all required paths and settings should be set up Automatically.
+If problems occur such as no textures being displayed then you should check the various settings in the </FONT><A
+HREF="#Prefs"><FONT SIZE="2">Prefs</FONT></A><FONT SIZE="2"> menu and make sure they are pointing to valid locations.</FONT></P>
+<P>
+<CENTER>
+<P>
+<HR ALIGN="CENTER">
+<A NAME="TopBar"></A><B>The Top Toolbar</B></P>
+</CENTER>
+<P><FONT SIZE="2">The Toolbar across the top of the Program Window contains the main gadgets for setting up and
+creating an initial scenery</FONT></P>
+<CENTER>
+<P>
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TD WIDTH="24%" VALIGN="TOP">Create</TD>
+		<TD WIDTH="76%" VALIGN="TOP"><FONT SIZE="2">Pressing this button will drop down a list of scenery types to use to create the base scenery. Selecting
+			one of this will create a new layout in the main window based on the type selected. Selecting &quot;Random&quot;
+			will create a totally random scenery then attempt to create a Match with the random textures based on the current
+			Default Texture type<BR>
+			</FONT>
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="24%" VALIGN="TOP">Perform Match</TD>
+		<TD WIDTH="76%" VALIGN="TOP"><FONT SIZE="2">Pressing this button will cause the program to try to match all the tiles in the layout to each
+			other. Locked textures will not change but all others are liable to be substituded with a more suitable texture.
+			Several passes are made through the layout in an attempt to create a 100% match of all tiles to their surrounding
+			textures. This is not always possible.<BR>
+			</FONT>
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="24%" VALIGN="TOP">Lat/Lon Position</TD>
+		<TD WIDTH="76%" VALIGN="TOP"><FONT SIZE="2">This collection of gadgets lets you set the location in the world to place the scenery. Set N/S
+			and W/E using the drop down gadgets. Set the Degrees in the next gadgets and the Minutes (including fractions e.g.
+			34.7778) in the next boxes.<BR>
+			</FONT>
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="24%" VALIGN="TOP">ALT</TD>
+		<TD WIDTH="76%" VALIGN="TOP"><FONT SIZE="2">In this box set the height (in Ft) above sealevel of the scenery when it is placed in the location.
+			Free-Flight to the Area you are going to put the scenery then Slew to ground level (press 'Y' then 'F1' ) and read
+			off the Altitude value. Don`t assume that areas covered in Water will be zero feet because they frequently aren`t!<BR>
+			</FONT>
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="24%" VALIGN="TOP">Display Mode</TD>
+		<TD WIDTH="76%" VALIGN="TOP"><FONT SIZE="2">This gadget switches between &quot;Map&quot; mode (where the tiles are displayed as they will appear
+			in the scenery) and &quot;Elevation&quot; mode (where the tiles are seperated from each other to reveal the Elevation
+			settings for each corner). When in &quot;Elevation&quot; mode clicking directly on any of the displayed Elevations
+			will display a gadget for changing the Elevation at that point.</FONT><BR>
+			<FONT SIZE="2" COLOR="#FF0000">Note that the Elevations you set are Elevations ABOVE the base Scenery Altitude</FONT><FONT
+			COLOR="#FF0000"><BR>
+			</FONT>
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="24%" VALIGN="TOP">Scale</TD>
+		<TD WIDTH="76%" VALIGN="TOP"><FONT SIZE="2">This box sets the scale of the tiles when outputting scenery. Any suitable number can be used from
+			0.1 to 8.0. A scale of 4 corresponds to 1024x1024 metres for each texture. A scale of 1 is 256x256 metres. The
+			normal textures you see on the ground in CFS are at an equivalent to Scale 4.</FONT><BR>
+			
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="24%" VALIGN="TOP">Max Rel Altitude</TD>
+		<TD WIDTH="76%"><FONT SIZE="2">This number is currently only used when the &quot;Randomise to Max Altitude&quot; function is run.
+			To quickly fill a Layout with random Elevations set this to a suitable value then use the function from the Elevations
+			menu.<BR>
+			</FONT><FONT SIZE="2" COLOR="#FF0000">Note that the Elevations you set are Elevations ABOVE the base Scenery Altitude</FONT>
+			
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="24%" VALIGN="TOP">Move</TD>
+		<TD WIDTH="76%"><FONT SIZE="2">This cluster of buttons allows the shifting of the current location to the adjoining location (taking
+			into account the size of the layout) in the chosen direction. When you have finished the Layout you are creating
+			(and SAVED it!) you can click one of these buttons to start a new layout adjoining the current one. As well as
+			changing the Lat/Lon location appropriately the program will flip the existing tiles in the given direction so
+			that the edge adjoining the original layout will contain the last row or column of that layout (bitmaps and elevations)
+			to ease the matching of the edged of the 2 layouts together. It will also Lock all the edge tiles. Once you have
+			created a new layout that matches up to the &quot;Carried over&quot; tiles you can use the Shift menu to move the
+			layout one row/column to remove the carry overs. This will just leave the opposite side to tidy up and you should
+			have a perferct match up.<BR>
+			</FONT><FONT SIZE="2" COLOR="#008800">The recommended method is to start your multi-layout scenery with the Top-Left
+			layout, Create the first row by stepping East and then reload the Leftmost map and step South to start the next
+			row.</FONT></TD>
+	</TR>
+</TABLE>
+
+<HR ALIGN="CENTER">
+<A NAME="LeftBar"></A><B>The Left Toolbar</B></P>
+</CENTER>
+<CENTER>
+<P>
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TD WIDTH="21%" VALIGN="TOP">Default Texture</TD>
+		<TD WIDTH="79%" VALIGN="TOP"><FONT SIZE="2">This gadget dictates which Texture-type is used during matching if no match is possible.</FONT>
+			
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="21%" VALIGN="TOP">File List</TD>
+		<TD WIDTH="79%"><FONT SIZE="2">Use this gadget to select which Texture image to display in the thumbnail ready for insertion into
+			the layout.</FONT> 
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="21%" VALIGN="TOP">Thumbnail</TD>
+		<TD WIDTH="79%"><FONT SIZE="2">This gadget will display a thumbnail view of the currently selected image (selected either from
+			the File list or by Right-clicking on a tile in the layout). To insert this image into the layout just double-click
+			the desired layout tile.</FONT> <FONT SIZE="2">Holding down the mouse button while over the thumbnail will display
+			a full-size version of the texture</FONT> 
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="21%" VALIGN="TOP">Rotate</TD>
+		<TD WIDTH="79%"><FONT SIZE="2">This button will rotate the Texture currently displayed in the thumbnail in steps of 90 degrees.
+			Alternatively tiles can be rotated in the layout by clicking the [&lt;&lt;] button that appears when the mouse
+			moves over a tile.</FONT> 
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="21%" VALIGN="TOP">Fill</TD>
+		<TD WIDTH="79%"><FONT SIZE="2">This will fill all the tiles in the layout (except those that are Locked) with the Texture currently
+			displayed in the thumbnail</FONT> 
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="21%" VALIGN="TOP">Random</TD>
+		<TD WIDTH="79%"><FONT SIZE="2">This will fill all the tiles in the layout (except those that are Locked) with a random texture
+			and then performs a Match</FONT> 
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="21%" VALIGN="TOP">Zero all Rotations</TD>
+		<TD WIDTH="79%" VALIGN="TOP"><FONT SIZE="2">This will set all tiles in the Layout to be Rotated 0 degrees</FONT> 
+<HR ALIGN="CENTER">
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="21%" VALIGN="TOP">Adjoining Layouts</TD>
+		<TD WIDTH="79%" VALIGN="TOP"><FONT SIZE="2">Clicking this button will display the other Terrain files that are set to be adjoining each side
+			of the current layout. Click on one to change it. The theory is (and it is not completely perfected yet) that the
+			appropriate textures from the appropriate edges of the chosen Layouts are included in the Matching process when
+			you &quot;Match&quot; the current Layout.</FONT></TD>
+	</TR>
+</TABLE>
+</P>
+</CENTER>
+<CENTER>
+<P>
+<HR ALIGN="CENTER">
+</P>
+</CENTER>
+<P ALIGN="CENTER"><A NAME="Menus"></A><B>The Menus</B></P>
+<P>
+<TABLE BORDER="0" WIDTH="78%">
+	<TR>
+		<TD WIDTH="10%"><A HREF="#File"><B>File</B></A></TD>
+		<TD WIDTH="15%"><B> </B><A HREF="#Prefs"><B>Prefs</B></A></TD>
+		<TD WIDTH="14%"><B> </B><A HREF="#Shift"><B>Shift</B></A></TD>
+		<TD WIDTH="11%"><A HREF="#Lock"><B>Lock</B></A></TD>
+		<TD WIDTH="6%"><A HREF="#Elevations"><B>Elevations</B></A></TD>
+		<TD WIDTH="44%">&nbsp;</TD>
+	</TR>
+</TABLE>
+</P>
+<P>
+<CENTER>
+<P>
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TD WIDTH="11%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<A NAME="File"></A><B>File</B></TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Load Terrain File</TD>
+		<TD WIDTH="62%">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Load a previously created layout into the program.</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Save Terrain File</TD>
+		<TD WIDTH="62%">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Save the current Layout as a terrain file. The saved file includes data about the location and scale
+			of the layout and other details</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Save Layout as BMP</TD>
+		<TD WIDTH="62%">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Save a 256 colour Bitmap of the current Layout. This is a leftover from CFSMap but retained so that
+			you can &quot;overview&quot; the layout. TheBitmap takes into account the scale of the layout so that the Bmp can
+			be imported into Airport as a background (at 10 pixels/100m) for assistance in placing further scenery objects
+			for seperate compilation.</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+View Saved BMP</TD>
+		<TD WIDTH="62%">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Displays the last &quot;Save Layout as BMP&quot; bitmap in a seperate window.</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Create Scasm File</TD>
+		<TD WIDTH="62%">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Outputs a scasm SCA source file. Can be compiled with scasm from dos by invoking scasm on the SCA
+			file.</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Create BGL</TD>
+		<TD WIDTH="62%">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Outputs a scasm SCA file and compiles it to a finished BGL scenery file. The file dialog will ask
+			for the SCA filename to use. The finished BGL will have the same name but with the .bgl extension.</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Copy BGL to CFS</TD>
+		<TD WIDTH="62%">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Copy the last created BGL file to the CFS scenery folder you desire. Browse to &lt;CFS&gt;\Scenery
+			and then to the desired scenery sub-folder</FONT>. <FONT SIZE="2">(\All\Scenery\ if you are not sure or have no
+			Add-on scenery folders)</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Run CFS</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Runs CFS so you can test out your new BGL (providing you have set up a valid combatfs.exe path in
+			the</FONT><A HREF="#Prefs"><FONT SIZE="2"> Prefs</FONT></A><FONT SIZE="2"> menu)</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<A NAME="Prefs"></A><B>Prefs</B></TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Select Scasm Location</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Set up the location of scasm.exe for compiling directly to finished scenery BGL. <BR>
+			</FONT><FONT SIZE="2" COLOR="#008800">Should be set automatically on first running the program.</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Select CFS Location</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Set up the location of combatfs.exe to enable the direct running of it from the program. <BR>
+			</FONT><FONT SIZE="2" COLOR="#008800">Should be set automatically on first running the program.</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Select Texture Location</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Set up the location containing the textures to be used for creating layouts. <BR>
+			</FONT><FONT SIZE="2" COLOR="#008800">Should be set automatically on first running the program</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Allow Rotation..</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">If this is ticked then the Matching routine will also take into account rotated images and the Rotation
+			buttons will be available. If not then only the default textures will be used to find a match and the Tile Rotation
+			buttons will not appear.</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Use Elevation Interpolation</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">If this is ticked then a simple form of interpolation is used when creating the Elevated mesh. This
+			increases the Elevation points per tile from 4 to 9. <BR>
+			</FONT><FONT SIZE="2" COLOR="#FF0000">Note that if you are using multiple layouts in your scenery then they must
+			all be compiled with the same setting or gaps will appear!</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<A NAME="Shift"></A><B>Shift</B></TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+		</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Use this menu to shift the whole layout by one row or column in the specified direction</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<A NAME="Lock"></A><B>Lock</B></TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+		</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Use this menu to Lock or Unlock various combinations of Tiles</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<A NAME="Elevations"></A><B>Elevations</B></TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Randomise up to Max Altitude</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">This will create a random array of relative altitudes between 0 and the number set in the Max Rel
+			Altitude box.</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Set Water to 0m Relative</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">This will set all elevation points that have a tile containing any Water adjoining them to Zero
+			(relative to the base scenery altitude). If all 4 surrounding tiles are locked (or not water) then the elevation
+			will not be changed.</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Use Tile Types to Randomise</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Attempts to randomise Elevations with regard to the Type of texture. Experimental!</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Double/Halve Elevations</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">Doubles (or Halves) all elevations in the layout</FONT></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+		<TD WIDTH="27%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+Import ... Edge Elevations</TD>
+		<TD WIDTH="62%" VALIGN="TOP">
+<HR ALIGN="CENTER">
+<FONT SIZE="2">This will display a file dialog for selecting another terrain file from which to import the edge
+			elevation for putiing on the selected Edge of the current layout. <BR>
+			<BR>
+			</FONT><FONT SIZE="2" COLOR="#008800">Example - To set the West edge elevations of the current layout to be the
+			same as the East edge of the next layout westwards.....use &quot;Import West Edge Elevations&quot; and select the
+			terrain file for the layout that is immediately to the Left (West). Just think in terms of the current layout and
+			Import the N,S,E and W elevations by selecting the terrain file adjoining in that direction.</FONT></TD>
+	</TR>
+</TABLE>
+</P>
+</CENTER>
+<CENTER>
+<P>
+<HR ALIGN="CENTER">
+<A NAME="Choosing"></A><B>Choosing a Location for your Scenery</B></P>
+</CENTER>
+<P><FONT SIZE="2">The first thing to do when creating a scenery is to decide where in the world it is going to
+be.</FONT></P>
+<P><FONT SIZE="2">In CFS there are 2 distinctly different Area types - The &quot;European Theatre&quot; that is
+fully covered with ground textures and lots of variations in altitude and.......&quot;The Rest&quot; covered with
+a very basic coating of Water, Desert or Forest. You can tell which type you are flying over by the type of textures
+on the ground. Basicly the &quot;European Theatre&quot; extends from Northern England down to mid-France and across
+to the Eastern edge of Germany.</FONT></P>
+<P><FONT SIZE="2">In &quot;The Rest&quot; you can create CfsTmap scenery anywhere - it is all pretty level over
+very large areas. In &quot;Europe&quot; you will need to locate an area of the of the right size that is roughly
+the same altitude all round the edge of where your scenery is going to go. CfsTmap is primarily intended for the
+creation of new scenery in &quot;The Rest&quot;. There are problems when laying scenery over existing elevated
+terrain that can make scenery unusable. Elevated mesh within &quot;Europe&quot; will not be Hardened or Landable
+- the original underlying scenery will still be used by CFS for crash-checking.</FONT></P>
+<P><FONT SIZE="2">While bearing this in mind you can place your scenery anywhere.</FONT></P>
+<P><FONT SIZE="2">Start CFS and go to Free-Flight. Select the rough coordinates of where you want to go and Fly!.
+Switch to &quot;Slew&quot; mode by pressing &quot;Y&quot; and move around the area (watching the Altitude readout
+and frequently pressing F1 to keep yourself on the ground if the altitude drops). Once you have selected the rough
+area go to the SW corner of it and copy the Lat/Lon and Altitude figures down (for entering into CfsTmap)</FONT></P>
+<P ALIGN="CENTER"><A NAME="Creating"></A><B>Creating a Scenery</B></P>
+<P><FONT SIZE="2">Start CfsTmap. Set up the Lat/Lon Location gadgets and the Altitude using the data you copied
+down when in CFS. Set the Scale (a scale of 4 is the right size to match existing CFS ground textures). Note that
+all Elevations in CfsTmap are &quot;Relative&quot; - they will have the base altitude added to them when creating
+the scenery.</FONT></P>
+<P><FONT SIZE="2">Decide what type of basic texture the scenery is going to be (Water, Rural, Woods etc) and click
+the appropriate type from the &quot;Create&quot; button (or set the Default Texture to the appropriate type and
+click Random from the Create Button)</FONT></P>
+<P><FONT SIZE="2">Browse the files listed on the Left and insert the textures as desired by bouble-clicking the
+tile in the layout where you want to put it. After inserting one or more textures click &quot;Perform Match&quot;
+to attempt to match the new and old tiles together. This may change or remove the inserted textures in the process
+of matching all the tiles together. If you wish to preserve particular tiles from change (and force the program
+to try to match the rest) then Right-Click on the Tile(s) so they are outlined in Red and they will be &quot;Locked&quot;.
+To copy a texture from one place to another in the layout Right-Double-Click on the tile (to make it the current
+selected file) then Double-click in the place(s) you wish to put it.</FONT></P>
+<P><FONT SIZE="2">Once you are happy with the scenery save the map file (File-&gt;Save Terrain File). To create
+a BGL file for use in CFS use File-&gt;Create Bgl. To copy this Bgl file into a CFS scenery folder use File-&gt;Copy
+Bgl to CFS</FONT></P>
+<CENTER>
+<P>
+<HR ALIGN="CENTER">
+<A NAME="Rotations"></A><B>Rotations</B></P>
+</CENTER>
+<P><FONT SIZE="2">Because of the nature of the CFS default bitmaps they will blend best with each other if not
+rotated. The main problem with non-rotated textures is the shortage of suitable coastline bitmaps. If you are creating
+a Water-based scenery (an Island or a Lake) then you will probably need to enable Rotation (at least while working
+on the coastlines) in order to get a reasonable variety of textures to work with.</FONT></P>
+<P><FONT SIZE="2">If Rotation is enabled then the &quot;Rotate&quot; button under the Thumbnail will be enabled
+(for rotating the image before inserting into the layout) and also each Tile will have a Rotation button which
+will appear when the mouse moves over the tile.</FONT></P>
+<CENTER>
+<P>
+<HR ALIGN="CENTER">
+<A NAME="Adding"></A><B>Adding Static Scenery</B></P>
+</CENTER>
+<P><FONT SIZE="2">There are problems with adding extra scenery to a scenery created with Elevated Mesh. It is best
+to place static scenery on to a level area so bear this in mind when creating the Elevated mesh . In order for
+scenery added using Airport you will need to use the Airport Sections-&gt;General settings to add a single Synth
+tile (farm.r8) under the static scenery and set the altitude of the Airport file to the Real Elevation of the mesh
+you are placing on (find the Real Elevation from Free Flight in the same manner as &quot;</FONT><A HREF="#Choosing"><FONT
+SIZE="2">Choosing a Location</FONT></A><FONT SIZE="2">&quot;.</FONT></P>
+
+<P><FONT SIZE="2" COLOR="#008800">Example - You want to place an Airfield that will cover 3 tiles in the CfsTmap
+scenery. Set the Corner elevations of ALL these 3 tiles to the same value. Set the Textures to one of the &quot;Grass&quot;
+textures if you want. Now you can create a normal static scenery with Airport inside this area (3 km x 1 km at
+scale 4) by setting the scenery Altitude in Airport to the Altitude of these tiles (the &quot;Real&quot; altitude
+- you will need to find this out by Free-Flighting to the chosen area and slewing to the ground the same as when
+creating any scenery for CFS with Airport) - set the &quot;Synthetic Scenery&quot; in Sections-&gt;General to one
+tile of farm.r8 and everything should appear correctly.</FONT></P>
+<CENTER>
+<P>
+<HR ALIGN="CENTER">
+<A NAME="Future"></A><B>Future</B></P>
+</CENTER>
+<P><FONT SIZE="2">I am still determined to get the MeshWithTexList Elevated Mesh working sufficiently well to Incorporate
+it as an Option. It is actually included in the current program but disabled. MeshWithTexList requires a custom
+Classlist.bgl file to be created for each scenery. I have written a program to do this but there are major Visual
+problems in the finished scenery that require further experimentation.</FONT></P>
+<P><FONT SIZE="2">Experiments with transferring created scenery (TexRelief and MeshWithTexList) into FS2000 have
+shown that it is perfectly possible but major differences in the Visibility Range operation currently interfere
+with consistent display of the scenery. More research may make an &quot;Export to FS2000&quot; option possible
+(possibly including remapping CFS textures to FS equivalents).</FONT></P>
+<CENTER>
+<P>
+<HR ALIGN="CENTER">
+<A NAME="Updates"></A><B>Updates</B></P>
+</CENTER>
+<P><FONT SIZE="2">Updates to CfsTmap and mwgfx.dll will be made available on the </FONT><A HREF="http://fly.to/mwgfx/"><FONT
+SIZE="2">MWGraphics</FONT></A><FONT SIZE="2"> website</FONT> <FONT SIZE="2">as they appear.</FONT></P>
+<P><FONT SIZE="2">To view the list of updates so for see </FONT><A HREF="update.txt"><FONT SIZE="2">update.txt</FONT></A></P>
+<CENTER>
+<P>
+<HR ALIGN="CENTER">
+<FONT SIZE="2"><B> <A NAME="Copyright"></A></B></FONT><B>Copyright</B></P>
+</CENTER>
+<P><B>All files in this distribution are (c)2000 Martin Wright except for the files in the Scasm 2.39 Package</B></P>
+<P><B>Scasm.exe, sclink.exe and all files in the Scasm2.39 folder are Copyright (c) 1995-2000 by Manfred Moldenhauer</B></P>
+<P><B>No Redistribution in whole or in part without Permission</B></P>
+<P><B>Scenery created using CfsTmap may be distributed as Freeware.</B></P>
+
+<P><B>Any and All Copyrights imposed by Manfred Moldenhauer for </B><A HREF="readmescasm.txt"><B>Scasm</B></A><B>
+and its accompanying files must be fully respected.</B>
+
+</BODY>
+
+</HTML>

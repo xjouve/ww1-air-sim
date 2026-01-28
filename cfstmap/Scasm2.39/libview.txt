@@ -1,0 +1,26 @@
+Dummy help file for LibView.exe
+
+  LibView.EXE
+
+LibView is a little tool to look into the Object Library files of
+FS98 and CFS and of course compatible files.
+
+The standard files are: DYNLIB.BGL     for FS98 and
+                        LIBRARY.BGL    for CFS.
+
+The purpose of this program is to show you the object ID's of the
+objects so you can do some experiments with them. Just use the cryptic
+hex numbers in the SCASM codes CallLibObj (FS98) or CallLibObj2 (CFS).
+
+The format for both libraries is different. In CFS libraries the
+objects also have an object discribtion.
+
+Select "catalogue" to see this data.
+
+The "View" option is not fully implemented in the public version of
+LibView. It will only show you the object code as a hex dump. To
+make this option fully functional you need to install the BGL
+decompiler BLIST in the same directory as LibView.
+Note: there is no SAVE function in this program, but the BLIST output
+is stored in the file LIBVIEW.TMP in LibView's home directory.
+
