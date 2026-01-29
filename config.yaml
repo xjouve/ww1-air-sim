@@ -1,0 +1,175 @@
+# WW1 Air Simulation - Configuration centrale
+# Ce fichier définit les paramètres de build et les versions actives
+
+project:
+  name: "WW1 Air Simulation"
+  version: "1.0.0"
+  author: "Xavier Jouve"
+  description: "Simulation de combat aérien WWI - Front de l'Ouest"
+
+# Configuration du terrain
+terrain:
+  resolution: "1-arc-sec"      # Options: "30-arc-sec", "1-arc-sec"
+  quality: "high"              # Options: "low", "medium", "high", "extra-high", "super-high"
+  source_dir: "src/elevation"
+  output_dir: "build/terrain"
+  # Couverture géographique (SRTM tiles)
+  coverage:
+    lat_min: 47
+    lat_max: 51
+    lon_min: 1
+    lon_max: 6
+
+# Configuration du landcover
+landcover:
+  source: "corine"             # Options: "corine", "2gis", "osm"
+  source_dir: "src/landcover"
+  output_dir: "build/landcover"
+  # Périodes à générer
+  periods:
+    - "1914"
+    - "1915"
+    - "1916"
+    - "1916+6"
+    - "1917"
+    - "1917+6"
+    - "1918"
+    - "1918+2"
+    - "1918+4"
+    - "1918+6"
+    - "1918+9"
+
+# Configuration de l'hydrographie
+hydrography:
+  source_dir: "src/hydrography"
+  output_dir: "build/hydrography"
+  include_historical_corrections: true
+  # Zones d'inondation historiques
+  flood_zones:
+    - name: "Inondation Yser 1914"
+      description: "Inondation provoquée par les forces belges et françaises pour stopper l'avancée allemande"
+      file: "src/hydrography/historical/yser_flood_1914.geojson"
+      start_date: "1914-10-21"
+      end_date: "1918-11-11"
+  # Lacs/réservoirs modernes à retirer
+  remove_modern:
+    - name: "Lac de l'Ailette"
+      description: "Lac artificiel au nord du Chemin des Dames, construit après-guerre"
+      file: "src/hydrography/historical/ailette_lake_remove.geojson"
+
+# Configuration de l'infrastructure
+infrastructure:
+  source_dir: "src/infrastructure"
+  # Villages et villes
+  settlements:
+    source: "osm"              # Base OSM
+    historical_corrections: true
+  # Routes
+  roads:
+    include_primary: true
+    include_secondary: true
+    include_tertiary: false    # Trop de détail pour CFS3
+  # Chemins de fer
+  railways:
+    include: true
+  # Aérodromes
+  airfields:
+    source: "historical"       # Positions historiques des JMO
+    by_period: true            # Différents aérodromes par période
+
+# Configuration des lignes de front
+frontlines:
+  source_dir: "src/frontlines"
+  output_dir: "build/campaign/frontlines"
+  # Mode d'interpolation entre snapshots
+  interpolation: "linear"      # Options: "linear", "step"
+  # Granularité des snapshots sources
+  source_granularity: "event"  # Snapshots aux événements majeurs
+  # Périodes de sortie CFS3
+  output_periods:
+    - "1914"
+    - "1915"
+    - "1916"
+    - "1916+6"
+    - "1917"
+    - "1917+6"
+    - "1918"
+    - "1918+2"
+    - "1918+4"
+    - "1918+6"
+    - "1918+9"
+
+# Configuration des campagnes
+campaigns:
+  source_dir: "src/campaigns"
+  output_dir: "build/campaign"
+  nations:
+    - code: "france"
+      name: "France"
+      active: true
+    - code: "britain"
+      name: "Grande-Bretagne"
+      active: true
+    - code: "germany"
+      name: "Allemagne"
+      active: true
+    - code: "usa"
+      name: "États-Unis"
+      active: true
+      start_period: "1918"     # USA entre en guerre en 1917, opérationnel 1918
+
+# Configuration des cartes
+maps:
+  output_dir: "build/maps"
+  styles:
+    - name: "color"
+      description: "Carte couleur moderne"
+      active: true
+    - name: "bw"
+      description: "Carte noir et blanc"
+      active: true
+    - name: "etat-major"
+      description: "Carte État-Major historique française"
+      active: true
+
+# Configuration de la simulation (référence)
+simulation:
+  config_dir: "sim"
+  version: "0.4"
+  # Paramètres IA (référence aux valeurs dans simulation.xml)
+  ai:
+    fight_threshold: 5         # Seuil d'engagement (v0.4)
+    withdraw_threshold: 3      # Seuil de retrait
+    shooting_range_m: 75       # Distance de tir (mètres)
+
+# Chemins des outils
+tools:
+  cfstmap: "tools/cfstmap/cfsTmap.exe"
+  scasm: "tools/cfstmap/scasm.exe"
+  sclink: "tools/cfstmap/sclink.exe"
+  tiff2lcf: "tools/landclass/tiff2lcf.exe"
+  water: "tools/water/water.exe"
+  shorelines: "tools/water/shorelines.exe"
+
+# Configuration de distribution
+dist:
+  output_dir: "dist"
+  packages:
+    - name: "terrain-hi"
+      description: "Terrain haute résolution"
+      includes: ["build/terrain"]
+    - name: "landcover"
+      description: "Landcover toutes périodes"
+      includes: ["build/landcover"]
+    - name: "water"
+      description: "Hydrographie complète"
+      includes: ["build/hydrography"]
+    - name: "maps-color"
+      description: "Cartes couleur"
+      includes: ["build/maps/color"]
+    - name: "campaign-full"
+      description: "Campagne complète"
+      includes: ["build/campaign"]
+    - name: "complete"
+      description: "Bundle complet"
+      includes: ["build/*", "sim/*"]

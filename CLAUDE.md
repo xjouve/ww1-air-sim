@@ -4,67 +4,130 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-WW1 Air Simulation content repository for "Wings Over Flanders Fields" (WOFF/OFF) — a World War I combat flight simulator. This is primarily a **data and content repository** (not a traditional software project) containing terrain meshes, landcover classifications, water layers, campaign maps, simulation configurations, and tooling for scenery creation.
+WW1 Air Simulation — a World War I combat flight simulator mod for CFS3 (Combat Flight Simulator 3), focused on the Western Front. The project prioritizes historical and geographic realism: precise village locations, roads, waterways, day-by-day frontline evolution based on unit war diaries (JMO), and historically accurate mission types per nation.
 
 Maintained by Xavier Jouve. GitHub: `xjouve/ww1-air-sim`.
 
 ## Repository Structure
 
-The repository is organized into layered scenery packages (XJ series) and supporting tools:
-
-- **`WOFF - XJ0 - Terrain`**: Elevation mesh data at various resolutions (1 arc-sec, 30 arc-sec) and quality tiers (hi, exhi, shi)
-- **`WOFF - XJ1 - Landcover`**: Land classification layers (2GIS and Corine Land Cover variants)
-- **`WOFF - XJ2 - Map`**: Campaign maps (B&W, Color, Etat Major historical; with/without frontlines)
-- **`WOFF - XJ3 - Water`**: Regional water layers (Yser-Somme, Aisne-Velse, Meuse-Moselle, Bas-Haut-Rhin, Total)
-- **`WOFF - XJ4 - Global layer`**: Integrated scenery layer combining all components with full campaign data (missions, aces, pilots, targets for 1914-1918 across Britain, Germany, France, USA)
-- **`WOFF - XJ5 - France Campaign`**: France-specific campaign configuration
-
-### Tools and Utilities
-
-- **`cfstmap/`**: CfsTmap terrain editor — creates elevated mesh scenery from elevation data, compiles to BGL format via SCASM
-  - `cfsTmap.exe` — terrain map editor (GUI)
-  - `scasm.exe` — SCASM 2.39 scenery compiler (source → BGL)
-  - `sclink.exe` — links multiple BGL files into a single BGL
-- **`water/`**: Water feature processing from GIS shapefiles (`water.exe`, `shorelines.exe`)
-- **`landclass/`**: Landcover classification tooling; uses `tiff2lcf` to convert TIFF raster data to LCF files using `landclasses.xml` definitions
-- **`Map Simulator/`**: Windows WPF application (.NET 4.6.1) for interactive map visualization using GMap.NET, SQLite, and Entity Framework
-
-### Data and Configuration
-
-- **`Sim/OBDWW1 Over Flanders Fields/`**: Core simulation configs — `simulation.xml` (physics, damage, weapons) and `pilotconstants.xml` (pilot skills, vision, G-tolerance)
-- **`Sim/.../aircraft/`**: Per-aircraft variant configs (e.g., `Alb_DVa_AC1`, `Fokker_DR1_AC2`)
-- **`New_Theater/`**: Raw source data — SRTM elevation (.hgt.zip), DEM files, GIS shapefiles for Belgium/Picardy regions
-- **`new-theater-kit/`**: Step-by-step tutorials (STEP 1-10.doc) for creating new simulation theaters
-- **`docs/`**: French-language pilot tactics and operations guides (WWI-era doctrine)
-
-## Key Tool Workflows
-
-### Terrain Creation Pipeline
-1. Source SRTM elevation data (`.hgt` files from `New_Theater/`)
-2. Load into CfsTmap (`cfstmap/cfsTmap.exe`) to create terrain layouts
-3. Compile via SCASM (`scasm.exe`) to produce BGL scenery files
-4. Link multiple BGLs with `sclink.exe` (see `cfstmap/Arran/linkit.bat` for example)
-
-### Landcover Generation
 ```
-tiff2lcf <input.tif> <color-to-value.txt> <resolution> <size> landclasses.xml <output.lcf>
+ww1-air-sim/
+├── src/                    # Source data (versioned, editable)
+│   ├── elevation/          # SRTM .hgt files
+│   ├── hydrography/        # Waterways (OSM + historical corrections)
+│   ├── landcover/          # Land classification (Corine/OSM)
+│   ├── infrastructure/     # Villages, roads, railways, airfields
+│   ├── frontlines/         # Front line snapshots by date (GeoJSON)
+│   └── campaigns/          # Missions, aces, squadrons, targets
+│
+├── tools/                  # Build tools
+│   ├── cfstmap/            # Terrain compiler (cfsTmap, SCASM, sclink)
+│   ├── landclass/          # Landcover converter (tiff2lcf)
+│   ├── water/              # Hydrography processor
+│   └── scripts/            # Python build scripts
+│
+├── build/                  # Compiled outputs (generated, gitignored)
+│   ├── terrain/            # BGL mesh files
+│   ├── landcover/          # LCF files by period
+│   ├── hydrography/        # Water BGL
+│   ├── maps/               # DDS map backgrounds
+│   └── campaign/           # CFS3-formatted campaign data
+│
+├── dist/                   # Distribution packages
+├── sim/                    # Simulation configuration
+│   ├── simulation.xml      # AI/combat parameters (v0.4)
+│   ├── pilotconstants.xml  # Pilot skills, vision, G-tolerance
+│   └── aircraft/           # Aircraft configs (.xdp)
+│
+├── docs/                   # Documentation
+│   ├── architecture/       # Architecture docs
+│   ├── historical/         # WWI doctrine documents (French)
+│   └── tutorials/          # Theater creation tutorials
+│
+├── config.yaml             # Centralized build configuration
+└── archive/                # Old WOFF-XJ structure (reference)
 ```
-Example: `tiff2lcf test8RGBA.tif c2v.txt 1024000 1024 landclasses.xml test.lcf`
 
-### Water Layer Processing
-Uses `water/water.exe` and `water/shorelines.exe` with GIS shapefile inputs (`.shp/.dbf/.shx`).
+## Configuration
+
+All build parameters are centralized in `config.yaml`:
+- Terrain resolution and quality
+- Landcover source (Corine vs 2GIS)
+- Periods to generate (1914, 1915, ..., 1918+9)
+- Historical corrections (flood zones, removed modern features)
+- Active nations and campaign settings
+
+## Build System
+
+```bash
+# Build everything
+python tools/scripts/build_all.py
+
+# Build specific layers
+python tools/scripts/build_all.py --layer=terrain,landcover
+
+# Build specific periods
+python tools/scripts/build_all.py --periods=1917,1918
+
+# Build with quality setting
+python tools/scripts/build_all.py --quality=high
+```
+
+## Key Tools
+
+| Tool | Location | Purpose |
+|------|----------|---------|
+| cfsTmap.exe | tools/cfstmap/ | Terrain mesh editor (GUI) |
+| scasm.exe | tools/cfstmap/ | SCASM scenery compiler |
+| sclink.exe | tools/cfstmap/ | BGL linker |
+| tiff2lcf | tools/landclass/ | TIFF → LCF converter |
+| water.exe | tools/water/ | Hydrography processor |
+| build_all.py | tools/scripts/ | Master build script |
 
 ## Data Formats
 
-- **BGL**: Binary scenery format for Combat Flight Simulator engine
-- **MTW**: Terrain map working files
-- **LCF**: Landcover classification files
-- **HGT**: SRTM elevation data (1 arc-second resolution)
-- **SHP/DBF/SHX**: ESRI Shapefiles for geographic features
-- **XML**: Simulation parameters, landcover class definitions, aircraft configs
+| Format | Description | Tool |
+|--------|-------------|------|
+| .hgt | SRTM elevation (source) | cfsTmap |
+| .bgl | CFS3 binary scenery | SCASM/sclink |
+| .lcf | Landcover classification | tiff2lcf |
+| .geojson | Frontlines, corrections | build scripts |
+| .xdp | Aircraft config (XML) | manual |
 
-## Architecture Notes
+## Simulation Configuration (v0.4)
 
-The scenery system uses a **layered composition model** — each XJ layer (0-5) is independently versioned and can be mixed. The layers stack: terrain mesh (XJ0) at the base, landcover (XJ1) on top, then water (XJ3), maps (XJ2), and the global integration layer (XJ4) ties everything together with campaign data. XJ5 adds region-specific campaign overrides.
+The `sim/simulation.xml` file controls AI combat behavior. Key v0.4 changes for historical realism:
+- `fightThreshold=5`: AI requires significant advantage to engage (rare combats)
+- `withdrawThreshold=3`: AI breaks off quickly (brief engagements)
+- `soloWt=-5`: No lone pursuit (formation cohesion)
+- `Vrille` as default substitute: Failed maneuvers → defensive spin
+- `SHOOTING_RANGE=75m`: Point-blank fire doctrine
 
-Campaign data in XJ4 is organized by time period (1914-1918+) and nation, with separate configuration files for missions, pilot rosters, ace records, and ground targets per period.
+## Historical Corrections
+
+The project includes historical corrections not found in modern GIS data:
+- **Removed**: Post-1918 lakes (e.g., Lac de l'Ailette north of Chemin des Dames)
+- **Added**: 1914 Yser flood zone (Belgian/French defensive flooding)
+- **Frontlines**: Day-by-day evolution from JMO (Journaux des Marches et Opérations)
+
+## Layer Architecture
+
+```
+Campaign (missions, targets, aces)     ← src/campaigns/
+         ↓
+Frontlines (by date)                   ← src/frontlines/
+         ↓
+Infrastructure (villages, roads)       ← src/infrastructure/
+         ↓
+Maps (visual background)               ← build/maps/
+         ↓
+Hydrography (waterways)                ← src/hydrography/
+         ↓
+Landcover (forests, fields)            ← src/landcover/
+         ↓
+Terrain (elevation mesh)               ← src/elevation/
+```
+
+## Legacy Structure
+
+The old scattered mod structure (WOFF - XJ0 through XJ5) is preserved in `archive/` for reference. The new unified architecture eliminates redundancy and provides reproducible builds.

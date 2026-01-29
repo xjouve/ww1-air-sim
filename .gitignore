@@ -1,0 +1,43 @@
+# WW1 Air Simulation - Git Ignore
+
+# ===== Build outputs (regenerable) =====
+build/
+
+# ===== Distribution packages =====
+dist/*.zip
+
+# ===== Archive (old mod structure, reference only) =====
+archive/
+
+# ===== Old scattered mod directories (to be migrated) =====
+WOFF - XJ*/
+
+# ===== IDE and editor files =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.env
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Temporary files =====
+*.tmp
+*.temp
+*.log
+
+# ===== Large binary source data (track with Git LFS or exclude) =====
+# Uncomment if not using Git LFS:
+# src/elevation/*.hgt
+# src/hydrography/osm/*.pbf

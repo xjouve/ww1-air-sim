@@ -1,0 +1,296 @@
+<PilotConstants>
+   <!-- GLOBAL NOTES:
+
+	I. All data entered in this file should be within <entry> elements.
+	
+	II. <entry> elements have exactly three attributes:
+	
+		1. name, which is case-sensitive and should never change
+		
+		2. type, which can be "int", "float", "string", or "int=string"
+		
+		3. value, which can contain 1 to many comma-delimitted values.
+			"int=string" values must contain an integer, followed by an
+			equals sign, followed by a string.  Strings cannot contain
+			equals signs or commas, and only internal whitespace will
+			be preserved.  leading and trailing whitespace will be
+			trimmed.
+	
+	III. "int=string" type entries are often used to name particular
+		sub-ranges within a larger range of values.  To interpret such
+		an entry, a particular named sub-range starts at the value given
+		for that name and ends 1 before the value for the next name.  For
+		example, if the entry is:
+		
+			<entry name="Example" type="int=string"
+				value="50=first,120=second,500=third" />
+		
+		Then for a value x, its sub-range is the one that satisfies the
+		corresponding equation in the following table:
+		
+			 50 <= x < 120,  first
+			120 <= x < 500,  second
+			500 <= x,        third
+		
+		Note that if x is less than the first value listed, its sub-range
+		is undefined.	
+	-->
+   <!-- Pilot Validity -->
+   <!-- NOTES:
+
+	1. The file "country.xml" contains all the valid countries the game uses.
+		In this file, in entry "ValidPilotCountries" list the country names
+		corresponding to each country for which the user is	allowed to create
+		and use pilots.
+	-->
+   <entry name="ValidPilotCountries" type="string" value="Britain,Germany,USA"/>
+   <!-- -->
+   <!-- Flight Skills and experience percentage for each -->
+   <entry name="FlightSkillName" type="string" value="Trained,Experienced,Expert"/>
+   <entry name="FlightSkillExperience" type="int" value="15,50,98"/>
+   <!-- <entry name="FlightSkillExperience" type="int" value="50,75,100"/> -->
+   <!-- -->
+   <!-- Vision range, class, and rangemods per class -->
+   <!-- NOTES:
+
+	1. The ranges and rangemods are listed in REVERSE order from that
+		in the spec and the PB variables list.  The order they should be 
+		listed in this file is from near to far.
+		
+	2. There should be a VisionRangeMods_ClassX entry for each VisionClass
+		except the first one.  They should be numbered starting with 1.
+		For example, for 5 vision classes, you should have 4 rangemods named
+		as follows:
+			VisionRangeMods_Class1
+			VisionRangeMods_Class2
+			VisionRangeMods_Class3
+			VisionRangeMods_Class4
+		Each one should have exactly as many values as there are VisionRanges.
+		Class 0 is skipped because the "Blind" class is a special case.
+		
+		The way this data is used is flexible enough to allow the designers
+		to define more finely grained ranges and classes so that the benefits
+		of adding skill points to vision are more gradual, if such is ever
+		desirable.
+		
+		Close	=	Name Label
+		Normal	=	Type Label
+		Far		=	Bogie Label
+		Extreme	=	No label
+
+	-->
+   <entry name="VisionRanges" type="int=string" value="0=None,400=Close,1500=Normal,3000=Far,6000=Extreme"/>
+   <entry name="VisionClasses" type="int=string" value="0=Blind,1=Below Average,26=Average,51=Above Average,76=Superior"/>
+   <entry name="VisionRangeMods_Class1" type="int" value="0,-100,-400,-800,-1500"/>
+   <entry name="VisionRangeMods_Class2" type="int" value="0,0,0,0,0"/>
+   <entry name="VisionRangeMods_Class3" type="int" value="0,525,875,1125,1000"/>
+   <entry name="VisionRangeMods_Class4" type="int" value="0,1050,1750,2250,2000"/>
+   <!-- -->
+   <!-- G-Tolerance -->
+   <!-- NOTES:
+
+	1. There should be as many GTolBucket values as there are GTolClasses.
+	
+    2. The order of the constants is:
+        Blackout Rate
+        Redout Rate
+        Awaken Rate
+        UnRedded Rate
+        Greyout Onset
+        Blackout Onset
+        Pinkout Onset
+        Redout Onset
+        Negative G Trigger
+        Positive G Trigger
+
+    3. The equations go something like this
+
+        Integrate gSeconds.
+            The time outside the trigger range * distance outside the trigger range
+        Decay at either the Awaken or UnRedden rate as appropriate.
+        If the gSeconds value is positive then negative gs decrease the load
+        If the gSeconds value is negative then positive gs decrease the load
+        Finally, the percentage of Red/Black out is calculate as follows
+        For Positive loading
+            (gSeconds - Greyout Onset) / (Blackout Onset - Greyout Onset)
+        For Negative loading
+            (gSeconds - Pinkout Onset) / (Pinkout Onset - Redout Onset)
+	-->
+   <entry name="GTolClasses" type="int=string" value="0=None,1=Below Average,26=Average,51=Above Average,76=Superior,101=Super Human"/>
+   <entry name="GTolBucket" type="int" value="5,25,50,75,100,100"/>
+   <entry name="GTolFormulaConstants_Class0" type="float" value="2.0, 3.0, 0.135, 0.068, 15.0,  90.0, -10.0, -30.0, -1.0, 2.0"/>
+   <entry name="GTolFormulaConstants_Class1" type="float" value="2.0, 3.0, 0.140, 0.075, 20.0, 110.0, -13.0, -40.0, -1.0, 2.5"/>
+   <entry name="GTolFormulaConstants_Class2" type="float" value="2.0, 3.0, 0.145, 0.078, 30.0, 130.0, -14.0, -45.0, -1.0, 2.8"/>
+   <entry name="GTolFormulaConstants_Class3" type="float" value="2.0, 3.0, 0.150, 0.080, 35.0, 150.0, -15.0, -50.0, -1.0, 3.5"/>
+   <entry name="GTolFormulaConstants_Class4" type="float" value="2.0, 3.0, 0.155, 0.082, 40.0, 155.0, -15.0, -50.0, -1.0, 3.8"/>
+   <entry name="GTolFormulaConstants_Class5" type="float" value="2.0, 3.0, 0.160, 0.084, 45.0, 160.0, -15.0, -55.0, -1.0, 4.2"/>
+   <!-- -->
+   <!-- Health / Wounds / Healing -->
+   <!-- NOTES:
+	
+	1. WoundsOfClassForcingDegrade should have as many valuse as there are
+		health classes.  These values indicate the number of wounds of the
+		corresponding class that will force the pilot's overall health class
+		to be degraded one level.  Degrading it past "critical" is the same as
+		dying.
+		
+	2. The formulas which use the various HealthModFormulaConstants are:
+	
+			  Crash: (a / b) * V + cDd
+		
+			BailOut: ( S = aDb - c ) , ( (S < d) ? 0 : ((eDf) * S) )
+		
+			  Eject: same as BailOut
+		 
+		Where xDy means sum of y-sided dice rolled x times, V is vertical
+		velocity in meters per second, and S is a temporary variable (the
+		"damage save roll").  The BailOut formula is basically C-language
+		notation...  What it means is that the first two constants are
+		used in dice rolls, the third is subtracted from their total, and
+		the result saved in S.  Then, if S is less than the fourth
+		constant, no damage is done, otherwise the rest of the formula is
+		the damage done (the portion following the colon).
+		
+	3. The XXXXXPerWoundFormulaConstants_ClassY entries are formula constants
+		that, for a given class Y, apply to XXXXX.  There should be as many
+		ClassY entries for each XXXXX as there are health classes.  The
+		formulas are:
+		
+			    FatigueMod: max(a, F) * b / c + d
+		
+			 GTolBucketMod: a + (bDc) / d - e * (L / f)
+			 
+			LongTermEffect: sames as GTolBucketMod
+			
+		where bDc is the standard dice roll notation, max(x, y) means
+		the larger of x or y, F is the pilot's current fatigue, and L
+		is the pilot's current level.
+	
+	4. The formula used by HealingEvaluatorFormulaConstants is:
+		
+			aDb - R/H <= c
+		
+		where R is the number of rounds since being wounded and H is the 
+		current health.
+	-->
+   <entry name="HealthClasses" type="int=string" value="0=Light,16=Serious,61=Critical"/>
+   <entry name="WoundsOfClassForcingDegrade" type="int" value="3,2,2"/>
+   <entry name="HealthModFormulaConstants_Crash" type="int" value="90,100,2,6"/>
+   <entry name="HealthModFormulaConstants_BailOut" type="int" value="1,10,0,8,1,6"/>
+   <entry name="HealthModFormulaConstants_Eject" type="int" value="1,10,2,8,1,6"/>
+   <entry name="FatigueModPerWoundFormulaConstants_Class0" type="int" value="1,100,100,0"/>
+   <entry name="FatigueModPerWoundFormulaConstants_Class1" type="int" value="1,200,100,0"/>
+   <entry name="FatigueModPerWoundFormulaConstants_Class2" type="int" value="1,500,100,0"/>
+   <entry name="GTolBucketModPerWoundFormulaConstants_Class0" type="int" value="10,1,6,1,1,2"/>
+   <entry name="GTolBucketModPerWoundFormulaConstants_Class1" type="int" value="20,2,6,2,1,2"/>
+   <entry name="GTolBucketModPerWoundFormulaConstants_Class2" type="int" value="30,2,6,1,1,2"/>
+   <entry name="LongTermEffectPerWoundFormulaConstants_Class0" type="int" value=" 0,0,0,1,0,1"/>
+   <entry name="LongTermEffectPerWoundFormulaConstants_Class1" type="int" value=" 0,1,6,1,1,2"/>
+   <entry name="LongTermEffectPerWoundFormulaConstants_Class2" type="int" value=" 0,2,6,1,1,3"/>
+   <entry name="HealingIntervalInRounds" type="int" value="360"/>
+   <entry name="HealingEvaluatorFormulaConstants" type="int" value="1,6,4,1,2,10"/>
+   <entry name="HealingCost" type="int" value="1000"/>
+   <entry name="MaxHealingPerDay" type="int" value="6"/>
+   <!-- -->
+   <!-- Fatigue ranges and penalties -->
+   <!-- NOTES:
+
+	1. FatiguePenalty should have exactly as many values as there are
+		fatigue classes.  This is the percentage that the following
+		attributes are reduced while fatigue is in this class:
+			Vision, GTol, Health, Morale
+	-->
+   <entry name="FatigueClasses" type="int=string" value="0=None,10=Minor,30=Mild,50=Heavy,90=Extreme"/>
+   <entry name="FatiguePenalty" type="int" value="0,0,10,30,50"/>
+   <entry name="FatigueMod_Per_ConsecutiveMission" type="int" value="2"/>
+   <entry name="FatigueMod_Per_GroundAttackMission" type="int" value="4"/>
+   <entry name="FatigueMod_Per_EmptyGTolBucket" type="int" value="2"/>
+   <entry name="FatigueReductionPerDay" type="int" value="1"/>
+   <entry name="FatigueReductionPerSuccessfulMission" type="int" value="2"/>
+   <entry name="FatigueReductionPerGroundKill" type="int" value="2"/>
+   <entry name="FatigueReductionPerShipKill" type="int" value="2"/>
+   <entry name="FatigueReductionPerAirKill" type="int" value="4"/>
+   <entry name="FatigueReductionForLandingSafely" type="int" value="2"/>
+   <entry name="FatigueIncreasePerMission" type="int" value="5"/>
+   <entry name="FatigueIncreasePerCrashOrBail" type="int" value="10"/>
+   <!-- -->
+   <!-- Capture / Escape -->
+   <!-- NOTES:
+
+	1. The formulas for entries XXXFormulaCosntants are:
+	
+		     CaptureSaveRoll: aDb > c
+		     
+		EscapeEvaluationRoll: (aDb + c * R) >= d
+		
+		    CaptureDeathRoll: aDb <= c
+		    
+		Where aDb is the standard die-roll notation, and R is the number
+		of months the player has been in captivity.
+		
+	2. CaptureDeathRoll is evaluated a second time if it is true the first.
+		Only if it is true both times does the player actually die while
+		trying to escape.
+	-->
+   <entry name="CaptureEvaluation" type="int" value="0"/>
+   <entry name="CaptureSaveRollFormulaConstants" type="int" value="2,6,10"/>
+   <entry name="EscapeEvaluationRollFormulaConstants" type="int" value="1,6,1,5"/>
+   <entry name="CaptureDeathRollFormulaConstants" type="int" value="1,6,1"/>
+   <!-- -->
+   <!-- Experience / levels / rank -->
+   <!-- NOTES:
+
+	1. ExperienceRequiredPerLevel and SkillPointsAwardedPerLevel should	have
+		the exact same number of values, and should be an integer multiple
+		of LevelsPerRank.
+	
+	2. For each nationality listed in the ValidPilotCountries entry,
+		there should be entries RankShortNames_XXX and RankLongNames_XXX
+		where XXX is the corresponding country.  The number of values
+		in these entries should be equal to the number of values in entry
+		ExperienceRequiredPerLevel divided by the value LevelsPerRank.
+	
+	-->
+   <entry name="ExperienceRequiredPerLevelMultiplier" type="int" value="10"/>
+   <entry name="ExperienceRequiredPerLevel" type="int" value="0,3,8,16,26,39,54,72,92,115,140,168,198,231,266,304,344,387,432,480,530,583,638,696,756,819,884,952,1022,1095,1170,1248,1328,1411,1496,1584,1674,1767,1862,1960"/>
+   <entry name="SkillPointsAwardedPerLevel" type="int" value="0,1,1,0,2,1,1,0,2,1,1,0,2,1,1,0,3,1,1,0,3,1,1,0,3,1,1,0,4,1,1,0,5,1,1,0,6,1,1,1"/>
+   <entry name="LevelsPerRank" type="int" value="4"/>
+   <entry name="Experience_Per_SuccessfulMission" type="int" value="50"/>
+   <entry name="Experience_Per_SuccessfulMission_SectionLeader" type="int" value="50"/>
+   <entry name="Experience_Per_SuccessfulMission_FlightLeader" type="int" value="100"/>
+   <entry name="Experience_Per_FailedMission" type="int" value="  5"/>
+   <entry name="Experience_Per_FailedMission_SectionLeader" type="int" value="  0"/>
+   <entry name="Experience_Per_FailedMission_FlightLeader" type="int" value="  0"/>
+   <entry name="Experience_Per_AirKill" type="int" value=" 10"/>
+   <entry name="Experience_Per_GroundKill" type="int" value=" 5"/>
+   <entry name="Experience_Per_ShipKill" type="int" value=" 15"/>
+   <entry name="ExperiencePercentageLostUponDeath" type="int" value=" 50"/>
+   <entry name="TotalSkillPoints_Unlimited" type="int" value="100"/>
+   <entry name="StartSkillPoints_Campaign" type="int" value=" 10"/>
+   <entry name="StartLevelFromAge" type="int" value="1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5"/>
+   <entry name="StartPrestigeFromLevel" type="int" value="0, 500, 1000, 1500, 2000"/>
+   <!-- -->
+   <!-- Technology Unlocking -->
+   <!-- NOTES:
+
+	1. Entry "UnlockTechAtLevel" simply contains a map of level to the short
+		word for the technology that is unlocked for pilots at that level.
+	-->
+   <entry name="UnlockTechAtLevel" type="int=string" value="8=Armor,8=Rocket,12=Engine,16=Jet,20=Guided"/>
+   <entry name="AircraftCostConstant" type="int" value="5000"/>
+   <!-- -->
+   <!-- Launching Offensive -->
+   <entry name="LaunchOffensiveBaseCost" type="int" value="8000"/>
+   <entry name="LaunchOffensiveCostPerDay" type="int" value="2000"/>
+   <!-- Base Relocation -->
+   <entry name="RelocationBaseCost" type="int" value="2000"/>
+   <!-- Personal Aircraft -->
+   <entry name="PersonalAircraftBaseCost" type="int" value="1000"/>
+   <entry name="PersonalAircraftTechCost" type="int" value="1000"/>
+   <entry name="PersonalAircraftInflationCost" type="int" value="500"/>
+   <!-- AIWingmen -->
+   <entry name="AIWingmenExperienceCap" type="int" value="3"/>
+   <entry name="AIWingmenAccuracyCap" type="int" value="3"/>
+   <!-- Prestige -->
+   <entry name="PrestigeFactor" type="float" value="6.2"/>
+</PilotConstants>
