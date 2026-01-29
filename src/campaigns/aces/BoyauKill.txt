@@ -1,0 +1,318 @@
+35
+9
+BoyauKill01
+16
+03
+1917
+Aviatik Des
+NA
+S of Thiaucourt N77
+
+EOR
+BoyauKill02
+03
+06
+1917
+Balloon DesF
+NA
+Geline 09:55 N77 shared/Slt Sardier
+
+EOR
+BoyauKill03
+05
+06
+1917
+Balloon DesF
+NA
+Moussey N77
+
+EOR
+BoyauKill04
+24
+06
+1917
+Balloon DesF
+NA
+Goin N77 shared/Slt d'Hautefeuille, Sgt Boillot
+
+EOR
+BoyauKill05
+24
+06
+1917
+Scout Des
+na
+Goin / Chevisey 09:45 N77
+
+EOR
+BoyauKill06
+13
+07
+1917
+LVG Des
+na
+N of Nancy 10:35 N77
+
+EOR
+BoyauKill07
+26
+08
+1917
+Balloon DesF
+na
+Juvelize / Bourdonnaye 15:30 Spa77
+
+EOR
+BoyauKill08
+16
+09
+1917
+Balloon DesF
+na
+Haie / Vauthier 15:00 Spa77 shared/Ltn Reboug
+
+EOR
+BoyauKill09
+22
+09
+1917
+Balloon DesF
+na
+Cirey / Bertrambois 18:50 Spa77 shared/Ltn Reboug
+
+EOR
+BoyauKill10
+23
+09
+1917
+2-Seater Des possibly FA(A) 241 Vfw Stiler, Ltn Kuhne
+na
+Coincourt 11:25 Spa77
+
+EOR
+BoyauKill11
+01
+10
+1917
+2-Seater Des possibly FA12 Hans Frowein, Oskar Sigg KiA
+na
+N of Champenoux 12:00 Spa77
+
+EOR
+BoyauKill12
+03
+01
+1918
+Balloon DesF
+na
+Beney Spa77
+
+EOR
+BoyauKill13
+20
+02
+1918
+Balloon DesF
+na
+Vaxy 07:35 Spa77 shared/Slt Sardier
+
+EOR
+BoyauKill14
+29
+05
+1918
+Balloon DesF
+na
+Bois de Bole Spa77
+
+EOR
+BoyauKill15
+29
+05
+1918
+Albatros DV Des
+na
+Ville-en-Tardenois Spa77 shared/Slt Sardier
+
+EOR
+BoyauKill16
+01
+06
+1918
+Pfalz DIII Des possibly Ja 27 Wilhelm Stein KiA
+na
+Epieds 11:25 Spa77
+
+EOR
+BoyauKill17
+04
+06
+1918
+Balloon DesF
+na
+Spa77 shared/Slt Sardier
+
+EOR
+BoyauKill18
+04
+06
+1918
+Balloon DesF
+na
+Spa77 shared/Slt Sardier
+
+EOR
+BoyauKill19
+27
+06
+1918
+Balloon DesF
+na
+Spa77
+
+EOR
+BoyauKill20
+01
+07
+1918
+Balloon DesF
+na
+Spa77, shared/Slt Haegelen
+
+EOR
+BoyauKill21
+05
+07
+1918
+Balloon DesF
+na
+Ville-Dommange Spa77
+
+EOR
+BoyauKill22
+05
+07
+1918
+Scout Des possibly Ja 68 Alb DVa 7296/17 Fritz Ree KiA
+na
+Ville-Dommange Spa77
+
+EOR
+BoyauKill23
+15
+07
+1918 
+Fokker DVII Des
+na
+SE of Dormans 15:50 Spa77
+
+EOR
+BoyauKill24
+17
+07
+1918
+HA Des
+na
+NE of Nesle-le-Repons 19:15 Spa77
+
+EOR
+BoyauKill25
+21
+07
+1918
+HA Des possibly Ja 26 Otto Esswein KiA
+na
+S of Soissons 15:05 Spa77
+
+EOR
+BoyauKill26
+22
+07
+1918
+Balloon DesF
+na
+Spa77, shared/Slt Guerrier
+
+EOR
+BoyauKill27
+22
+07
+1918
+Balloon DesF
+na
+Spa77, shared/Slt Guerrier
+
+EOR
+BoyauKill28
+22
+07
+1918
+HA Des
+na
+Fresnes 15:30 Spa77
+
+EOR
+BoyauKill29
+08
+08
+1918
+2-Seater DesF
+na
+Piennes-Onvillers 1815 Spa77
+
+EOR
+BoyauKill30
+08
+08
+1918
+Rumpler C DesF
+na
+Ressons-sur-Matz 18:15 Spa77 shared/Mdl Lentz-Mitchell
+
+EOR
+BoyauKill31
+08
+08
+1918
+Balloon DesF
+na
+Gury 18:20 Spa77
+
+EOR
+BoyauKill32
+14
+09
+1918
+Balloon DesF
+na
+Etray 17:45 Spa77 shared/ Cpl Corsi, Slt Haegelen
+
+EOR
+BoyauKill33
+15
+09
+1918
+Balloon DesF
+na
+La Haie des Allemands 12:30 Spa77 shared/Decoin, Barbazza, Strohl
+
+EOR
+BoyauKill34
+15
+09
+1918
+Balloon DesF
+na
+Foulgrey 12:50 Spa77 shared/Decoin, Barbazza, Strohl
+
+EOR
+BoyauKill35
+16
+09
+1918
+Balloon DesF
+na
+Marville 11:17 Spa77 shared/Asp Cessieux
+
+EOR
+EOF

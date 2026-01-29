@@ -1,0 +1,48 @@
+3
+15
+1
+Artillery Spotting
+Artillery Spotting
+"startloop"
+"endloop"
+Make notes of troop positions and fall of shot for bombardment
+Enemy
+nothing
+frontsectors
+none
+none
+none
+1
+ArtilleryCooperation
+EOR
+2
+Reconnaisance
+Reconnaisance
+"loiter"
+NULL
+Fly over the region and note any troop or vehicle movement
+Enemy
+nothing
+towns
+none
+none
+none
+1
+Reccy
+EOR
+3
+Bombing Enemy Front Lines
+Bombing Enemy Front Lines
+"""turn"""
+"""turn"""
+Bombing Mission enemy front sectors - be careful of the ground fire and air activity
+Enemy
+strike
+frontsectors
+none
+none
+none
+1
+Bombing
+EOR
+EOF

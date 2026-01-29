@@ -1,0 +1,101 @@
+7
+14
+Fort de Seclin
+Fort de Seclin
+N50*33'20.664000
+E3*3'12.052800
+N50*33'20.664000
+E3*3'12.052800
+N50*33'20.664000
+E3*3'12.052800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Sainghin
+Fort de Sainghin
+N50*34'52.078800
+E3*9'33.541200
+N50*34'52.078800
+E3*9'33.541200
+N50*34'52.078800
+E3*9'33.541200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort du Vert-Galant
+Fort du Vert-Galant
+N50*41'35.059200
+E3*1'0.955200
+N50*41'35.059200
+E3*1'0.955200
+N50*41'35.059200
+E3*1'0.955200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort d'Englos
+Fort d'Englos
+N50*37'59.840400
+E2*57'25.736400
+N50*37'59.840400
+E2*57'25.736400
+N50*37'59.840400
+E2*57'25.736400
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Mons-en-Bareuil
+Fort de Mons-en-Baroeuil
+N50*38'41.193600
+E3*7'12.313200
+N50*38'41.193600
+E3*7'12.313200
+N50*38'41.193600
+E3*7'12.313200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Bondues
+Fort de Bondues
+N50*41'32.042400
+E3*5'12.235200
+N50*41'32.042400
+E3*5'12.235200
+N50*41'32.042400
+E3*5'12.235200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Premesque
+Fort de Premesque
+N50*39'35.384400
+E2*57'26.305200
+N50*39'35.384400
+E2*57'26.305200
+N50*39'35.384400
+E2*57'26.305200
+Null
+Null
+Null
+Null
+Null
+EOR
+EOF

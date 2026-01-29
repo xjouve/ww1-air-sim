@@ -1,0 +1,59 @@
+4
+14
+Fort de St-Thierry
+Fort de St-Thierry
+N49*18'27.118800
+E3*55'58.677600
+N49*18'27.118800
+E3*55'58.677600
+N49*18'27.118800
+E3*55'58.677600
+Null
+Null
+Null
+Null
+Null
+EOR
+Reduit de Chenay
+Reduit de Chenay
+N49*18'8.42
+E3*55'43.68
+N49*18'8.42
+E3*55'43.68
+N49*18'8.42
+E3*55'43.68
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Montbre
+Fort de Montbre
+N49*11'30.393600
+E4*3'34.858800
+N49*11'30.393600
+E4*3'34.858800
+N49*11'30.393600
+E4*3'34.858800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de la Pompelle
+Fort de la Pompelle
+N49*12'57.596400
+E4*7'44.922000
+N49*12'57.596400
+E4*7'44.922000
+N49*12'57.596400
+E4*7'44.922000
+Null
+Null
+Null
+Null
+Null
+EOR
+EOF

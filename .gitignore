@@ -37,7 +37,9 @@ desktop.ini
 *.temp
 *.log
 
-# ===== Large binary source data (track with Git LFS or exclude) =====
-# Uncomment if not using Git LFS:
-# src/elevation/*.hgt
-# src/hydrography/osm/*.pbf
+# ===== Large binary source data (download separately) =====
+# These files are too large for GitHub. See docs/architecture/README.md for download instructions.
+src/elevation/
+src/hydrography/
+src/infrastructure/
+src/landcover/

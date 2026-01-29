@@ -1,0 +1,480 @@
+53
+9
+GuynemerKill01
+19
+07
+1915
+Aviatik B Des possibly FA26 Werner Johannes WiA, August Ströbel DoW
+NA
+Septmont 14:15 MS3 gunner: Sol Guerder
+
+EOR
+GuynemerKill02
+05
+12
+1915
+Aviatik C Des
+NA
+Bois Carré 10:20 N3
+
+EOR
+GuynemerKill03
+08
+12
+1915
+LVG Des possibly FA27 Kurt Beisendahl, Hans Reitter KiA
+NA
+Bauvraignes 10:35 N3
+
+EOR
+GuynemerKill04
+14
+12
+1915
+Fokker A Des
+NA
+SE of Noyon 14:15 N3, shared/Sgt Bucquet, Ltt Pandevan
+
+EOR
+GuynemerKill05
+03
+02
+1916
+LVG Des
+na
+Carrépuis 11:10 N3
+
+EOR
+GuynemerKill06
+03
+02
+1916
+LVG Des
+na
+Roye 11:40 N3
+
+EOR
+GuynemerKill07
+05
+02
+1916
+LVG DesF possibly FA9 Rudy Lumblatt KiA
+na
+Herbecourt 11:30 N3
+
+EOR
+GuynemerKill08
+12
+03
+1916
+LVG Des possibly FA61 Friedrich Ackermann, Friedrich Marquardt KiA
+na
+Thiescourt 11:00 N3
+
+EOR
+GuynemerKill09
+22
+06
+1916
+LVG DesF
+na
+Vrély 10:00 N3 shared/w Sgt Chainat.
+
+EOR
+GuynemerKill10
+16
+07
+1916
+LVG Des possibly FA8 Franz Sigwart, Ludwig König KiA
+na
+Barleux 10:02 N3
+
+EOR
+GuynemerKill11
+28
+07
+1916
+LVG DesF possibly Wilhelm Kroker KiA
+na
+Grandau / Barleux 16:45 N3
+
+EOR
+GuynemerKill12
+03
+08
+1916
+HA DesF
+na
+Barleux 09:45 N3, shared/Ltt Heurteaux.
+
+EOR
+GuynemerKill13
+17
+08
+1916
+Alb C Des possibly Rossbach
+na
+Grancourt 10:05 N3
+
+EOR
+GuynemerKill14
+18
+08
+1916
+Rumpler DesF possibly FA26 Walter Strauss, Karl Ramfeld KiA
+na
+Bouchavesnes 15:00 N3
+
+EOR
+GuynemerKill15
+04
+09
+1916
+Rumpler DesF possibly KG7/Kst37 Otto Fresenius, Hans Steiner KiA
+na
+Ablaincourt 18:25 N3
+
+EOR
+GuynemerKill16
+15
+09
+1916
+Rumpler Des possibly FA8b Josef Obermaier, Hans Sommer KiA
+na
+St-Cren 11:25 N3
+
+EOR
+GuynemerKill17
+23
+09
+1916
+Fokker DesF
+na
+Erches 11:20 N3
+
+EOR
+GuynemerKill18
+23
+09
+1916
+Fokker Des
+na
+Roye 11:23 N3
+
+EOR
+GuynemerKill19
+10
+11
+1916
+Aviatik D Des possibly Ja 6 Christian Kress KiA
+na
+S of Nesle 12:15 N3
+
+EOR
+GuynemerKill20
+10
+11
+1916
+Alb C Des possibly FA13 Karl Staemm, Albert Eder KiA
+na
+Morcourt 12:25 N3
+
+EOR
+GuynemerKill21
+22
+11
+1916
+Halberstadt D Des
+na
+E of Saint-Christ 14:45 N3
+
+EOR
+GuynemerKill22
+22
+11
+1916
+Halberstadt D Des
+na
+Flavy 15:55 N3
+
+EOR
+GuynemerKill23
+26
+12
+1916
+Halberstadt D Des
+na
+E of Misery 09:45 N3
+
+EOR
+GuynemerKill24
+27
+12
+1916
+Albatros Des
+na
+S of La Moussonette 11:45 N3
+
+EOR
+GuynemerKill25
+23
+01
+1917
+2-Seater Des possibly FA(A)269 Martin Korner KiA
+na
+Chaulnes 10:45 N3
+
+EOR
+GuynemerKill26
+23
+01
+1917
+Rumpler DesF possibly FA216b Berhnard Roeder, Otto von Schanzenbach KiA
+na
+Maurepas 11:30 N3
+
+EOR
+GuynemerKill27
+24
+01
+1917
+Rumpler Des possibly Ltn Kurt Just (FIAbt A 234), KiA Roye.
+na
+Guyencourt 11:40 N3
+
+EOR
+GuynemerKill28
+24
+01
+1917
+Rumpler Des possibly Gefrs Heinrich Bauer and Anton Haschert, KiA.
+na
+Lignières 11:50 N3
+
+EOR
+GuynemerKill29
+26
+01
+1917
+Alb C ftl possibly from FIAbt A 266, PoW.
+na
+Monchy 12:15 N3
+
+EOR
+GuynemerKill30
+08
+02
+1917
+Gotha GIII ftl from Kaghol 3, PoW.
+na
+Bouconville 11:15 N3, shared/h Adj Chainat.
+
+EOR
+GuynemerKill31
+16
+03
+1917
+Alb C DesF possibly from FIAbt A 266, PoW.
+na
+Serres 09:08 N3
+
+EOR
+GuynemerKill32
+16
+03
+1917
+Alb C DesF possibly FA12 August Reichenbach, Wifried Buchdrucker KiA
+na
+Serres 09:08 N3
+
+EOR
+GuynemerKill33
+16
+03
+1917
+Roland DII ftl Ja 32 Lothar von Hausen PoW/DoW
+na
+Hoéville 09:26 N3
+
+EOR
+GuynemerKill34
+16
+03
+1917
+Alb C DesF possibly FA(A)279 Karl Kolrop, Feodor Kellner KiA
+na
+Regnéville 14:30 N3
+
+EOR
+GuynemerKill35
+17
+03
+1917
+Alb C DesF possibly FA12 Karl Maurer, Eduard Marcard KiA
+na
+E of Atilloncourt 13:30 N3, shared/w Cne Shigeno
+
+EOR
+GuynemerKill36
+14
+04
+1917
+Alb C possibly FA(A)254 Karl Abelmann, Heinrich Schönberg KiA
+na
+La Neuvillette 10:30 N3
+
+EOR
+GuynemerKill37
+02
+05
+1917
+Alb C DesF possibly Ss10 Felix Schilf, Felix Bockenmühl KiA
+na
+Des Courteçon / Ailles 19:35 N3
+
+EOR
+GuynemerKill38
+04
+05
+1917
+Albatros C Des possibly Ss25 Johann Weidmann, Walter Lagerhauser KiA
+na
+Courteçon / Braye-en-Laonnois 15:08 N3
+
+EOR
+GuynemerKill39
+25
+05
+1917
+LVG DesF
+na
+NW of Coberny 08:30 N3
+
+EOR
+GuynemerKill40
+25
+05
+1917
+LVG DesF possibly FA(A)257 Georg Feldmann, Georg Oehler KiA
+na
+Juvincourt 08:31 N3
+
+EOR
+GuynemerKill41
+25
+05
+1917
+DFW C Des
+na
+Courlandon 12:15 N3
+
+EOR
+GuynemerKill42
+25
+05
+1917
+2-Seater DesF possibly FA(A)254 Werner Gaedicke KiA
+na
+W Guignicourt 18:30 N3
+
+EOR
+GuynemerKill43
+26
+05
+1917
+Albatros C Des
+na
+W Condé-sur-Suippe 10:00 N3
+
+EOR
+GuynemerKill44
+05
+06
+1917
+Alb C Des possibly FA(A)248 Fritz Schröder, Ernst Schreb KiA
+na
+Loivre 17:15 N3
+
+EOR
+GuynemerKill45
+05
+06
+1917
+DFW C Des possibly FA(A)267 Rudolf Lehmann, Hans Philler KiA
+na
+Bois de Berru 17:30 N3
+
+EOR
+GuynemerKill45
+06
+07
+1917
+DFW C DesF possibly FA(A)278 Martin Hieber KiA
+na
+Brimont / Bourgogne 18:00 Spa3
+
+EOR
+GuynemerKill47
+07
+07
+1917
+Alb D Des possibly Ja 19 Reinhold Oertelt KiA
+na
+Villers-Franqueux 11:10 Spa3
+
+EOR
+GuynemerKill48
+07
+07
+1917
+DFW C Des
+na
+Moussy-sur-Aisne 12:30 Spa3
+
+EOR
+GuynemerKill49
+27
+07
+1917
+Alb D DesF possibly Ja 33 Fritz Vossen KiA
+na
+Westroosebeke 20:30 Spa3
+
+EOR
+GuynemerKill50
+28
+07
+1917
+DFW C Des
+na
+E of Houthulst Forest 20:50 Spa3
+
+EOR
+GuynemerKill51
+17
+08
+1917
+Albatros C DesF
+na
+S of Vladsloo 08:20 Spa3
+
+EOR
+GuynemerKill52
+17
+08
+1917
+DFW C DesF
+na
+S of Dixmude 08:24 Spa3
+
+EOR
+GuynemerKill53
+20
+08
+1917
+DFW C DesF possibly FA3 Martin Ewald, Walter Rode KiA
+na
+S of Poperinghe 09:05 Spa3
+
+EOR
+EOF

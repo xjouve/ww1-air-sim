@@ -1,0 +1,367 @@
+26
+14
+Fort de Vaux
+Fort de Vaux
+N49*12'1.656000
+E5*28'13.198800
+N49*12'1.656000
+E5*28'13.198800
+N49*12'1.656000
+E5*28'13.198800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Douaumont
+Fort de Douaumont
+N49*13'1.084800
+E5*26'19.363200
+N49*13'1.084800
+E5*26'19.363200
+N49*13'1.084800
+E5*26'19.363200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Souville
+Fort de Souville
+N49*11'14.629200
+E5*26'19.838400
+N49*11'14.629200
+E5*26'19.838400
+N49*11'14.629200
+E5*26'19.838400
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Tavannes
+Fort de Tavannes
+N49*10'52.831200
+E5*27'47.322000
+N49*10'52.831200
+E5*27'47.322000
+N49*10'52.831200
+E5*27'47.322000
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Moulainville
+Fort de Moulainville
+N49*10'2.546400
+E5*29'4.120800
+N49*10'2.546400
+E5*29'4.120800
+N49*10'2.546400
+E5*29'4.120800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort du Rozellier
+Fort du Rozellier
+N49*7'29.654400
+E5*28'50.678400
+N49*7'29.654400
+E5*28'50.678400
+N49*7'29.654400
+E5*28'50.678400
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort d'Haudainville
+Fort d'Haudainville
+N49*6'55.605600
+E5*25'59.671200
+N49*6'55.605600
+E5*25'59.671200
+N49*6'55.605600
+E5*25'59.671200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Belrupt
+Fort de Belrupt
+N49*8'52.155600
+E5*26'6.223200
+N49*8'52.155600
+E5*26'6.223200
+N49*8'52.155600
+E5*26'6.223200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Belleville
+Fort de Belleville
+N49*10'50.602800
+E5*23'2.295600
+N49*10'50.602800
+E5*23'2.295600
+N49*10'50.602800
+E5*23'2.295600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de St-Michel
+Fort de St-Michel
+N49*10'27.112800
+E5*25'17.238000
+N49*10'27.112800
+E5*25'17.238000
+N49*10'27.112800
+E5*25'17.238000
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de la Chaume
+Fort de la Chaume
+N49*9'20.804400
+E5*19'47.157600
+N49*9'20.804400
+E5*19'47.157600
+N49*9'20.804400
+E5*19'47.157600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Regret
+Fort de Regret
+N49*8'15.824400
+E5*20'14.712000
+N49*8'15.824400
+E5*20'14.712000
+N49*8'15.824400
+E5*20'14.712000
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort des Sartelles
+Fort des Sartelles
+N49*9'11.700000
+E5*18'35.524800
+N49*9'11.700000
+E5*18'35.524800
+N49*9'11.700000
+E5*18'35.524800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Vacherauville
+Fort de Vacherauville
+N49*12'14.742000
+E5*20'30.429600
+N49*12'14.742000
+E5*20'30.429600
+N49*12'14.742000
+E5*20'30.429600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Marre
+Fort de Marre
+N49*11'45.096000
+E5*18'52.639200
+N49*11'45.096000
+E5*18'52.639200
+N49*11'45.096000
+E5*18'52.639200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Bois Bourrus
+Fort de Bois Bourrus
+N49*11'31.844400
+E5*17'56.688000
+N49*11'31.844400
+E5*17'56.688000
+N49*11'31.844400
+E5*17'56.688000
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Choisel
+Fort de Choisel
+N49*10'41.696400
+E5*18'10.641600
+N49*10'41.696400
+E5*18'10.641600
+N49*10'41.696400
+E5*18'10.641600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Dugny
+Fort de Dugny
+N49*6'45.738000
+E5*22'44.374800
+N49*6'45.738000
+E5*22'44.374800
+N49*6'45.738000
+E5*22'44.374800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Landrecourt
+Fort de Landrecourt
+N49*6'43.232400
+E5*20'35.523600
+N49*6'43.232400
+E5*20'35.523600
+N49*6'43.232400
+E5*20'35.523600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Genicourt
+Fort de Genicourt
+N49*3'24.732000
+E5*26'52.443600
+N49*3'24.732000
+E5*26'52.443600
+N49*3'24.732000
+E5*26'52.443600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Liouville
+Fort de Liouville
+N48*49'50.948400
+E5*37'20.611200
+N48*49'50.948400
+E5*37'20.611200
+N48*49'50.948400
+E5*37'20.611200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Gironville
+Fort de Gironville
+N48*47'21.170400
+E5*40'14.289600
+N48*47'21.170400
+E5*40'14.289600
+N48*47'21.170400
+E5*40'14.289600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Jouy-sous-les-Cotes
+Fort de Jouy-sous-les-Cotes
+N48*46'31.216800
+E5*41'13.563600
+N48*46'31.216800
+E5*41'13.563600
+N48*46'31.216800
+E5*41'13.563600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Troyon
+Fort de Troyon
+N48*59'18.434400
+E5*29'18.693600
+N48*59'18.434400
+E5*29'18.693600
+N48*59'18.434400
+E5*29'18.693600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort des Paroches
+Fort des Paroches
+N48*54'43.095600
+E5*29'54.376800
+N48*54'43.095600
+E5*29'54.376800
+N48*54'43.095600
+E5*29'54.376800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Manonviller
+Fort de Manonviller
+N48*35'39.40800
+E6*39'31.03200
+N48*35'39.40800
+E6*39'31.03200
+N48*35'39.40800
+E6*39'31.03200
+Null
+Null
+Null
+Null
+Null
+EOR
+EOF

@@ -1,0 +1,174 @@
+19
+9
+Hay_de_SladeKill01
+20
+05
+1917
+DFW C Des
+NA
+Condé-sur-Suippe 11:15 N86
+
+EOR
+Hay_de_SladeKill02
+29
+05
+1917
+2-Seater DesF
+NA
+W of Amifontaine 19:25 N86
+
+EOR
+Hay_de_SladeKill03
+22
+08
+1917
+Albatros DIII Des possibly Ja 21 Vfw Jahnke WiA/MiA kette led by von Schleich
+NA
+Bois de Forges 18:20 N86
+
+EOR
+Hay_de_SladeKill04
+25
+09
+1917
+Albatros DIII DesF
+NA
+Dompierre 12:30 N86 shared/Sgt Renaux
+
+EOR
+Hay_de_SladeKill05
+05
+12
+1917
+Rumpler C Des
+na
+Anizy 11:40 N86
+
+EOR
+Hay_de_SladeKill06
+25
+03
+1918
+Rumpler C DesF
+na
+Noyon 10:40 N86 shared/Lt Larner (USAS)
+
+EOR
+Hay_de_SladeKill07
+02
+05
+1918
+Pfalz DIII DesF
+na
+Morlancourt N86
+
+EOR
+Hay_de_SladeKill08
+18
+05
+1918
+2-Seater Des
+na
+E of Langemarck N86
+
+EOR
+Hay_de_SladeKill09
+27
+05
+1918
+2-Seater DesF
+na
+Mont Kemmel N86
+
+EOR
+Hay_de_SladeKill10
+18
+06
+1918
+2-Seater Des
+na
+Cravancon N86
+
+EOR
+Hay_de_SladeKill11
+21
+07
+1918
+Fokker DVII DesF possibly Ja 26 OfStv Otto Esswein 12v KiA
+na
+SW of Belleu 17:45 Spa86
+
+EOR
+Hay_de_SladeKill12
+14
+08
+1918
+HA Des
+na
+SE of Morsain 10:15 CO Spa159
+
+EOR
+Hay_de_SladeKill13
+22
+08
+1918
+HA Des possibly Obltn Theodor Cammann Jafu Ja 74 12v severely WiA
+na
+Bieuxy 19:55 CO Spa159
+
+EOR
+Hay_de_SladeKill14
+02
+09
+1918
+HA Des possibly Ja 45 Fokker DVII Ltn Konrad Brendle 9v KiA
+na
+W of Terny-Sorny 10:45 CO Spa159
+
+EOR
+Hay_de_SladeKill15
+24
+09
+1918
+HA Des
+na
+N of Suippes CO Spa159
+
+EOR
+Hay_de_SladeKill16
+01
+10
+1918
+HA DesF possibly SchSta 34 Vfws Theodor Schäfer, Alfred Hädrich KiA
+na
+Aure 18:00 CO Spa159
+
+EOR
+Hay_de_SladeKill17
+01
+10
+1918
+HA DesF
+na
+NE of Sommepy CO Spa159
+
+EOR
+Hay_de_SladeKill18
+10
+10
+1918
+Balloon DesF
+na
+Champagne sector CO Spa159 shared/Sgt Fairchild
+
+EOR
+Hay_de_SladeKill19
+10
+10
+1918
+Balloon DesF
+na
+N of Etain CO Spa159
+
+EOR
+EOF

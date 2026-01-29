@@ -1,0 +1,18 @@
+1
+15
+1
+Ronde front d'armée
+Ronde front d'armée
+"startloop"
+"endloop"
+Ronde au dessus des lignes de front
+Enemy
+cap
+frontsectors
+none
+none
+none
+1
+CAP
+EOR
+EOF

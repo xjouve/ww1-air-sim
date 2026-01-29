@@ -1,0 +1,213 @@
+15
+14
+Fort de Nogent-l'Abbesse
+Fort de Nogent-l'Abbesse
+N49*14'44.444400
+E4*9'16.934400
+N49*14'44.444400
+E4*9'16.934400
+N49*14'44.444400
+E4*9'16.934400
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Witry-les-Reims
+Fort de Witry-les-Reims
+N49*16'51.787200
+E4*8'7.418400
+N49*16'51.787200
+E4*8'7.418400
+N49*16'51.787200
+E4*8'7.418400
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Brimont
+Fort de Brimont
+N49*20'31.110000
+E4*1'1.635600
+N49*20'31.110000
+E4*1'1.635600
+N49*20'31.110000
+E4*1'1.635600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Fresnes
+Fort de Fresnes
+N49*19'25.734000
+E4*6'22.212000
+N49*19'25.734000
+E4*6'22.212000
+N49*19'25.734000
+E4*6'22.212000
+Null
+Null
+Null
+Null
+Null
+EOR
+Ouvrage de la Vigie-de-Berru
+Ouvrage de la Vigie-de-Berru
+N49*15'25.819200
+E4*8'45.600000
+N49*15'25.819200
+E4*8'45.600000
+N49*15'25.819200
+E4*8'45.600000
+Null
+Null
+Null
+Null
+Null
+EOR
+Batterie de Loivre
+Batterie de Loivre
+N49*20'18.704400
+E4*0'2.631600
+N49*20'18.704400
+E4*0'2.631600
+N49*20'18.704400
+E4*0'2.631600
+Null
+Null
+Null
+Null
+Null
+EOR
+Batterie du Cran-de-Brimont
+Batterie du Cran-de-Brimont
+N49*20'29.594400
+E4*2'4.207200
+N49*20'29.594400
+E4*2'4.207200
+N49*20'29.594400
+E4*2'4.207200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de la Malmaison
+Fort de la Malmaison
+N49*27'40.255200
+E3*31'21.554400
+N49*27'40.255200
+E3*31'21.554400
+N49*27'40.255200
+E3*31'21.554400
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Laniscourt
+Fort de Laniscourt
+N49*32'32.377200
+E3*32'17.181600
+N49*32'32.377200
+E3*32'17.181600
+N49*32'32.377200
+E3*32'17.181600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Montberault
+Fort de Montberault
+N49*29'54.290400
+E3*40'23.404800
+N49*29'54.290400
+E3*40'23.404800
+N49*29'54.290400
+E3*40'23.404800
+Null
+Null
+Null
+Null
+Null
+EOR
+Batterie des Bruyeres
+Batterie des Bruyeres
+N49*31'52.075200
+E3*41'2.554800
+N49*31'52.075200
+E3*41'2.554800
+N49*31'52.075200
+E3*41'2.554800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Liez
+Fort de Liez
+N49*41'30.562800
+E3*18'52.110000
+N49*41'30.562800
+E3*18'52.110000
+N49*41'30.562800
+E3*18'52.110000
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort Mayot
+Fort Mayot
+N49*42'38.620800
+E3*25'5.869200
+N49*42'38.620800
+E3*25'5.869200
+N49*42'38.620800
+E3*25'5.869200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Vendeuil
+Fort de Vendeuil
+N49*43'4.587600
+E3*20'23.233200
+N49*43'4.587600
+E3*20'23.233200
+N49*43'4.587600
+E3*20'23.233200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Conde
+Fort de Conde
+N49*24'4.046400
+E3*27'19.018800
+N49*24'4.046400
+E3*27'19.018800
+N49*24'4.046400
+E3*27'19.018800
+Null
+Null
+Null
+Null
+Null
+EOR
+EOF

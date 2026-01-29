@@ -1,0 +1,31 @@
+2
+14
+Fort des Dunes
+Fort des Dunes
+N51*3'12.153600
+E2*26'48.242400
+N51*3'12.153600
+E2*26'48.242400
+N51*3'12.153600
+E2*26'48.242400
+Null
+Null
+Null
+Null
+Null
+EOR
+Batterie de Zuydcoote
+Batterie de Zuydcoote
+N51*3'34.48800
+E2*26'59.67600
+N51*3'34.48800
+E2*26'59.67600
+N51*3'34.48800
+E2*26'59.67600
+Null
+Null
+Null
+Null
+Null
+EOR
+EOF

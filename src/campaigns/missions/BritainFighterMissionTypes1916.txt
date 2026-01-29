@@ -1,0 +1,33 @@
+2
+15
+1
+Patrol Over Enemy Front Lines
+Patrol Over Enemy Front Lines
+"startloop"
+"endloop"
+Patrol over enemy lines - be on the look out for enemy aircraft and ground fire
+Enemy
+cap
+urban
+none
+none
+none
+1
+CAP
+EOR
+2
+Lone Wolf Mission
+Lone Wolf Mission
+"startloop"
+"endloop"
+Scout for any target of opportunity
+Enemy
+cap
+urban
+frontsectors
+none
+none
+1
+none
+EOR
+EOF

@@ -1,0 +1,390 @@
+43
+9
+NungesserKill01
+31
+07
+1915
+Alb C ftl
+NA
+W of Bézaumont VB106 gunner: Sol Pochon
+
+EOR
+NungesserKill02
+28
+11
+1915
+Alb C DesF possibly BAM Vfw August Blank, Ltn Wilhelm von Baklckreuth KiA
+NA
+Nomeny N65
+
+EOR
+NungesserKill03
+02
+04
+1916
+Balloon DesF
+NA
+Septsarges N65
+
+EOR
+NungesserKill04
+03
+04
+1916
+LVG c Des
+NA
+Etang des Hauts-Fourneaux N65
+
+EOR
+NungesserKill05
+04
+04
+1916
+Twin engines 4 passengers Des
+NA
+Etang des Hauts-Fourneaux N65
+
+EOR
+NungesserKill06
+25
+04
+1916
+LVG C Des possibly KG5 Vfw Helmuth Peters, Ltn Walter Kaehler KiA
+NA
+N Verdun N65
+
+EOR
+NungesserKill07
+27
+04
+1916
+LVG C DesF - fight against 3 Fokker E and 3 LVG C  
+na
+Forêt de Spincourt N65
+
+EOR
+NungesserKill08
+19
+05
+1916
+LVG C Des possibly FL Truppe Uffz Friedrich Nottebohm KiA
+na
+Bois de Forges N65
+
+EOR
+NungesserKill09
+22
+05
+1916
+Balloon Desf
+na
+Pierreville N65
+
+EOR
+NungesserKill10
+22
+06
+1916
+Aviatik C Des possibly FIAbt 42 Ltns Erwin Bredow, Peter Tülff von Tscheppe und Weidenbach KiA
+na
+Lamorville N65
+
+EOR
+NungesserKill11
+22
+06
+1916
+Aviatik C Des possibly FIAbt 59 OfStv Fritz Müller, Ltn Walter von der Ohe KiA
+na
+Lamorville N65
+
+EOR
+NungesserKill12
+26
+07
+1916
+Aviatik D Des FIAbt 32 Ltn Otto Parschau 8v KiA
+na
+Seuzey N124
+
+EOR
+NungesserKill13
+25
+08
+1916
+LVG C Des
+na
+Roye / Nurlu 11:50 N65
+
+EOR
+NungesserKill14
+14
+09
+1916
+Alb C DesF
+na
+E of Flavy 07:06 N65
+
+EOR
+NungesserKill15
+26
+09
+1916
+2-Seater Des possibly FIAbt 6 Ltn Richard Holler KiA
+na
+Le Transloy 07:45 N65
+
+EOR
+NungesserKill16
+26
+09
+1916
+Balloon DesF
+na
+Neuville 08:05 N65
+
+EOR
+NungesserKill17
+26
+09
+1916
+Alb C Des possibly FIAbt A 222 Ltn Max Pawlowski KiA
+na
+Rocquigny 10:45 N65
+
+EOR
+NungesserKill18
+23
+11
+1916
+LVG C Des
+na
+S of Flavy 14:30 N65
+
+EOR
+NungesserKill19
+04
+12
+1916
+Halberstadt D DesF FIAbt 22 Obltn Hans Schilling 8v KiA - fight against 4 scouts attacking a British plane with jammed guns
+na
+W of Nurlu 12:35 N65
+
+EOR
+NungesserKill20
+04
+12
+1916
+LVG C Des - fight against 5 planes
+na
+Forêt de Vallulart 13:05 N65
+
+EOR
+NungesserKill21
+20
+12
+1916
+HA Des possibly Ja 3 Ltn Kurt Haber 5v KiA
+na
+S Rouy-le-Grand 11:20 N65
+
+EOR
+NungesserKill22
+01
+05
+1917
+Alb DIII DesF - fight against 6 scouts
+na
+Dunkerque sector / Near the sea V116
+
+EOR
+NungesserKill23
+01
+05
+1917
+Alb DIII ftl - fight against 6 scouts
+na
+Dunkerque sector / Near the sea V116
+
+EOR
+NungesserKill24
+03
+05
+1917
+Rumpler c Des
+na
+Nieuport / Marvaux V116
+
+EOR
+NungesserKill25
+09
+05
+1917
+DFW C DesF
+na
+V116
+
+EOR
+NungesserKill26
+12
+05
+1917
+HA Des
+na
+Savy V116
+
+EOR
+NungesserKill27
+12
+05
+1917
+HA Des
+na
+V116
+
+EOR
+NungesserKill28
+26
+06
+1917
+2-Seater DesF FA 269(A) Ltn Paul Schweizer, Gefr Ernst Bittorf KiA
+na
+Drocourt pm V116
+
+EOR
+NungesserKill29
+26
+06
+1917
+Gotha DesF KG 1/Ks 5 Ltn Paul Hagenmeyer, Gefr Otto Heinz, Ltn Walter von Knorre, Gefr Paul Vogl KiA 
+na
+Drocourt pm V116
+
+EOR
+NungesserKill30
+16
+08
+1917
+Gotha G DesF
+na
+S of Houthulst Forest V116
+
+EOR
+NungesserKill31
+12
+03
+1918
+Gotha Des
+na
+Craonne Spa65
+
+EOR
+NungesserKill32
+31
+03
+1918
+Scout DesF
+na
+Lagny Spa65 shared/Mdl Gérard
+
+EOR
+NungesserKill33
+06
+05
+1918
+2-Seater Des
+na
+S of Marquivillers Spa65
+
+EOR
+NungesserKill34
+06
+05
+1918
+2-Seater Des
+na
+N of Boussicourt Spa65
+
+EOR
+NungesserKill35
+15
+05
+1918
+2-Seater DesF
+na
+Erchau Spa65 shared/Adj Camplan
+
+EOR
+NungesserKill36
+05
+06
+1918
+2-Seater Des
+na
+W of Château-Thierry Spa65
+
+EOR
+NungesserKill37
+30
+06
+1918
+Fokker D Des
+na
+18:45 Spa65
+
+EOR
+NungesserKill38
+16
+07
+1918
+Scout Des
+na
+Méricourt 13:25 Spa65
+
+EOR
+NungesserKill39
+14
+08
+1918
+Balloon DesF
+na
+am Spa65
+
+EOR
+NungesserKill40
+14
+08
+1918
+Balloon DesF
+na
+am Spa65
+
+EOR
+NungesserKill41
+14
+08
+1918
+Balloon DesF
+na
+pm Spa65
+
+EOR
+NungesserKill42
+14
+08
+1918
+Balloon DesF
+na
+pm Spa65
+
+EOR
+NungesserKill43
+15
+08
+1918
+HA Des
+na
+Spa65 shared/wAdj Henriot, Sgt Millot
+
+EOR
+EOF

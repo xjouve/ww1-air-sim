@@ -1,0 +1,246 @@
+27
+9
+PinsardKill01
+01
+11
+1916
+HA Des
+NA
+Léchelle 15:25 N26
+
+EOR
+PinsardKill02
+23
+01
+1917
+2-Seater Des
+NA
+Fort de la Pompelle CO N78
+
+EOR
+PinsardKill03
+15
+02
+1917
+HA Des
+NA
+Juniville CO N78
+
+EOR
+PinsardKill04
+25
+02
+1917
+HA Des possibly Ja 9 Ltn Walter Junge DoW
+NA
+Grateuil / Manre 14:55 CO N78
+
+EOR
+PinsardKill05
+06
+13
+1917
+Rumpler C Des
+na
+N of Laval-sur-Tourbe CO N78
+
+EOR
+PinsardKill06
+11
+04
+1917
+Albatros D Des Ja 29 possibly Vfw Karl Möwe 1v KiA
+na
+SE of St-Souplet CO N78
+
+EOR
+PinsardKill07
+12
+04
+1917
+Albatros Des
+na
+S of Epoye CO N78
+
+EOR
+PinsardKill08
+14
+04
+1917
+2-Seater Des
+na
+W of Sommepy CO N78
+
+EOR
+PinsardKill09
+21
+04
+1917
+HA Des possibly Ja 24 Alb DIII 2096/16 'Vera' Ltn Freidrich-Wilhelm Wichard PoW
+na
+Nauroy CO N78
+
+EOR
+PinsardKill10
+21
+04
+1917
+Albatros Des possibly Ja 9 Ltn Gunther von der Hyde KiA
+na
+Nauroy / Moronvilliers CO N78
+
+EOR
+PinsardKill11
+06
+05
+1917
+HA Des possibly FIAbt 17 Ltns Fredriech Oeken, Hans Weichert KiA
+na
+N of Vaudesincourt CO N78
+
+EOR
+PinsardKill12
+06
+05
+1917
+HA Des possibly FIAbt 17 Ltns Fredriech Oeken, Hans Weichert KiA
+na
+S of Biene CO N78
+
+EOR
+PinsardKill13
+20
+05
+1917
+HA Des
+na
+Châlons sector CO N78
+
+EOR
+PinsardKill14
+28
+05
+1917
+HA Des
+na
+Châlons sector CO N78 shared/Adj Fauvet N38
+
+EOR
+PinsardKill15
+31
+05
+1917
+HA Des
+na
+Châlons sector CO N78
+
+EOR
+PinsardKill16
+05
+06
+1917
+HA Des
+na
+Berru CO N78 shared/Slt Hugues N81
+
+EOR
+PinsardKill17
+20
+02
+1918
+Albatros Des
+na
+Fôret d'Apremont CO Spa23
+
+EOR
+PinsardKill18
+04
+05
+1918
+Balloon DesF
+na
+Bois de Brieulles 17:45 CO Spa23
+
+EOR
+PinsardKill19
+30
+05
+1918
+Balloon DesF
+na
+Dannevoux CO Spa23
+
+EOR
+PinsardKill20
+06
+06
+1918
+2-Seater Des
+na
+Ornes CO Spa23
+
+EOR
+PinsardKill21
+08
+07
+1918
+Balloon DesF
+na
+Boinville CO Spa23
+
+EOR
+PinsardKill22
+19
+07
+1918
+Balloon DesF
+na
+Bois d'Epoye CO Spa23
+
+EOR
+PinsardKill23
+31
+07
+1918
+Balloon DesF
+na
+Lançon CO Spa23
+
+EOR
+PinsardKill24
+11
+08
+1918
+Balloon DesF
+na
+Mangiennes CO Spa23
+
+EOR
+PinsardKill25
+14
+08
+1918
+Balloon DesF
+na
+Blockhaus 'Le-Gros-Buisson' / Chaumont-devant-Damvilliers CO Spa23 shared/Ltt Simeoni
+
+EOR
+PinsardKill26
+20
+08
+1918
+Balloon DesF
+na
+Mangiennes 18:40 CO Spa23
+
+EOR
+PinsardKill27
+22
+08
+1918
+Balloon DesF
+na
+Romagne-sous-les-Côtes CO Spa23
+
+EOR
+EOF

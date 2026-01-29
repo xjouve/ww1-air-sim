@@ -1,0 +1,17 @@
+1
+14
+Fort du Camp des Romains
+Fort du Camp des Romains
+N48*52'34.921200
+E5*32'22.945200
+N48*52'34.921200
+E5*32'22.945200
+N48*52'34.921200
+E5*32'22.945200
+Null
+Null
+Null
+Null
+Null
+EOR
+EOF

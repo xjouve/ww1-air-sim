@@ -1,0 +1,17 @@
+1
+15
+1
+Lone Wolf Mission
+Lone Wolf Mission
+"startloop"
+"endloop"
+Scout for any target of opportunity
+Friendly
+nothing
+none
+none
+none
+none
+1
+none
+EOR

@@ -1,0 +1,19 @@
+1
+15
+1
+Bombing Behind Enemy Front Lines
+Bombing Behind Enemy Front Lines
+"""turn"""
+"""turn"""
+Bombing Mission - be careful of the ground fire and air activity
+Enemy
+strike
+towns
+airfields
+factories
+none
+1
+Bombing
+EOR
+EOF
+

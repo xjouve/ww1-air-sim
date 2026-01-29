@@ -1,0 +1,143 @@
+10
+14
+militarydefence1 A390
+militarydefence1 A390
+N51*7'36.4800
+E2*44'34.11600
+N51*7'36.4800
+E2*44'34.11600
+N51*7'36.4800
+E2*44'34.11600
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A389
+militarydefence1 A389
+N50*58'17.0400
+E2*47'7.36800
+N50*58'17.0400
+E2*47'7.36800
+N50*58'17.0400
+E2*47'7.36800
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A376
+militarydefence1 A376
+N50*53'56.11200
+E2*53'34.22400
+N50*53'56.11200
+E2*53'34.22400
+N50*53'56.11200
+E2*53'34.22400
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A396
+militarydefence1 A396
+N50*40'47.74800
+E2*54'11.30400
+N50*40'47.74800
+E2*54'11.30400
+N50*40'47.74800
+E2*54'11.30400
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A388
+militarydefence1 A388
+N50*19'31.0800
+E2*43'59.48400
+N50*19'31.0800
+E2*43'59.48400
+N50*19'31.0800
+E2*43'59.48400
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A395
+militarydefence1 A395
+N50*16'50.01600
+E2*45'12.42000
+N50*16'50.01600
+E2*45'12.42000
+N50*16'50.01600
+E2*45'12.42000
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A394
+militarydefence1 A394
+N50*13'24.56400
+E2*37'10.38000
+N50*13'24.56400
+E2*37'10.38000
+N50*13'24.56400
+E2*37'10.38000
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A393
+militarydefence1 A393
+N50*10'30.50400
+E2*33'57.56400
+N50*10'30.50400
+E2*33'57.56400
+N50*10'30.50400
+E2*33'57.56400
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A382
+militarydefence1 A382
+N50*0'38.98800
+E2*39'23.86800
+N50*0'38.98800
+E2*39'23.86800
+N50*0'38.98800
+E2*39'23.86800
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A360
+militarydefence1 A360
+N50*0'54.86400
+E2*51'50.400
+N50*0'54.86400
+E2*51'50.400
+N50*0'54.86400
+E2*51'50.400
+Null
+Null
+Null
+Null
+Null
+EOR
+EOF

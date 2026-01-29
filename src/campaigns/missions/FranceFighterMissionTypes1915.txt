@@ -1,0 +1,33 @@
+2
+15
+1
+Vol de barrage
+Vol de barrage
+"startloop"
+"endloop"
+Barrage au dessus du front d'armée
+Enemy
+cap
+frontsectors
+none
+none
+none
+1
+none
+EOR
+2
+Essai de reconnaissance photographique
+Essai de reconnaissance photographique
+"startloop"
+"endloop"
+Photographier les installations et les mouvements de l'ennemi
+Enemy
+cap
+towns
+frontsectors
+none
+none
+1
+Reccy
+EOR
+EOF

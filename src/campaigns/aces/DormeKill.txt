@@ -1,0 +1,210 @@
+23
+9
+DormeKill01
+09
+07
+1916
+LVG Des
+NA
+E of Péronne 09:10 N3
+
+EOR
+DormeKill02
+28
+07
+1916
+HA DesF twin Engines / twin Fuselage
+NA
+Guyencourt 10:15 N3
+
+EOR
+DormeKill03
+03
+08
+1916
+LVG Des possibly KG1/Ks2 Walter Bollow, Fritz Levique KiA
+NA
+Montauban 14:25 N3
+
+EOR
+DormeKill04
+22
+08
+1916
+LVG Des possibly KG1 Hans Becken KiA
+NA
+NE of Moislains 18:35 N3
+
+EOR
+DormeKill05
+23
+08
+1916
+LVG DesF
+na
+S of Marchélepot 10:55 N3
+
+EOR
+DormeKill06
+25
+08
+1916
+LVG DesF
+na
+Mesnil-St. Nicaise 09:45 N3
+
+EOR
+DormeKill07
+31
+08
+1916
+LVG Des possibly Kurt Richter DoW
+na
+Manancourt 17:50 N3
+
+EOR
+DormeKill08
+09
+09
+1916
+LVG Des
+na
+SW of Beaulencourt 15:30 N3
+
+EOR
+DormeKill09
+15
+09
+1916
+Rumpler Des possibly FA8b Joseph Obermaier, Hans Sommer KiA
+na
+Brie / Ennemain 17:20 N3
+
+EOR
+DormeKill10
+22
+09
+1916
+LVG Des possibly FA(A)237 Karl Köhn KiA, Albert Reicht DoW
+na
+Guyencourt 09:20 N3
+
+EOR
+DormeKill11
+25
+09
+1916
+LVG Des possibly FA(A)237 Paul Tewes WiA, Martin Hoffmann KiA
+na
+Liéramont / Nurlu 17:15 N3
+
+EOR
+DormeKill12
+10
+10
+1916
+Roland C DesF possibly KG6/Ks34 Gustav Sittig
+na
+Nurlu / Bertincourt 16:15 N3
+
+EOR
+DormeKill13
+16
+10
+1916
+Fokker E Des possibly Martin Rossbach
+na
+Trenches N of Péronne 16:35 N3
+
+EOR
+DormeKill14
+21
+10
+1916
+Roland D Des possibly Ja 3 Hans Peterson KiA
+na
+Barleux 15:21 N3
+
+EOR
+DormeKill15
+16
+11
+1916
+Rumpler DesF
+na
+E of Marchélepot 15:15 N3
+
+EOR
+DormeKill16
+04
+12
+1916
+Fokker Des possibly Ja 3 Ltn Hansen MiA
+na
+N of St-Cren 14:25 N3
+
+EOR
+DormeKill17
+25
+03
+1917
+AEG C DesF
+na
+Ferme Faite NE of Fismes 11:00 N3
+
+EOR
+DormeKill18
+19
+04
+1917
+Alb D Des possibly Ja 31 Paul Hermann KiA
+na
+W of Orainville 14:51 N3
+
+EOR
+DormeKill19
+22
+04
+1917
+2-Seater Des possibly Ss10 Albert Karzmarek, Karl Schulz KiA
+na
+Beaurieux 18:35 N3
+
+EOR
+DormeKill20
+24
+04
+1917
+2-Seater Des possibly FA(A)253 Walter Rudatis, Karl Jeager KiA
+na
+Vaucelles / Montbavin 15:58 N3
+
+EOR
+DormeKill21
+29
+04
+1917
+Scout Des possibly LudWig Dornheim Jafu Ja 29 KiA 
+na
+Aguilcourt 10:25 N3
+
+EOR
+DormeKill22
+04
+05
+1917
+3-seater Des
+na
+Amifontaine 14:05 N3
+
+EOR
+DormeKill23
+10
+05
+1917
+Albatros C DesF
+na
+Chivy-lès-Etouvelles 10:07 N3
+
+EOR
+EOF

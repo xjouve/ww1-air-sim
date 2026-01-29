@@ -1,0 +1,165 @@
+18
+9
+Barny_de_RomanetKill01
+03
+05
+1917
+Scout Des
+NA
+Craonne N37
+
+EOR
+Barny_de_RomanetKill02
+31
+03
+1918
+Alb D DesF possibly Ja 63 Vfw Friedrich Neubauer 4v KiA
+NA
+Rollot N37 shared/Ltt Poupon
+
+EOR
+Barny_de_RomanetKill03
+30
+05
+1918
+Balloon DesF
+NA
+Fère-en-Tardenois Spa37 shared/Mdl Coupillaud
+
+EOR
+Barny_de_RomanetKill04
+01
+06
+1918
+HA Des possibly Ja 27 Vfw Wilhelm Stein KiA
+NA
+Villers-Cotterêts Spa37
+
+EOR
+Barny_de_RomanetKill05
+30
+06
+1918
+Fokker DVII Ja 10 Ltn Lothar Feige KiA kettes led by Lowenhardt, Udet
+na
+Chouy 19:10 Spa37 shared/Ltt Poupon
+
+EOR
+Barny_de_RomanetKill06
+15
+07
+1918
+DFW C Des
+na
+Moulin de Laval Spa37
+
+EOR
+Barny_de_RomanetKill07
+16
+07
+1918
+DFW C Des
+na
+Picardie sector Spa37 shared/Adj Lienhart, Mdl Francisquet
+
+EOR
+Barny_de_RomanetKill08
+09
+08
+1918
+HA Des
+na
+Mortemer Spa37 shared/Ltt Poupon, Slt Guyou, Sgt Coupillaud
+
+EOR
+Barny_de_RomanetKill09
+15
+08
+1918
+Fokker DVII Des possibly Ja 42 Ltn August Wüst KiA
+na
+Picardie sector Spa37 shared/Adj Marot, Mdl Daniel
+
+EOR
+Barny_de_RomanetKill10
+22
+08
+1918
+2-Seater
+na
+Soissons Spa37 shared/Ltt Poupon
+
+EOR
+Barny_de_RomanetKill11
+03
+10
+1918
+Fokker DVII DesF possibly Ja 41 Ltn Fritz Höhn KiA
+na
+St-Etienne-à-Arnes 10:10 CO Spa167 shared/Cpl de Lombardon
+
+EOR
+Barny_de_RomanetKill12
+10
+10
+1918
+2-Seater Des
+na
+S of Bignicourt 07:00 CO Spa167
+
+EOR
+Barny_de_RomanetKill13
+14
+10
+1918
+Gotha G
+na
+Bois de Voncq 13:10 CO Spa167 shared/Slt Dumas
+
+EOR
+Barny_de_RomanetKill14
+18
+10
+1918
+Fokker DVII Des possibly Ja 10 Gustav Boehren KiA
+na
+Givry 14:30 CO Spa167 shared/Slt Dumas
+
+EOR
+Barny_de_RomanetKill15
+23
+10
+1918
+2-Seater Des
+na
+S of Le Chesne 12:15 CO Spa167 shared/Slt le Chevalier
+
+EOR
+Barny_de_RomanetKill16
+23
+10
+1918
+Fokker DVII Des possibly Ja 15 Vfw Gustav Klaudat 6v severely WiA
+na
+Attigny 16:25 CO Spa167
+
+EOR
+Barny_de_RomanetKill17
+24
+10
+1918
+2-Seater Des
+na
+N of Attigny 15:00 CO Spa167 shared/Slt Guiguet
+
+EOR
+Barny_de_RomanetKill18
+29
+10
+1918
+2-Seater Des
+na
+S of Bois des Loges 15:00 CO Spa167
+
+EOR
+EOF

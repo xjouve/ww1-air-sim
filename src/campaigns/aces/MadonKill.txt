@@ -1,0 +1,372 @@
+41
+9
+MadonKill01
+28
+09
+1916
+Fokker Des
+NA
+Pomacle N38
+
+EOR
+MadonKill02
+09
+11
+1916
+Fokker D Des
+NA
+Sommepy N38 shared/w Slt Mosnier
+
+EOR
+MadonKill03
+17
+11
+1916
+FOkker D Des possibly Ja 9 Ltn Wilhelm Schoulat KiA
+NA
+Marvaux N38
+
+EOR
+MadonKill04
+10
+12
+1916
+LVG DesF
+NA
+N of Autry Forest N38 shared/w Ltt Barbaza
+
+EOR
+MadonKill05
+31
+01
+1917
+Alb C Des possibly FIAbt (A) 251 Ltns Walter Stephan, Wilhelm Hölscher KiA
+NA
+N of Suippes N38
+
+EOR
+MadonKill06
+06
+02
+1917
+Rumpler Des
+NA
+Butte du Mesnil N38
+
+EOR
+MadonKill07
+15
+02
+1917
+Alb C DesF possibly Uffz Hans Gross, Vfw Emil Stiller KiA  
+na
+N of Ripont N38
+
+EOR
+MadonKill08
+18
+03
+1917
+Alb C Des possibly FIAbt (A) 252w Ltn Johannes Ohlrau, Obltn Alfred Weser WiA
+na
+NW of Massiges N38
+
+EOR
+MadonKill09
+24
+04
+1917
+Alb C Des possibly FIAbt (A) 252w Friedrich Krawolitzki, Vfw Otto Hartung KiA
+na
+Cornillet N38
+
+EOR
+MadonKill10
+04
+05
+1917
+HA Des possibly Ja 21 Vfws Hans Brickmann or Eduard Horn 1v KiA
+na
+Nogent l'Abbesse N38
+
+EOR
+MadonKill11
+13
+05
+1917
+Alb C Des
+na
+N of Côte 304 N38
+
+EOR
+MadonKill12
+20
+05
+1917
+2-Seater ftl possibly FIAbt 261 Lb Uffz Fölsche, Ltn Heuer WiA/PoW or FIAbt 9 Guido Kolb PoW
+na
+SW of Sept-Saulx N38
+
+EOR
+MadonKill13
+18
+08
+1917
+2-Seater Des
+na
+Nogent l'Abbesse N38
+
+EOR
+MadonKill14
+22
+08
+1917
+Alb C Des
+na
+E of Nogent l'Abbesse N38
+
+EOR
+MadonKill15
+03
+09
+1917
+Alb C Des
+na
+Nogent l'Abbesse N38
+
+EOR
+MadonKill16
+04
+09
+1917
+Alb D Des possibly Obltn Erich Hahn Jafu Ja 19 6v KiA
+na
+NE of Biene N38
+
+EOR
+MadonKill17
+24
+10
+1917
+Scout ftl PoW
+na
+Passavant-en-Argonne Spa38
+
+EOR
+MadonKill18
+22
+12
+1917
+Scout DesF
+na
+N of Selles Spa38
+
+EOR
+MadonKill19
+23
+12
+1917
+2-Seater Des
+na
+Tahure Spa38 shared/Sgt Garaud
+
+EOR
+MadonKill20
+04
+01
+1918
+Scout Des
+na
+Pontfaverger Spa38
+
+EOR
+MadonKill21
+27
+01
+1918
+2-Seater Des
+na
+N of Ville-sur-Tourbe Spa38
+
+EOR
+MadonKill22
+03
+02
+1918
+Scout Des
+na
+Bétheniville Spa38
+
+EOR
+MadonKill23
+03
+02
+1918
+2-Seater Des possibly FIAbt (A) 203 Uffz Otto Gumz, Ltn Karl Otto KiA
+na
+Caurel Spa38
+
+EOR
+MadonKill24
+09
+03
+1918
+2-Seater DesF
+na
+Pontfaverger Spa38
+
+EOR
+MadonKill25
+09
+03
+1918
+Scout Des
+na
+Pomacle Spa38
+
+EOR
+MadonKill26
+27
+05
+1918
+HA Des possibly FIAbt (A) 244s Vfw Willy Glander, Ltn Kurt Haese KiA 
+na
+Condé-sur-Suippe Spa38
+
+EOR
+MadonKill27
+27
+05
+1918
+HA Des possibly FIAbt (A) 252 Uffz Wilhelm Weniger, Ltn Fritz Freit KiA
+na
+Condé-sur-suippe Spa38
+
+EOR
+MadonKill28
+01
+06
+1918
+Alb D Des
+na
+S of Reims Spa38
+
+EOR
+MadonKill29
+01
+06
+1918
+Alb D Des
+na
+Bétheny Spa38
+
+EOR
+MadonKill30
+01
+06
+1918
+Balloon DesF
+na
+Reims / Epernay Spa38 shared/Ltt Casale
+
+EOR
+MadonKill31
+02
+06
+1918
+HA Des
+na
+Reims 06:00 Spa38
+
+EOR
+MadonKill32
+02
+06
+1918
+HA Des possibly Ja 1 Uffz Adolf Schneider KiA
+na
+Reims 07:00 Spa38
+
+EOR
+MadonKill33
+06
+06
+1918
+2-Seater Des
+na
+Rosnay / Gueux Spa38
+
+EOR
+MadonKill34
+12
+06
+1918
+Fokker D Des
+na
+Fismes Spa38
+
+EOR
+MadonKill35
+30
+06
+1918
+Fokker DrI Des
+na
+Pontfaverger Spa38
+
+EOR
+MadonKill36
+01
+07
+1918
+Rumpler C ftl PoW
+na
+Breuil Spa38 shared/Ltns Vitoux, Romatet
+
+EOR
+MadonKill37
+17
+07
+1918
+Scout Des
+na
+Main de Massiges 07:16 Spa38
+
+EOR
+MadonKill38
+17
+07
+1918
+Scout Des
+na
+Gueux Spa38
+
+EOR
+MadonKill39
+31
+07
+1918
+Fokker DVII Des
+na
+S of Lhéry 16:00 Spa38
+
+EOR
+MadonKill40
+11
+08
+1918
+Fokker DVII Des
+na
+E of Soissons 16:30 Spa38
+
+EOR
+MadonKill41
+03
+09
+1918
+Scout Des
+na
+N of Fismes 16:45 Spa38
+
+EOR
+EOF

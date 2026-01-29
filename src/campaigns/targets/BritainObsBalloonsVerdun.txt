@@ -1,0 +1,395 @@
+28
+14
+Balloonbase1 A75
+Balloonbase1 A75
+N49*11'18.38400
+E5*7'18.08400
+N49*11'18.38400
+E5*7'18.08400
+N49*11'18.38400
+E5*7'18.08400
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A56
+Balloonbase1 A56
+N49*11'7.04400
+E4*16'35.14800
+N49*11'7.04400
+E4*16'35.14800
+N49*11'7.04400
+E4*16'35.14800
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A53
+Balloonbase1 A53
+N49*10'57.3600
+E4*44'6.39600
+N49*10'57.3600
+E4*44'6.39600
+N49*10'57.3600
+E4*44'6.39600
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A64
+Balloonbase1 A64
+N49*10'51.92400
+E5*23'1.42800
+N49*10'51.92400
+E5*23'1.42800
+N49*10'51.92400
+E5*23'1.42800
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A52
+Balloonbase1 A52
+N49*10'44.43600
+E5*6'1.4400
+N49*10'44.43600
+E5*6'1.4400
+N49*10'44.43600
+E5*6'1.4400
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A77
+Balloonbase1 A77
+N49*10'34.75200
+E4*46'44.58000
+N49*10'34.75200
+E4*46'44.58000
+N49*10'34.75200
+E4*46'44.58000
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A76
+Balloonbase1 A76
+N49*10'29.89200
+E4*52'20.78400
+N49*10'29.89200
+E4*52'20.78400
+N49*10'29.89200
+E4*52'20.78400
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A81
+Balloonbase1 A81
+N49*10'26.65200
+E4*13'2.56800
+N49*10'26.65200
+E4*13'2.56800
+N49*10'26.65200
+E4*13'2.56800
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A55
+Balloonbase1 A55
+N49*10'25.03200
+E4*26'48.19200
+N49*10'25.03200
+E4*26'48.19200
+N49*10'25.03200
+E4*26'48.19200
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A54
+Balloonbase1 A54
+N49*10'5.66400
+E4*33'8.85600
+N49*10'5.66400
+E4*33'8.85600
+N49*10'5.66400
+E4*33'8.85600
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A78
+Balloonbase1 A78
+N49*9'52.70400
+E4*36'46.36800
+N49*9'52.70400
+E4*36'46.36800
+N49*9'52.70400
+E4*36'46.36800
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A57
+Balloonbase1 A57
+N49*9'46.26000
+E4*5'3.01200
+N49*9'46.26000
+E4*5'3.01200
+N49*9'46.26000
+E4*5'3.01200
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A80
+Balloonbase1 A80
+N49*9'18.79200
+E4*20'20.07600
+N49*9'18.79200
+E4*20'20.07600
+N49*9'18.79200
+E4*20'20.07600
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A79
+Balloonbase1 A79
+N49*8'30.26400
+E4*30'28.18800
+N49*8'30.26400
+E4*30'28.18800
+N49*8'30.26400
+E4*30'28.18800
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A74
+Balloonbase1 A74
+N49*7'59.55600
+E5*37'0.33600
+N49*7'59.55600
+E5*37'0.33600
+N49*7'59.55600
+E5*37'0.33600
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A73
+Balloonbase1 A73
+N49*2'56.83200
+E5*33'32.68800
+N49*2'56.83200
+E5*33'32.68800
+N49*2'56.83200
+E5*33'32.68800
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A72
+Balloonbase1 A72
+N48*57'14.72400
+E5*27'22.06800
+N48*57'14.72400
+E5*27'22.06800
+N48*57'14.72400
+E5*27'22.06800
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A69
+Balloonbase1 A69
+N48*53'53.26800
+E5*57'48.67200
+N48*53'53.26800
+E5*57'48.67200
+N48*53'53.26800
+E5*57'48.67200
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A68
+Balloonbase1 A68
+N48*53'17.5200
+E6*6'20.34000
+N48*53'17.5200
+E6*6'20.34000
+N48*53'17.5200
+E6*6'20.34000
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A67
+Balloonbase1 A67
+N48*50'15.39600
+E6*17'17.8800
+N48*50'15.39600
+E6*17'17.8800
+N48*50'15.39600
+E6*17'17.8800
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A71
+Balloonbase1 A71
+N48*49'50.98800
+E5*31'14.26800
+N48*49'50.98800
+E5*31'14.26800
+N48*49'50.98800
+E5*31'14.26800
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A70
+Balloonbase1 A70
+N48*49'3.79200
+E5*37'15.16800
+N48*49'3.79200
+E5*37'15.16800
+N48*49'3.79200
+E5*37'15.16800
+Null
+Null
+Null
+Null
+Null
+EOR
+Balloonbase1 A66
+Balloonbase1 A66
+N48*44'43.15200
+E6*26'21.69600
+N48*44'43.15200
+E6*26'21.69600
+N48*44'43.15200
+E6*26'21.69600
+Null
+Null
+Null
+Null
+Null
+EOR
+Ballon de Montzeville
+Ballon de Montzeville
+N49*11'16.76400
+E5*13'23.91600
+N49*11'16.76400
+E5*13'23.91600
+N49*11'16.76400
+E5*13'23.91600
+Null
+Null
+Null
+Null
+Null
+EOR
+Ballon de Vacherauville
+Ballon de Vacherauville
+N49*13'26.36400
+E5*22'2.42400
+N49*13'26.36400
+E5*22'2.42400
+N49*13'26.36400
+E5*22'2.42400
+Null
+Null
+Null
+Null
+Null
+EOR
+Ballon de Chattancourt
+Ballon de Chattancourt
+N49*13'0.91200
+E5*16'47.85600
+N49*13'0.91200
+E5*16'47.85600
+N49*13'0.91200
+E5*16'47.85600
+Null
+Null
+Null
+Null
+Null
+EOR
+Ballon d'Abaucourt
+Ballon d'Abaucourt
+N49*11'45.81600
+E5*32'8.66400
+N49*11'45.81600
+E5*32'8.66400
+N49*11'45.81600
+E5*32'8.66400
+Null
+Null
+Null
+Null
+Null
+EOR
+Ballon de Braquis
+Ballon de Braquis
+N49*9'24.44400
+E5*37'27.51600
+N49*9'24.44400
+E5*37'27.51600
+N49*9'24.44400
+E5*37'27.51600
+Null
+Null
+Null
+Null
+Null
+EOR
+EOF

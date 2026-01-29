@@ -1,0 +1,171 @@
+12
+14
+militarydefence1 A366
+militarydefence1 A366
+N48*32'21.62400
+E6*42'35.6400
+N48*32'21.62400
+E6*42'35.6400
+N48*32'21.62400
+E6*42'35.6400
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A367
+militarydefence1 A367
+N48*29'44.44800
+E6*49'50.70000
+N48*29'44.44800
+E6*49'50.70000
+N48*29'44.44800
+E6*49'50.70000
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A362
+militarydefence1 A362
+N48*22'18.33600
+E6*54'2.84400
+N48*22'18.33600
+E6*54'2.84400
+N48*22'18.33600
+E6*54'2.84400
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A387
+militarydefence1 A387
+N48*18'15.15600
+E6*56'21.26400
+N48*18'15.15600
+E6*56'21.26400
+N48*18'15.15600
+E6*56'21.26400
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A378
+militarydefence1 A378
+N48*12'13.06800
+E6*57'50.25600
+N48*12'13.06800
+E6*57'50.25600
+N48*12'13.06800
+E6*57'50.25600
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A384
+militarydefence1 A384
+N48*11'28.96800
+E7*3'5.25600
+N48*11'28.96800
+E7*3'5.25600
+N48*11'28.96800
+E7*3'5.25600
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A383
+militarydefence1 A383
+N48*10'19.34400
+E7*2'22.16400
+N48*10'19.34400
+E7*2'22.16400
+N48*10'19.34400
+E7*2'22.16400
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A386
+militarydefence1 A386
+N48*1'8.90400
+E7*2'59.2800
+N48*1'8.90400
+E7*2'59.2800
+N48*1'8.90400
+E7*2'59.2800
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A380
+militarydefence1 A380
+N47*55'40.26000
+E7*1'59.91600
+N47*55'40.26000
+E7*1'59.91600
+N47*55'40.26000
+E7*1'59.91600
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A379
+militarydefence1 A379
+N47*49'13.83600
+E7*7'12.39600
+N47*49'13.83600
+E7*7'12.39600
+N47*49'13.83600
+E7*7'12.39600
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A381
+militarydefence1 A381
+N47*43'13.40400
+E7*5'2.83200
+N47*43'13.40400
+E7*5'2.83200
+N47*43'13.40400
+E7*5'2.83200
+Null
+Null
+Null
+Null
+Null
+EOR
+militarydefence1 A385
+militarydefence1 A385
+N47*31'0.26400
+E7*7'53.4000
+N47*31'0.26400
+E7*7'53.4000
+N47*31'0.26400
+E7*7'53.4000
+Null
+Null
+Null
+Null
+Null
+EOR
+EOF

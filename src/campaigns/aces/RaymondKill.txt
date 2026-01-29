@@ -1,0 +1,61 @@
+06
+9
+RaymondKill01
+25
+09
+1916
+HA Des
+NA
+Bois de Vaux Forest 17:15 N3
+
+EOR
+RaymondKill02
+24
+12
+1916
+HA Des
+NA
+Ornes 14:00 N3
+
+EOR
+RaymondKill03
+16
+03
+1917
+Alb D DesF Heinrich Schwander Jafu Ja32 KiA
+NA
+Courbessaux / Bois Saint-Hilaire 09:28 N3
+
+EOR
+RaymondKill04
+16
+08
+1917
+HA Des possibly Ja26; or Anton Schrader KiA Ja31
+NA
+Houthulst Forest 08:32 Spa3
+
+EOR
+RaymondKill05
+27
+10
+1917
+HA Des
+NA
+Houthulst Forest 15:35 CO Spa3
+
+EOR
+RaymondKill06
+20
+02
+1918
+2-Seater Des
+NA
+N of Vauquois 16:40 CO Spa3
+
+EOR
+EOF
+
+
+
+

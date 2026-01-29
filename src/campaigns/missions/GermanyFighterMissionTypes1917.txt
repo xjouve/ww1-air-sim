@@ -1,0 +1,33 @@
+2
+15
+1
+Patrol Friendly Front Lines
+Patrol Friendly Front Lines
+"startloop"
+"endloop"
+Patrol our lines - be on the look out for enemy aircraft
+Friendly
+cap
+frontsectors
+none
+none
+none
+0
+CAP
+EOR
+2
+Patrol Behind Friendly Front Lines
+Patrol Behind Friendly Front Lines
+"startloop"
+"endloop"
+Patrol into friendly territory - be on the look out for AA and enemy craft
+Friendly
+cap
+urban
+none
+none
+none
+0
+CAP
+EOR
+EOF

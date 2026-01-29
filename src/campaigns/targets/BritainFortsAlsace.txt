@@ -1,0 +1,143 @@
+10
+14
+Fort du Parmont
+Fort du Parmont
+N48*0'53.319600
+E6*34'30.723600
+N48*0'53.319600
+E6*34'30.723600
+N48*0'53.319600
+E6*34'30.723600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Rupt
+Fort de Rupt
+N47*55'3.734400
+E6*38'22.120800
+N47*55'3.734400
+E6*38'22.120800
+N47*55'3.734400
+E6*38'22.120800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Giromagny
+Fort de Giromagny
+N47*43'50.678400
+E6*48'47.163600
+N47*43'50.678400
+E6*48'47.163600
+N47*43'50.678400
+E6*48'47.163600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Chateau-Lambert
+Fort de Chateau-Lambert
+N47*51'33.015600
+E6*44'36.592800
+N47*51'33.015600
+E6*44'36.592800
+N47*51'33.015600
+E6*44'36.592800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Servance
+Fort de Servance
+N47*49'55.660800
+E6*47'30.645600
+N47*49'55.660800
+E6*47'30.645600
+N47*49'55.660800
+E6*47'30.645600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Roppe
+Fort de Roppe
+N47*40'49.663200
+E6*53'58.984800
+N47*40'49.663200
+E6*53'58.984800
+N47*40'49.663200
+E6*53'58.984800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort des Hautes-Perches
+Fort des Hautes-Perches
+N47*37'48.896400
+E6*52'40.335600
+N47*37'48.896400
+E6*52'40.335600
+N47*37'48.896400
+E6*52'40.335600
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort des Basses-Perches
+Fort des Basses-Perches
+N47*37'33.942000
+E6*52'7.273200
+N47*37'33.942000
+E6*52'7.273200
+N47*37'33.942000
+E6*52'7.273200
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort de Vezelois
+Fort de Vezelois
+N47*36'1.818000
+E6*54'29.908800
+N47*36'1.818000
+E6*54'29.908800
+N47*36'1.818000
+E6*54'29.908800
+Null
+Null
+Null
+Null
+Null
+EOR
+Fort du Bois d'Oye
+Fort du Bois d'Oye
+N47*34'27.883200
+E6*50'35.656800
+N47*34'27.883200
+E6*50'35.656800
+N47*34'27.883200
+E6*50'35.656800
+Null
+Null
+Null
+Null
+Null
+EOR
+EOF

@@ -1,0 +1,678 @@
+75
+9
+FonckKill01
+06
+08
+1916
+Rumpler C1 4593/15 ftl Brey, von Raumer PoW
+NA
+Estrèes-Saint-Denis 10:30 C47 gunner Slt Thiberge
+
+EOR
+FonckKill02
+17
+03
+1917
+Alb D DesF possibly Ja 15
+NA
+Cerny-en-Laonnois 15:10 C47
+
+EOR
+FonckKill03
+03
+05
+1917
+2-Seater Des
+NA
+N of Berry-au-Bac N103
+
+EOR
+FonckKill04
+05
+05
+1917
+Fokker D DesF possibly from Ja 15 kette led by Udet
+NA
+E of Sainte-Croix / Berry-au-Bac 07:30 N103
+
+EOR
+FonckKill05
+11
+05
+1917
+Rumpler C Des
+NA
+Aguilcourt 18:50 N103
+
+EOR
+FonckKill06
+12
+06
+1917
+Alb D DesF possibly Eberhard von Seel Jafu Ja 17 KiA
+NA
+N Fort de Brimont 09:00 N103
+
+EOR
+FonckKill07
+09
+08
+1917
+Fokker D Des - fight against 2 scouts (out of 32) attacking a Strutter
+na
+Bixshcoote / Dixmude 08:15 N103
+
+EOR
+FonckKill08
+16
+08
+1917
+Albatros DesF
+na
+S of Houthulst Forest N103
+
+EOR
+FonckKill09
+20
+08
+1917
+Alb C DesF
+na
+W of Ypres 09:05 N103
+
+EOR
+FonckKill10
+21
+08
+1917
+2-Seater Des
+na
+Dixmude 09:55 N103
+
+EOR
+FonckKill11
+22
+08
+1917
+2-Seater DesF
+na
+E of Ypres 09:00 N103
+
+EOR
+FonckKill12
+14
+09
+1917
+2-Seater Des
+na
+Poelcapelle 16:36 N103
+
+EOR
+FonckKill13
+15
+09
+1917
+HA DesF
+na
+Zonnebeke 16:20 N103
+
+EOR
+FonckKill14
+23
+09
+1917
+Alb D Des possibly Ja 20 Hugo Jons KiA
+na
+Houthulst Forest 17:15 N103
+
+EOR
+FonckKill15
+30
+09
+1917
+2-Seater DesF
+na
+La Lovie 11:00 N103 shared/Slt Dupré N102
+
+EOR
+FonckKill16
+15
+10
+1917
+2-Seater Des
+na
+NW of Ypres / Merken 11:05 N103
+
+EOR
+FonckKill17
+15
+10
+1917
+2-Seater Des
+na
+Houthulst Forest 11:20 N103
+
+EOR
+FonckKill18
+21
+10
+1917
+HA Des possibly Ja 6 Fritz Bachmann KiA
+na
+Passchendaele 14:55 N103
+
+EOR
+FonckKill19
+27
+10
+1917
+HA Des
+na
+Westroosebeke 10:00 N103
+
+EOR
+FonckKill20
+19
+01
+1918
+Scout Des possibly Ja 16 - fight against 9 scouts attacking balloon (claimed by Ja 16 Otto Hohmuth) over Fort de Belleville
+na
+Bois de Chaumes at 14:25 Spa103
+
+EOR
+FonckKill21
+19
+01
+1918
+Fokker D Des possibly Ja 16 - fight against 9 scouts attacking balloon (claimed by Ja 16 Otto Hohmuth) over Fort de Belleville
+na
+Samogneux 14:25 Spa103
+
+EOR
+FonckKill22
+05
+02
+1918
+2-Seater Des
+na
+Avocourt 12:05 Spa103
+
+EOR
+FonckKill23
+18
+02
+1918
+Alb D Des
+na
+Bezonvaux 13:00 Spa103
+
+EOR
+FonckKill24
+19
+02
+1918
+Albatros C Des
+na
+Montfaucon 12:05 Spa103
+
+EOR
+FonckKill25
+26
+02
+1918
+2-Seater Des
+na
+S of Montfaucon 10:10 Spa103
+
+EOR
+FonckKill26
+26
+02
+1918
+2-Seater Des
+na
+Dieppe-sous-Douamont 10:25 Spa103
+
+EOR
+FonckKill27
+15
+03
+1918
+Alb C Des
+na
+Fort de Brimont / Berméricourt 10:15 Spa103
+
+EOR
+FonckKill28
+15
+03
+1918
+2-Seater Des
+na
+N of Courteçon 17:25 Spa103
+
+EOR
+FonckKill29
+16
+03
+1918
+2-Seater DesF
+na
+Nogent l'Abbesse 11:50 Spa103
+
+EOR
+FonckKill30
+17
+03
+1918
+2-Seater Des possibly the one called 'Fantomas' (the ghost) by French infantrymen
+na
+N of Menneville 18:20 Spa103
+
+EOR
+FonckKill31
+28
+03
+1918
+2-Seater DesF
+na
+E of Montdidier 10:30 Spa103
+
+EOR
+FonckKill32
+29
+03
+1918
+Scout Des
+na
+E of Montdidier 18:30 Spa103
+
+EOR
+FonckKill33
+29
+03
+1918
+Scout Des
+na
+E of Montdidier 18:35 Spa103
+
+EOR
+FonckKill34
+12
+04
+1918
+Scout DesF
+na
+Montdidier 18:15 Spa103
+
+EOR
+FonckKill35
+12
+04
+1918
+2-Seater DesF
+na
+S of Moreuil 18:40 Spa103
+
+EOR
+FonckKill36
+22
+04
+1918
+2-Seater Des
+na
+Assainvilliers 18:05 Spa103
+
+EOR
+FonckKill37
+09
+05
+1918
+Alb C Des
+na
+Trenches near Grivesnes 16:00 Spa103
+
+EOR
+FonckKill38
+09
+05
+1918
+Alb C  Des
+na
+Trenches near Grivesnes 16:00 Spa103
+
+EOR
+FonckKill39
+09
+05
+1918
+2-Seater DesF
+na
+Trenches near Grivesnes 16:05 Spa103
+
+EOR
+FonckKill40
+09
+05
+1918
+2-Seater Des
+na
+Montdidier 18:20 Spa103
+
+EOR
+FonckKill41
+09
+05
+1918
+Fokker D DesF possibly Ja 48 Otto Kutter KiA
+na
+Montdidier / Hargicourt 18:55 Spa103
+
+EOR
+FonckKill42
+09
+05
+1918
+Fokker D DesF possibly Ja 48 Ernst Schulze KiA
+na
+Montdidier / Braches 18:56 Spa103
+
+EOR
+FonckKill43
+19
+05
+1918
+Albatros Des
+na
+Faverolles 09:40 Spa103
+
+EOR
+FonckKill44
+19
+05
+1918
+Scout Des
+na
+NW of Montdidier 09:50 Spa103
+
+EOR
+FonckKill45
+25
+06
+1918
+Halberstadt C Des
+na
+Contoire 18:00 Spa103
+
+EOR
+FonckKill46
+25
+06
+1918
+Fokker DVII Des Ja 13 possibly Fritz Hilberger KiA
+na
+Villers-aux-Erables 18:15 Spa103
+
+EOR
+FonckKill47
+25
+06
+1918
+Fokker DVII Des possibly Ja 5 13 or 15
+na
+Montdidier / Fescamps 18:35 Spa103
+
+EOR
+FonckKill48
+27
+06
+1918
+Halberstadt C DesF
+na
+Morisel 08:10 Spa103
+
+EOR
+FonckKill49
+27
+06
+1918
+Halberstadt C Des
+na
+NW Moreuil 08:15 Spa103
+
+EOR
+FonckKill50
+15
+07
+1918
+2-Seater DesF
+na
+Dormans at 1710 Spa103
+
+EOR
+FonckKill51
+15
+07
+1918
+2-Seater DesF
+na
+Dormans 17:12 Spa103
+
+EOR
+FonckKill52
+18
+07
+1918
+HA Des
+na
+Cuchery 11:20 Spa103
+
+EOR
+FonckKill53
+18
+07
+1918
+HA Des, possibly Ja 66 Konrad Schwartz 
+na
+Cuchery 11:20 Spa103
+
+EOR
+FonckKill54
+18
+07
+1918
+2-Seater Des
+na
+Dormans 15:55 Spa103
+
+EOR
+FonckKill55
+19
+07
+1918
+FokkerDVII DesF possibly Ja 45
+na
+Châtillon-sur-Marne 06:30 Spa103
+
+EOR
+FonckKill56
+19
+07
+1918
+FokkerDVII DesF possibly Ja 45
+na
+Châtillon-sur-Marne 06:32 Spa103
+
+EOR
+FonckKill57
+01
+08
+1918
+2-Seater Des
+na
+E of Bois de Hangard 11:00 Spa103
+
+EOR
+FonckKill58
+14
+08
+1918
+2-Seater Des
+na
+Roye / Cremery 11:10 Spa103
+
+EOR
+FonckKill59
+14
+08
+1918
+2-Seater Des
+na
+Roye / Cremery 11:10 Spa103
+
+EOR
+FonckKill60
+14
+08
+1918
+2-Seater Des
+na
+Roye / Cremery 11:10 Spa103
+
+EOR
+FonckKill61
+26
+09
+1918
+Fokker DVII DesF possibly Ja 9 or 60
+na
+Sainte-Marie-à-Py 11:45 Spa103
+
+EOR
+FonckKill62
+26
+09
+1918
+Fokker DVII DesF possibly Ja9 or 60
+na
+Sainte-Marie-à-Py 11:45 Spa103
+
+EOR
+FonckKill63
+26
+09
+1918
+Halberstadt C Des
+na
+Perthes-lès-Hurlus at 1210 Spa103
+
+EOR
+FonckKill64
+26
+09
+1918
+Fokker DVII Des possibly Ja 50 Karl Weinmann PoW
+na
+Saint-Souplet / Souain 18:10 Spa103
+
+EOR
+FonckKill65
+26
+09
+1918
+Fokker DVII Des
+na
+Saint-Souplet / Souain 18:20 Spa103
+
+EOR
+FonckKill66
+26
+09
+1918
+Alb D Des
+na
+Saint-Souplet / Souain 18:20 Spa103
+
+EOR
+FonckKill67
+28
+09
+1918
+2-Seater Des
+na
+E of Sommepy 10:30 Spa103
+
+EOR
+FonckKill68
+05
+10
+1918
+Fokker DVII Des - fight against 4 scouts
+na
+Liry / Marvaux 17:30 Spa103
+
+EOR
+FonckKill69
+05
+10
+1918
+Fokker DVII Des - fight against 4 scouts
+na
+Saint-Clément 17:40 Spa103
+
+EOR
+FonckKill70
+30
+10
+1918
+2-Seater DesF
+na
+Falaise / Vouziers 15:25 Spa103
+
+EOR
+FonckKill71
+30
+10
+1918
+2-Seater Des
+na
+Semuy / Terron 15:40 Spa103
+
+EOR
+FonckKill72
+30
+10
+1918
+2-Seater Des
+na
+Semuy / Terron 15:40 Spa103
+
+EOR
+FonckKill73
+31
+10
+1918
+2-Seater Des
+na
+N of Vouziers 11:20 Spa103
+
+EOR
+FonckKill74
+31
+10
+1918
+Scout Des
+na
+Vouziers 11:35 Spa103
+
+EOR
+FonckKill75
+01
+11
+1918
+Halberstadt C Des
+na
+E of Vouziers 14:20 Spa103
+
+EOR
+EOF
