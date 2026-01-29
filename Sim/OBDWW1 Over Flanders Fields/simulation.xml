@@ -1,0 +1,547 @@
+<?xml version="1.0"?>
+<!-- v0.4ROOT
+
+v0.4 - Historical realism overhaul (JMO-based combat behavior)
+ * ENGAGEMENT: Raise fightThreshold to 5 (formation & individual F v F)
+ * ENGAGEMENT: Raise continueOnThreshold to 3 (formation F v F)
+ * ENGAGEMENT: Raise withdrawThreshold to 3 (individual F v F)
+ * WEIGHTS (individual F v F): moraleWt 8->15, fatigueWt 40->50, locationWt 30->40
+ * WEIGHTS (individual F v F): groundProximityWt 20->30, threshold 1000->1500m
+ * WEIGHTS (individual F v F): acDamageWt 5->8, engineDamageWt 5->10, pilotDamageWt 5->10
+ * WEIGHTS (individual F v B): moraleWt 1->3, locationWt 10->15, groundProximityThreshold 1500->2000m
+ * FORMATION: soloWt -2->-5 (tactical & heavy v fighter) - no lone pursuit
+ * MANEUVERS: Vrille as default substitute for failed offensive maneuvers
+ * MANEUVERS: Vrille novice 0.80->1.00 (defensive spin always succeeds)
+ * MANEUVERS: HeadOn further reduced (near-zero for all skill levels)
+ * MANEUVERS: Virage novice 0.20->0.10, Stall ace 0.60->0.40
+ * VISION: SHOOTING_RANGE 95->75m (point-blank fire doctrine)
+ * VISION: maxRange 4000->5000m, perfectRange 3000->2000m (see far, identify late)
+
+v0.3
+ * Vision skill factors (reduced all)
+ * Increase individual fighter to bomber groundProximityThreshold_met
+ * Increase individual fighter to bomber fightThreshold
+
+v0.2
+ * Increase maxTimeCompression
+ * Decrease maxSimTimePerFrame_secs
+ * Increase individual/formation fighter to figher moraleWt
+ * Increase individual/formation fighter to figher fightThreshold
+ * Increase individual/formation fighter to figher withdrawThreshold
+ * Increase individual/formation fighter to figher locationWt
+ * Increase individual fighter to figher groundProximityThreshold_met
+ * Decrease individual fighter to figher engineDamageWt
+ * Decrease individual fighter to figher pilotDamageWt
+ * Decrease maxRange_met
+ * Increase trainableGunErrorFactor TEST NEEDED
+
+v0.1
+ * Change Maneuvers
+
+ -->
+<Simulation
+    missionXMLFile="Historical\OFF_Camp_Mission.xml">
+	<DeadPlanes
+                deadPlayerEndsMission="n"
+		deadPlayerDelay_secs="5"
+                deadAircraftEndsMission="n"
+		deadAircraftDelay_secs="5"
+		disableEndGame="n"
+		craterModelNamePrefix="crater"
+        	destroyedModelNamePrefix="destroyed_"
+        	damagedModelNamePrefix="damaged_"/>
+
+	<OutcomesData
+		recordingInterval_secs ="15"
+                AIEventRadius_met="75000"
+                finalStatusDataSet="playersField"/>
+	<Weapons
+
+        gunsJam="y"
+		unjamProbability_frac="0.25"
+		unjamMinInterval_secs="2"
+		trainableGunAlwaysIntermittent="y"
+		trainableGunCoherantNoise="y"
+		ignoreGunNoise="n"
+
+		triggerThresholdAce_deg="2.0"
+		triggerThresholdVeteran_deg="2.5"
+		triggerThresholdNovice_deg="3.0"
+
+ 		trainableGunErrorFactorAce="200.00"
+ 		trainableGunErrorFactorVeteran="275.00"
+ 		trainableGunErrorFactorNovice="400.0"
+
+
+		trainableGunRollLimit_deg="35"
+		trainableGunPitchLimit_deg="35"
+		trainableGunRollRateLimit_deg="20"
+		trainableGunPitchRateLimit_deg="20"
+		trainableGunGLimit="4"
+
+        levelBombingErrorFactorAce="2.0"
+        levelBombingErrorFactorVeteran="4.0"
+        levelBombingErrorFactorNovice="8.0"
+
+		triggerMode="index"
+        bombMode="all"
+		rocketMode="all"
+		rocketType="WWI"
+
+		A2SPasses="4"
+		A2STime="0:16"/>
+
+	<DamageRules masterDisable="n">
+		<Fire
+			burnToCompletion_pct="100"
+			damagePerMinute_pct="40"
+			/>
+		<Break breakPartsMinAGL_met="300">
+			<BreakRule SystemID="nose_structure"      DestroyNeighbours="y"                  hidePart="y" modelName="nose"/>
+           <BreakRule SystemID="fuselage_structure"  DestroyNeighbours="n"/>
+           <BreakRule SystemID="center_fuel_tank"    DestroyNeighbours="n"/>
+			<BreakRule SystemID="right_wing"          DestroyNeighbours="n" breakOffPart="y" hidePart="y" modelName="r_wing"/>
+			<BreakRule SystemID="left_wing"           DestroyNeighbours="n" breakOffPart="y" hidePart="y" modelName="l_wing"/>
+			<BreakRule SystemID="right_wing_tip"      DestroyNeighbours="n"                  hidePart="y" modelName="r_wing_tip"/>
+			<BreakRule SystemID="left_wing_tip"       DestroyNeighbours="n"                  hidePart="y" modelName="l_wing_tip"/>
+			<BreakRule SystemID="rear_tail_struct"    DestroyNeighbours="n"                  hidePart="y" modelName="tail"/>
+			<BreakRule SystemID="left_tail_boom"      DestroyNeighbours="n"                  hidePart="y" modelName="l_wing_tip1"   biplaneSystemID="left_wing_tip" biplaneDamage_pct="35"/>
+			<BreakRule SystemID="right_tail_boom"     DestroyNeighbours="n"                  hidePart="y" modelName="r_wing_tip1"   biplaneSystemID="right_wing_tip" biplaneDamage_pct="35"/>
+			<BreakRule SystemID="left_flap"           DestroyNeighbours="n" breakOffPart="y" hidePart="y" modelName="l_wing1"       biplaneSystemID="left_wing" biplaneDamage_pct="60"/>
+			<BreakRule SystemID="right_flap"          DestroyNeighbours="n" breakOffPart="y" hidePart="y" modelName="r_wing1"       biplaneSystemID="right_wing" biplaneDamage_pct="60"/>
+			<BreakRule SystemID="engine_one"          DestroyNeighbours="n"                  hidePart="y" modelName="engine0"/>
+			<BreakRule SystemID="engine_two"          DestroyNeighbours="n"                  hidePart="y" modelName="engine1"/>
+			<BreakRule SystemID="pilot" 		  DestroyNeighbours="n"                  hidePart="y" modelName="engine2"/>
+			<BreakRule SystemID="left_guns" 	  DestroyNeighbours="n"                  hidePart="y" modelName="engine3"/>
+			<BreakRule SystemID="right_guns" 	  DestroyNeighbours="n"                  hidePart="y" modelName="engine4"/>			
+		</Break>
+		<OverallDamage>
+			<OverallDamageRule>
+				<System SystemID="nose_structure"/>
+				<Stage Threshold_pct="10" OverallDamage="2"/>
+				<Stage Threshold_pct="50" OverallDamage="5"/>
+				<Stage Threshold_pct="90" OverallDamage="8"/>
+				<Stage Threshold_pct="100" OverallDamage="10"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="fuselage_structure"/>
+				<Stage Threshold_pct="10" OverallDamage="2"/>
+				<Stage Threshold_pct="50" OverallDamage="5"/>
+				<Stage Threshold_pct="90" OverallDamage="8"/>
+				<Stage Threshold_pct="100" OverallDamage="10"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="pilot"/>
+				<Stage Threshold_pct="10" OverallDamage="1"/>
+				<Stage Threshold_pct="50" OverallDamage="8"/>
+				<Stage Threshold_pct="90" OverallDamage="9"/>
+				<Stage Threshold_pct="100" OverallDamage="10"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="engine_one"/>
+				<System SystemID="engine_two"/>
+				<System SystemID="engine_three"/>
+				<System SystemID="engine_four"/>
+				<Stage Threshold_pct="10" OverallDamage="2"/>
+				<Stage Threshold_pct="50" OverallDamage="5"/>
+				<Stage Threshold_pct="90" OverallDamage="8"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="center_fuel_tank" Fire="10"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="left_wing"/>
+				<Stage Threshold_pct="50" OverallDamage="2"/>
+				<Stage Threshold_pct="90" OverallDamage="3"/>
+				<Stage Threshold_pct="100" OverallDamage="5"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="right_wing"/>
+				<Stage Threshold_pct="50" OverallDamage="2"/>
+				<Stage Threshold_pct="90" OverallDamage="3"/>
+				<Stage Threshold_pct="100" OverallDamage="5"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="elevator_left"/>
+				<Stage Threshold_pct="50" OverallDamage="2"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="elevator_right"/>
+				<Stage Threshold_pct="50" OverallDamage="2"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="elevator_left"/>
+				<System SystemID="elevator_right"/>
+				<Stage Threshold_pct="90" OverallDamage="4"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="aileron_left"/>
+				<Stage Threshold_pct="50" OverallDamage="2"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="aileron_right"/>
+				<Stage Threshold_pct="50" OverallDamage="2"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="aileron_left"/>
+				<System SystemID="aileron_right"/>
+				<Stage Threshold_pct="90" OverallDamage="4"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="left_flap"/>
+				<Stage Threshold_pct="50" OverallDamage="2"/>
+				<Stage Threshold_pct="90" OverallDamage="3"/>
+				<Stage Threshold_pct="100" OverallDamage="5"/>
+			</OverallDamageRule>
+			<OverallDamageRule>
+				<System SystemID="right_flap"/>
+				<Stage Threshold_pct="50" OverallDamage="2"/>
+				<Stage Threshold_pct="90" OverallDamage="3"/>
+				<Stage Threshold_pct="100" OverallDamage="5"/>
+			</OverallDamageRule>
+		</OverallDamage>
+                <Failure weight="1.0" masterdisable="n">
+			<FailureRule SystemID="engine_one" average_hrs="90" damageAmount_pct="31" dump="y"/>
+			<FailureRule SystemID="engine_one" average_hrs="120" damageAmount_pct="70" dump="y"/>
+			<FailureRule SystemID="engine_one" average_hrs="160" damageAmount_pct="5" frequency_secs="111" dump="y"/>
+			<FailureRule SystemID="engine_one" average_hrs="200" damageAmount_pct="9" frequency_secs="35" dump="y"/>
+
+			<FailureRule SystemID="engine_two" average_hrs="90" damageAmount_pct="31" dump="y"/>
+			<FailureRule SystemID="engine_two" average_hrs="120" damageAmount_pct="70" dump="y"/>
+			<FailureRule SystemID="engine_two" average_hrs="160" damageAmount_pct="5" frequency_secs="114" dump="y"/>
+			<FailureRule SystemID="engine_two" average_hrs="200" damageAmount_pct="9" frequency_secs="35" dump="y"/>
+
+			<FailureRule SystemID="coolant_reservoir" average_hrs="100" damageAmount_pct="4" frequency_secs="32" dump="y"/>
+			<FailureRule SystemID="coolant_reservoir" average_hrs="95" damageAmount_pct="50" dump="y"/>
+			<FailureRule SystemID="oil_reservoir" average_hrs="150" damageAmount_pct="5" frequency_secs="50" dump="y"/>
+			<FailureRule SystemID="oil_reservoir" average_hrs="95" damageAmount_pct="50" dump="y"/>
+		</Failure>
+<Stress overG_secs="30" overspeed_wingTip_secs="15" overspeed_wing_secs="20"/>
+		<DamageRamps>
+			<DamageRamp SystemID="engine_one">
+				<Item x="30" y="0"/>
+				<Item x="60" y="100"/>
+			</DamageRamp>
+			<DamageRamp SystemID="engine_two">
+				<Item x="30" y="0"/>
+				<Item x="60" y="100"/>
+			</DamageRamp>
+		</DamageRamps>
+	</DamageRules>
+	<Bumps
+		windSmoothPeriod_secs="5"
+                localWindScaleVert_pct="100"
+                localWindScaleHorz_pct="10"
+		localWindFieldPerAircraft="y"
+                clearTurbulenceScale_pct="100"
+                cloudTurbulenceScale_pct="100"
+                groundBumpsVerticalScale_pct="50"
+                groundBumpsPitchScale_pct="100"
+                groundBumpsRollScale_pct="300"
+		/>
+	<AI
+        SHOOTING_RANGE_met="75"
+        COLLISION_RANGE_met="250"
+        MIN_AGL_met="150">
+		
+		
+        <!-- v0.3 Vision
+		acePlusFactor must be between 2.0 and 0.9 
+		aceFactor must be between     1.5 and 0.9
+		veteranFactor must be between 1.0 and 0.5
+		noviceFactor must be between  1 and 0.5
+		-->
+                        <!-- acePlusFactor="1.25" --> 
+                        <!-- aceFactor="1.0" -->
+                        <!-- veteranFactor="0.9" -->
+                        <!-- noviceFactor="0.75" -->
+		<Vision
+            offensiveSearchCycle_secs="6"
+            defensiveSearchCycle_secs="6"
+            groundSearchCycle_secs="11"
+
+			imperfect="y"
+
+            maxRange_met="5000"
+            perfectRange_met="2000"
+			maxRangeFactor="0.0"
+
+			pilotSightLine_deg="-25"
+			pilotBestAngle_deg="45"
+			pilotBestAngleFactor="1.0"
+			pilotWorstAngle_deg="30"
+			pilotWorstAngleFactor="0.1"
+
+			observerSightLine_deg="-25"
+			observerBestAngle_deg="60"
+			observerBestAngleFactor="1.0"
+			observerWorstAngle_deg="30"
+			observerWorstAngleFactor="0.15"
+
+            acePlusFactor   ="1.50"
+            aceFactor       ="0.90"
+            veteranFactor   ="0.50"
+            noviceFactor    ="0.10"
+
+			weatherLinear="y"
+
+			offensiveSearch="y"
+			defensiveSearch="y"
+			defensiveReaction="y"/>
+		<Airfield
+			runwayLaneMinWidth_met="15"
+			runwayBuffer_met="100"
+			min_descentAngle_deg="4.5"
+			max_descentAngle_deg="6"
+			parkingSpaceLength_met="15"
+			takeoffSpaceLength_met="15"
+			orbitLaneMinWidth_met="50"/>
+		<Takeoff
+            engineStartRandomDelay_secs="7"
+			singleEngineStart_secs="8"
+                        minSpread_secs="3"
+                        maxSpread_secs="7"
+                        minSpreadFormation_secs="2"
+                        maxSpreadFormation_secs="4"
+			obstacleRetry_secs="5"
+			liftTailEffort="1.0"
+			climbOutAGL_met="150"
+			climbOutEffort="1.0"/>
+
+		<!-- v0.2 Maneuvers
+			altitudeWt= ??
+			damageWt= the more, the longer the fight
+			moraleWt= the less, ...
+			skillWt= the less, ...
+			strengthWt= the less, ...
+			locationWt= the less, ...
+			turnWt= ??
+			climbWt= ??
+			speedWt= ??
+			underAttackWt= ??
+			runningWt= ??
+			escortWt= ??
+
+			fightThreshold="2"
+			continueOnThreshold="1.5"
+		-->
+		<Formation_fighter_v_fighter
+
+		    neverBackDown="n"
+            altitudeWt="3"
+			damageWt="5"
+			moraleWt="5"
+			skillWt="1"
+			strengthWt="1"
+			locationWt="30"
+			turnWt="1"
+			climbWt="1"
+			speedWt="1"
+			underAttackWt="1"
+			runningWt="-5"
+			escortWt="1"
+
+			fightThreshold="5"
+			continueOnThreshold="3"			/>
+		<!-- else run away-->
+
+		<Formation_fighter_v_bomber
+                        neverBackDown="n"
+
+			altitudeWt="1"
+			damageWt="1"
+			moraleWt="20"
+			skillWt="1"
+			strengthWt="1"
+			locationWt="20"
+			runningWt="-5"
+			escortWt="-3"
+
+			fightThreshold="0"/>
+		<!-- else continue on-->
+
+
+		<Formation_tactical_v_fighter
+                        neverBackDown="n"
+
+			altitudeWt="1"
+			damageWt="1"
+			moraleWt="1"
+			skillWt="1"
+			strengthWt="2"
+			locationWt="1"
+			soloWt="-5"
+
+			continueOnThreshold="0"
+			goHomeThreshold="-2"/>
+		<!-- else run away-->
+
+		<Formation_heavy_v_fighter
+                        neverBackDown="n"
+
+			altitudeWt="1"
+			damageWt="1"
+			moraleWt="1"
+			skillWt="1"
+			strengthWt="1"
+			locationWt="1"
+			soloWt="-5"
+
+			continueOnThreshold="-5"/>
+		<!-- else go home-->
+
+		<!-- <Individual_fighter_v_fighter -->
+            <!-- neverBackDown="n" -->
+			<!-- acDamageWt="0" -->
+			<!-- engineDamageWt="0" -->
+			<!-- pilotDamageWt="0" -->
+			<!-- moraleWt="0" -->
+			<!-- fatigueWt="0" -->
+            <!-- locationWt="10" -->
+            <!-- groundProximityWt="0" -->
+            <!-- groundProximityThreshold_met="300" -->
+			<!-- skillWt="0" -->
+			<!-- escortWt="0" -->
+
+			<!-- fightThreshold="-1" -->
+			<!-- withdrawThreshold="-2"/> -->
+			
+		<Individual_fighter_v_fighter
+            neverBackDown="n"
+			acDamageWt="8"
+			engineDamageWt="10"
+			pilotDamageWt="10"
+			moraleWt="15"
+			fatigueWt="50"
+            locationWt="40"
+            groundProximityWt="30"
+            groundProximityThreshold_met="1500"
+			skillWt="1"
+			escortWt="0"
+
+			fightThreshold="5"
+			withdrawThreshold="3"/>
+		<!-- else go home-->
+
+		<Individual_fighter_v_bomber
+            neverBackDown="n"
+			acDamageWt="1"
+			engineDamageWt="5"
+			pilotDamageWt="5"
+			moraleWt="3"
+			skillWt="1"
+		    fatigueWt="40"
+            locationWt="15"
+            groundProximityWt="1"
+            groundProximityThreshold_met="2000"
+			restartsWithoutProgressWt="1"
+			timeWithoutProgressWt="1"
+			totalTimeWt="1"
+
+			fightThreshold="1"/>
+		<!-- else withdraw-->
+
+		<Individual_fighter_v_airship
+                        neverBackDown="n"
+            		acDamageWt="1"
+            		engineDamageWt="5"
+            		pilotDamageWt="5"
+            		moraleWt="1"
+            		skillWt="1"
+            		fatigueWt="10"
+            		locationWt="1"
+            		groundProximityWt="1"
+            		groundProximityThreshold_met="300"
+            		restartsWithoutProgressWt="0.2"
+            		timeWithoutProgressWt="0.2"
+            		totalTimeWt="0.2"
+            		fightThreshold="0"/>
+
+
+
+		<Individual_v_ground
+                        neverBackDown="n"
+
+			acDamageWt="1"
+			engineDamageWt="10"
+			pilotDamageWt="10"
+			moraleWt="1"
+			skillWt="1"
+
+			continueThreshold="0"/>
+		<!-- else withdraw-->
+
+
+		<Individual_transit
+                        neverBackDown="n"
+
+			acDamageWt="1"
+			engineDamageWt="10"
+			pilotDamageWt="10"
+			moraleWt="1"
+			skillWt="1"
+
+			continueThreshold="0"/>
+		<!-- else withdraw-->
+        <!-- v0.1 Maneuvers
+		acePlusEffort must be between 1 and 0.9 
+		aceEffort must be between     1 and 0.9 
+		noviceEffort must be between  1 and 0.5 
+		tactics must be between       0 and 1.0
+		substitute required when any < 1.0
+		-->
+		<Maneuvers
+			acePlusEffort="1.00" 
+			aceEffort    ="0.90"
+			veteranEffort="0.75"
+			noviceEffort ="0.50">
+
+			<Boom         acePlus="1.00" ace="0.75" veteran="0.50" novice="0.00" substitute="Vrille"/>
+			<BoomF        acePlus="1.00" ace="0.75" veteran="0.50" novice="0.00" substitute="Vrille"/>
+			<Chandelle    acePlus="1.00" ace="1.00" veteran="1.00" novice="0.50" substitute="Vrille"/>
+			<HeadOn       acePlus="0.15" ace="0.05" veteran="0.00" novice="0.00" substitute="Vrille"/>
+			<Intercept    acePlus="1.00" ace="1.00" veteran="1.00" novice="1.00"/>
+			<InterceptF   acePlus="1.00" ace="1.00" veteran="1.00" novice="1.00"/>
+			<Pursuit      acePlus="1.00" ace="1.00" veteran="1.00" novice="1.00"/>
+			<PursuitB     acePlus="0.00" ace="0.00" veteran="0.00" novice="0.00" substitute="Pursuit"/>
+			<PursuitF     acePlus="1.00" ace="1.00" veteran="1.00" novice="1.00"/>
+			<ReverseUnder acePlus="1.00" ace="0.80" veteran="0.50" novice="0.00" substitute="Vrille"/>
+			<!-- <ReverseUp    acePlus="1.00" ace="1.00" veteran="0.00" novice="0.00" substitute="Pursuit"/> -->
+			<SideSlip     acePlus="1.00" ace="0.85" veteran="0.50" novice="0.00" substitute="Vrille"/>
+			<SpiralInF    acePlus="1.00" ace="1.00" veteran="1.00" novice="1.00"/>
+			<Stagger      acePlus="1.00" ace="1.00" veteran="1.00" novice="1.00"/>
+			<Stall        acePlus="0.10" ace="0.40" veteran="0.80" novice="1.00" substitute="Vrille"/>
+			<Virage       acePlus="1.00" ace="1.00" veteran="0.50" novice="0.10" substitute="Vrille"/>
+			<Vrille       acePlus="0.40" ace="0.60" veteran="0.90" novice="1.00" substitute="WidePass"/>
+			<WidePass     acePlus="1.00" ace="1.00" veteran="1.00" novice="1.00"/>
+
+		</Maneuvers>
+
+		<Damage
+			adaptControlsToDamage="y"
+                        skillReducedByDamage="y"/>
+
+
+	</AI>
+	<Dev
+		minTimeCompression="1"
+		maxTimeCompression="1000"
+		profileFrames="n"
+		renderDelay_frames="450"
+		maxSimTimePerFrame_secs="0.04"
+
+		crashTape="n"
+		crashTapeFreq_secs="0.0625"
+		crashTapePlayer="n"
+		crashTapeAI="n"
+		crashTapeStart_secs="0"
+		crashTapeStop_secs="999999"
+
+		saveXdpErrors="y"
+		correctMissionErrors="y"
+		logMissionFile="y"
+
+		runInBackground="y"
+                flyForPlayer="n"
+		/>
+</Simulation>
