@@ -37,9 +37,10 @@ def build_terrain(config, quality=None):
     Pipeline:
     1. Charger les fichiers .hgt depuis src/elevation/
     2. Créer les layouts CfsTmap
-    3. Compiler via SCASM
-    4. Lier via sclink
-    5. Sortie vers build/terrain/
+    3. Compiler via Terrain SDK
+    4. Sortie vers build/terrain/*.msh (mesh tiles)
+
+    Format sortie: CFS3Europe_*.msh dans archives zip
     """
     print("\n=== BUILD TERRAIN ===")
     terrain_cfg = config['terrain']
@@ -98,7 +99,9 @@ def build_hydrography(config):
     2. Appliquer corrections historiques (retraits lacs modernes, ajout inondations)
     3. Fusionner dans src/hydrography/merged/
     4. Convertir via water.exe
-    5. Sortie vers build/hydrography/
+    5. Sortie vers build/hydrography/*.cel (cellules eau + cells.idx)
+
+    Format sortie: hyp*.cel files avec cells.idx index
     """
     print("\n=== BUILD HYDROGRAPHY ===")
     hydro_cfg = config['hydrography']

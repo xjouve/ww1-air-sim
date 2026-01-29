@@ -86,13 +86,21 @@ python tools/scripts/build_all.py --quality=high
 
 ## Data Formats
 
-| Format | Description | Tool |
-|--------|-------------|------|
-| .hgt | SRTM elevation (source) | cfsTmap |
-| .bgl | CFS3 binary scenery | SCASM/sclink |
-| .lcf | Landcover classification | tiff2lcf |
-| .geojson | Frontlines, corrections | build scripts |
-| .xdp | Aircraft config (XML) | manual |
+### Source formats
+| Format | Description |
+|--------|-------------|
+| .hgt | SRTM elevation data |
+| .shp/.dbf/.shx | ESRI Shapefiles (GIS) |
+| .geojson | Frontlines, corrections |
+
+### CFS3 output formats
+| Format | Layer | Description |
+|--------|-------|-------------|
+| .msh | Terrain | Mesh tiles in zip archives |
+| .cel | Water | Hydrography cells + index |
+| .lcf | Landcover | Land classification |
+| .bgl | Scenery | 3D objects (buildings, roads) |
+| .xdp | Aircraft | Configuration (XML) |
 
 ## Simulation Configuration (v0.4)
 

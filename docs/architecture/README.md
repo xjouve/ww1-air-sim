@@ -78,20 +78,26 @@ Le système utilise une architecture en couches superposées :
 ```
 src/elevation/*.hgt
        │
-       ▼ [cfsTmap + SCASM]
-build/terrain/*.bgl
+       ▼ [cfsTmap → terrain SDK]
+build/terrain/*.msh              ← Mesh CFS3 (tuiles CFS3Europe_*.msh)
        │
        ▼
 src/landcover/* + landclasses.xml
        │
        ▼ [tiff2lcf]
-build/landcover/*/*.lcf
+build/landcover/*/*.lcf          ← Landcover CFS3
        │
        ▼
 src/hydrography/*.shp
        │
        ▼ [water.exe + shorelines.exe]
-build/hydrography/*.bgl
+build/hydrography/*.cel          ← Cellules d'eau (hyp*.cel + cells.idx)
+       │
+       ▼
+src/infrastructure/*.shp
+       │
+       ▼ [SCASM/sclink]
+build/scenery/*.bgl              ← Objets 3D (bâtiments, routes)
        │
        ▼
 src/campaigns/* + src/frontlines/*
@@ -116,13 +122,29 @@ Le fichier `config.yaml` à la racine centralise tous les paramètres :
 
 ## Formats CFS3
 
-| Extension | Description | Outil de génération |
-|-----------|-------------|---------------------|
-| `.bgl` | Binary scenery (terrain, hydrographie) | SCASM/sclink |
-| `.lcf` | Landcover classification | tiff2lcf |
-| `.dds` | Textures (cartes, eau) | Conversion image |
-| `.xdp` | Configuration avion (XML) | Manuel |
-| `.xml` | Configuration simulation | Manuel |
+### Formats source
+| Extension | Description |
+|-----------|-------------|
+| `.hgt` | Élévation SRTM (source NASA/USGS) |
+| `.shp/.dbf/.shx` | Shapefiles ESRI (GIS) |
+| `.geojson` | Frontlines, corrections historiques |
+| `.tif` | Raster images (landcover Corine/2GIS) |
+
+### Formats compilés CFS3
+| Extension | Couche | Description |
+|-----------|--------|-------------|
+| `.msh` | Terrain | Tuiles mesh (`CFS3Europe_*.msh`) dans archives zip |
+| `.cel` | Hydrographie | Cellules eau (`hyp*.cel`) + `cells.idx` |
+| `.lcf` | Landcover | Classification terrain (~75 MB/période) |
+| `.bgl` | Scenery | Objets 3D : bâtiments, routes (via SCASM) |
+| `.dds` | Textures | Cartes, eau, textures terrain |
+
+### Formats configuration
+| Extension | Description |
+|-----------|-------------|
+| `.xdp` | Configuration avion (XML) |
+| `.xml` | Simulation, facilities |
+| `.txt` | Campagne (missions, cibles, as) |
 
 ## Principes de conception
 
